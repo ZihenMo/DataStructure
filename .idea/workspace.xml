@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b4155960-9921-41c9-826e-ea772fe44895" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="macos_macos_x86_64" />
+  <component name="ProjectId" id="1fb5FI0bAmdxeFCmyWO36ON3vEP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="OBJC.PRESERVED_TARGET_SELECTION" value="DataStructure,,,TestFinonacci" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager" selected="XCTest.-[PatternMatchingTestCase testBrutForceMatch]">
+    <configuration name="DataStructure" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DataStructure" TARGET_NAME="DataStructure" CONFIG_NAME="Debug" SCHEME_NAME="DataStructure" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" RUN_TARGET_PROJECT_NAME="DataStructure" RUN_TARGET_NAME="DataStructure" MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="false">
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <embedded_app_extension_list />
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="-[PatternMatchingTestCase testBrutForceMatch]" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DataStructure" TARGET_NAME="TestFinonacci" CONFIG_NAME="Debug" SCHEME_NAME="-[PatternMatchingTestCase testBrutForceMatch]" IS_LOCATION_SIMULATION_ALLOWED="true" LOCATION_SCENARIO_ID="com.apple.dt.IDEFoundation.CurrentLocationScenarioIdentifier" LOCATION_SCENARIO_TYPE="1" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_CLASS="PatternMatchingTestCase" TEST_METHOD="testBrutForceMatch" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="-[TestFinonacci testExample]" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DataStructure" TARGET_NAME="TestFinonacci" CONFIG_NAME="Debug" SCHEME_NAME="-[TestFinonacci testExample]" IS_LOCATION_SIMULATION_ALLOWED="true" LOCATION_SCENARIO_ID="com.apple.dt.IDEFoundation.CurrentLocationScenarioIdentifier" LOCATION_SCENARIO_TYPE="1" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_CLASS="TestFinonacci" TEST_METHOD="testExample" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="-[TestFinonacci testWhichFibonacci]" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DataStructure" TARGET_NAME="TestFinonacci" CONFIG_NAME="Debug" SCHEME_NAME="-[TestFinonacci testWhichFibonacci]" IS_LOCATION_SIMULATION_ALLOWED="true" LOCATION_SCENARIO_ID="com.apple.dt.IDEFoundation.CurrentLocationScenarioIdentifier" LOCATION_SCENARIO_TYPE="1" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_CLASS="TestFinonacci" TEST_METHOD="testWhichFibonacci" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" PASS_PARENT_ENVS_2="true" IS_LOCATION_SIMULATION_ALLOWED="true" LOCATION_SCENARIO_ID="com.apple.dt.IDEFoundation.CurrentLocationScenarioIdentifier" LOCATION_SCENARIO_TYPE="1" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.DataStructure" />
+      <item itemvalue="XCTest.-[TestFinonacci testExample]" />
+      <item itemvalue="XCTest.-[TestFinonacci testWhichFibonacci]" />
+      <item itemvalue="XCTest.-[PatternMatchingTestCase testBrutForceMatch]" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="XCTest.-[PatternMatchingTestCase testBrutForceMatch]" />
+        <item itemvalue="XCTest.-[TestFinonacci testWhichFibonacci]" />
+        <item itemvalue="XCTest.-[TestFinonacci testExample]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b4155960-9921-41c9-826e-ea772fe44895" name="Default Changelist" comment="" />
+      <created>1596473846132</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596473846132</updated>
+      <workItem from="1596473847561" duration="477000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="162" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596474274258">
+      <screen x="0" y="23" width="1396" height="877" />
+    </state>
+    <state x="162" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1396.877@0.23.1396.877" timestamp="1596474274258" />
+    <state x="436" y="215" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596474100322">
+      <screen x="0" y="23" width="1396" height="877" />
+    </state>
+    <state x="436" y="215" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1396.877@0.23.1396.877" timestamp="1596474100322" />
+    <state width="1354" height="230" key="GridCell.Tab.0.bottom" timestamp="1596474529764">
+      <screen x="0" y="23" width="1396" height="877" />
+    </state>
+    <state width="1354" height="230" key="GridCell.Tab.0.bottom/0.23.1396.877@0.23.1396.877" timestamp="1596474529764" />
+    <state width="1354" height="230" key="GridCell.Tab.0.center" timestamp="1596474529763">
+      <screen x="0" y="23" width="1396" height="877" />
+    </state>
+    <state width="1354" height="230" key="GridCell.Tab.0.center/0.23.1396.877@0.23.1396.877" timestamp="1596474529763" />
+    <state width="1354" height="230" key="GridCell.Tab.0.left" timestamp="1596474529763">
+      <screen x="0" y="23" width="1396" height="877" />
+    </state>
+    <state width="1354" height="230" key="GridCell.Tab.0.left/0.23.1396.877@0.23.1396.877" timestamp="1596474529763" />
+    <state width="1354" height="230" key="GridCell.Tab.0.right" timestamp="1596474529764">
+      <screen x="0" y="23" width="1396" height="877" />
+    </state>
+    <state width="1354" height="230" key="GridCell.Tab.0.right/0.23.1396.877@0.23.1396.877" timestamp="1596474529764" />
+  </component>
+</project>
