@@ -33,9 +33,6 @@ static const NSUInteger kDefaultCapacity = 10;
 
 - (void)dealloc {
     NSLog(@"[%@ %@]",self.className, NSStringFromSelector(_cmd));
-//    for (NSUInteger i = 0; i < _count; ++i) {
-//        id _ = (__bridge_transfer id)_items[i];
-//    }
     free(_items);
     _items = NULL;
 }
@@ -81,7 +78,7 @@ static const NSUInteger kDefaultCapacity = 10;
 - (id)removeObjectAtIndex:(NSUInteger)idx {
     id obj;
     if ([self indexEnable:idx]) {
-        obj = (__bridge id) _items[idx];
+        obj = (__bridge_transfer id) _items[idx];
     }
     for (NSUInteger i = _count - 1; i > idx; --i) {
         _items[i - 1] = _items[i];
@@ -90,11 +87,21 @@ static const NSUInteger kDefaultCapacity = 10;
     return obj;
 }
 
+- (void)removeAllObjects {
+    for (NSUInteger i = 0; i < _count; ++i) {
+        CFRelease(_items[i]);                        // 必须释放retain的对象
+//        id obj = (__bridge_transfer id)_items[i];  // 桥接时由编译器转换成释放语句
+       _items[i] = nil;
+    }
+    _count = 0;
+}
+
+
 - (NSUInteger)indexOfObject:(id)obj {
     NSUInteger idx = NSNotFound;
     for (NSUInteger i = 0; i < _count; ++i) {
-        if ([obj isEqualTo:(__bridge id)_items[i]]) {
-            idx = i;
+        if ([obj isEqualTo:(__bridge id)_items[i]]) { // 此处不能用__bridge_transfer
+            idx = i;                                  // 因为数组元素还应持有
             break;
         }
     }
@@ -128,7 +135,7 @@ static const NSUInteger kDefaultCapacity = 10;
     NSMutableString *description = [NSMutableString stringWithFormat:@"<%@: ", NSStringFromClass([self class])];
     [description appendString:@"\n"];
     for (NSUInteger i = 0; i < _count; ++i) {
-        [description appendFormat:@"%@\n", (__bridge_transfer id)_items[i]];
+        [description appendFormat:@"%@\n", (__bridge id)_items[i]];
     }
     [description appendString:@">"];
     return description;

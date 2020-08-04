@@ -25,6 +25,8 @@
 
 - (id)removeObjectAtIndex:(NSUInteger)idx;
 
+- (void)removeAllObjects;
+
 - (id)objectAtIndex:(NSUInteger)idx;
 
 - (BOOL)empty;

@@ -16,4 +16,8 @@
     return [NSString stringWithFormat:@"<%@ %@ %p>", _name, self.className, self];
 }
 
+- (void)dealloc {
+    NSLog(@"-[%@ %@]", self.className, NSStringFromSelector(_cmd));
+}
+
 @end

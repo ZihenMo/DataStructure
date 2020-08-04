@@ -199,10 +199,13 @@
 			attributes = {
 				ORGANIZATIONNAME = Hutter;
 				TargetAttributes = {
+					1A85B15D7CC30605F66A3DB7 = {
+						DevelopmentTeam = 9C9K388S8H;
+					};
 					3847EA1924D95B47008CD872 = {
 						CreatedOnToolsVersion = 11.2.1;
 						DevelopmentTeam = 9C9K388S8H;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -328,6 +331,9 @@
 		1A85B5975D3D7100E8E5E9DD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				DEVELOPMENT_TEAM = 9C9K388S8H;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mzh.dataStructure;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -335,6 +341,9 @@
 		1A85B666A96CAEF41DF1BA2E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				DEVELOPMENT_TEAM = 9C9K388S8H;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mzh.dataStructure;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -393,7 +402,8 @@
 		3847EA2024D95B47008CD872 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 9C9K388S8H;
 				INFOPLIST_FILE = DataStructureUnitTest/Info.plist;
@@ -401,13 +411,15 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mozihen.DataStructureUnitTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
 		3847EA2124D95B47008CD872 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 9C9K388S8H;
 				INFOPLIST_FILE = DataStructureUnitTest/Info.plist;
@@ -415,6 +427,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mozihen.DataStructureUnitTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
