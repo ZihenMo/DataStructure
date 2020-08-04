@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A85B0BE7035DD3066290E5D /* Fibonacci.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A85BA5AC5D0F27C7251F4F2 /* Fibonacci.m */; };
-		1A85B563091FD5A9F8149B92 /* NSString+KMP.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A85B60CDF12E0C074A8C337 /* NSString+KMP.m */; };
-		1A85B58C149B8060EE181980 /* NSString+KMP.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A85B60CDF12E0C074A8C337 /* NSString+KMP.m */; };
 		1A85B59DEFB5CC635235404A /* Fibonacci.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A85BA5AC5D0F27C7251F4F2 /* Fibonacci.m */; };
-		1A85B9476186362F0BBE7414 /* TestFinonacci.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A85B912B2EC1438EEDB0AD9 /* TestFinonacci.m */; };
 		1A85BB611809110D6C480CD7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A85B004E279F108DEE006F1 /* main.m */; };
-		1A85BBE79E5FEA8D590EC32A /* PatternMatchingTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A85BF1EDB53220329D88E39 /* PatternMatchingTestCase.m */; };
-		1A85BCA268EDD5B3B79DED6F /* PatternMatchingTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A85BF1EDB53220329D88E39 /* PatternMatchingTestCase.m */; };
+		3847EA2224D95B54008CD872 /* TestFinonacci.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A85B912B2EC1438EEDB0AD9 /* TestFinonacci.m */; };
+		3847EA2324D95B54008CD872 /* PatternMatchingTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A85BF1EDB53220329D88E39 /* PatternMatchingTestCase.m */; };
+		3847EA2424D95B54008CD872 /* TestDynamicArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CE7DE6FE346D32A6D9B726 /* TestDynamicArray.m */; };
+		3847EA2524D95B70008CD872 /* DynamicArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CE71B8C14230A24B43A666 /* DynamicArray.m */; };
+		3847EA2624D95B74008CD872 /* LinkList.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CE752C11FE637AD0A5B3E8 /* LinkList.m */; };
+		3847EA2724D95B78008CD872 /* NSString+KMP.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A85B60CDF12E0C074A8C337 /* NSString+KMP.m */; };
+		3847EA2824D95BEB008CD872 /* Fibonacci.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A85BA5AC5D0F27C7251F4F2 /* Fibonacci.m */; };
+		3847EA2C24D98014008CD872 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 3847EA2A24D9800F008CD872 /* Person.m */; };
+		3847EA3024D980A7008CD872 /* DataStructureUnitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3847EA2F24D980A7008CD872 /* DataStructureUnitTest.m */; };
+		3847EA3224D980B2008CD872 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3847EA3124D980B2008CD872 /* Info.plist */; };
+		46CE727C1B9F0A92E9C5366E /* LinkList.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CE752C11FE637AD0A5B3E8 /* LinkList.m */; };
+		46CE7E5317D9C836A863645F /* DynamicArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CE71B8C14230A24B43A666 /* DynamicArray.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,15 +37,23 @@
 
 /* Begin PBXFileReference section */
 		1A85B004E279F108DEE006F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1A85B1346930A099E2883008 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		1A85B3FBBAB1C361052DAEBC /* DataStructure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructure; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A85B48ABC398D13A6E6F7DF /* TestFinonacci.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestFinonacci.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A85B50B7C3DD8348F46505D /* Fibonacci.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fibonacci.h; sourceTree = "<group>"; };
 		1A85B60CDF12E0C074A8C337 /* NSString+KMP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+KMP.m"; sourceTree = "<group>"; };
 		1A85B912B2EC1438EEDB0AD9 /* TestFinonacci.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestFinonacci.m; sourceTree = "<group>"; };
 		1A85BA5AC5D0F27C7251F4F2 /* Fibonacci.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fibonacci.m; sourceTree = "<group>"; };
 		1A85BF1EDB53220329D88E39 /* PatternMatchingTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatternMatchingTestCase.m; sourceTree = "<group>"; };
 		1A85BF710880F87335E58C41 /* NSString+KMP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+KMP.h"; sourceTree = "<group>"; };
+		3847EA1A24D95B47008CD872 /* DataStructureUnitTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataStructureUnitTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3847EA2924D9800F008CD872 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		3847EA2A24D9800F008CD872 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		3847EA2F24D980A7008CD872 /* DataStructureUnitTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataStructureUnitTest.m; sourceTree = "<group>"; };
+		3847EA3124D980B2008CD872 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46CE71B8C14230A24B43A666 /* DynamicArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicArray.m; sourceTree = "<group>"; };
+		46CE72C47F6F139BEAA9EC5B /* LinkList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkList.h; sourceTree = "<group>"; };
+		46CE752C11FE637AD0A5B3E8 /* LinkList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkList.m; sourceTree = "<group>"; };
+		46CE7C056C3FE1C6B5909359 /* DynamicArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicArray.h; sourceTree = "<group>"; };
+		46CE7DE6FE346D32A6D9B726 /* TestDynamicArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDynamicArray.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +64,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1A85BF3F2ABFBC824AADB63F /* Frameworks */ = {
+		3847EA1724D95B47008CD872 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -72,19 +86,20 @@
 		1A85B9C9BBF8262CC28DD0D8 = {
 			isa = PBXGroup;
 			children = (
+				3847EA1B24D95B47008CD872 /* DataStructureUnitTest */,
 				1A85BEE039FB5111E047CC79 /* Products */,
 				1A85BBF46EF3910EC3E0D5CE /* DataStructure */,
-				1A85BFD12571EB3E2DAF06CF /* TestFinonacci */,
 			);
 			sourceTree = "<group>";
 		};
 		1A85BBF46EF3910EC3E0D5CE /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
-				1A85B004E279F108DEE006F1 /* main.m */,
 				1A85B16D8542D6F7CB7E01F3 /* Fibonacci */,
-				1A85BF710880F87335E58C41 /* NSString+KMP.h */,
-				1A85B60CDF12E0C074A8C337 /* NSString+KMP.m */,
+				46CE7A55E63E6B6EE4FD9F76 /* LinearList */,
+				3847EA2D24D9801E008CD872 /* Person */,
+				3847EA3324D980BF008CD872 /* String */,
+				1A85B004E279F108DEE006F1 /* main.m */,
 			);
 			path = DataStructure;
 			sourceTree = "<group>";
@@ -93,19 +108,50 @@
 			isa = PBXGroup;
 			children = (
 				1A85B3FBBAB1C361052DAEBC /* DataStructure */,
-				1A85B48ABC398D13A6E6F7DF /* TestFinonacci.xctest */,
+				3847EA1A24D95B47008CD872 /* DataStructureUnitTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1A85BFD12571EB3E2DAF06CF /* TestFinonacci */ = {
+		3847EA1B24D95B47008CD872 /* DataStructureUnitTest */ = {
 			isa = PBXGroup;
 			children = (
-				1A85B1346930A099E2883008 /* Info.plist */,
+				3847EA3124D980B2008CD872 /* Info.plist */,
+				3847EA2F24D980A7008CD872 /* DataStructureUnitTest.m */,
 				1A85B912B2EC1438EEDB0AD9 /* TestFinonacci.m */,
 				1A85BF1EDB53220329D88E39 /* PatternMatchingTestCase.m */,
+				46CE7DE6FE346D32A6D9B726 /* TestDynamicArray.m */,
 			);
-			path = TestFinonacci;
+			path = DataStructureUnitTest;
+			sourceTree = "<group>";
+		};
+		3847EA2D24D9801E008CD872 /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				3847EA2924D9800F008CD872 /* Person.h */,
+				3847EA2A24D9800F008CD872 /* Person.m */,
+			);
+			path = Person;
+			sourceTree = "<group>";
+		};
+		3847EA3324D980BF008CD872 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				1A85BF710880F87335E58C41 /* NSString+KMP.h */,
+				1A85B60CDF12E0C074A8C337 /* NSString+KMP.m */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		46CE7A55E63E6B6EE4FD9F76 /* LinearList */ = {
+			isa = PBXGroup;
+			children = (
+				46CE71B8C14230A24B43A666 /* DynamicArray.m */,
+				46CE7C056C3FE1C6B5909359 /* DynamicArray.h */,
+				46CE752C11FE637AD0A5B3E8 /* LinkList.m */,
+				46CE72C47F6F139BEAA9EC5B /* LinkList.h */,
+			);
+			path = LinearList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,21 +174,21 @@
 			productReference = 1A85B3FBBAB1C361052DAEBC /* DataStructure */;
 			productType = "com.apple.product-type.tool";
 		};
-		1A85BA4B59FE53DF323C4DFE /* TestFinonacci */ = {
+		3847EA1924D95B47008CD872 /* DataStructureUnitTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1A85B371FC2A80638FCC6406 /* Build configuration list for PBXNativeTarget "TestFinonacci" */;
+			buildConfigurationList = 3847EA1F24D95B47008CD872 /* Build configuration list for PBXNativeTarget "DataStructureUnitTest" */;
 			buildPhases = (
-				1A85BF3BFE38106214E65BF2 /* Sources */,
-				1A85BF3F2ABFBC824AADB63F /* Frameworks */,
-				1A85BDB7D4EDE70F0082B7D8 /* Resources */,
+				3847EA1624D95B47008CD872 /* Sources */,
+				3847EA1724D95B47008CD872 /* Frameworks */,
+				3847EA1824D95B47008CD872 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = TestFinonacci;
-			productName = TestFinonacci;
-			productReference = 1A85B48ABC398D13A6E6F7DF /* TestFinonacci.xctest */;
+			name = DataStructureUnitTest;
+			productName = DataStructureUnitTest;
+			productReference = 3847EA1A24D95B47008CD872 /* DataStructureUnitTest.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -152,12 +198,20 @@
 			isa = PBXProject;
 			attributes = {
 				ORGANIZATIONNAME = Hutter;
+				TargetAttributes = {
+					3847EA1924D95B47008CD872 = {
+						CreatedOnToolsVersion = 11.2.1;
+						DevelopmentTeam = 9C9K388S8H;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 1A85B0BB06F0AF00A5427884 /* Build configuration list for PBXProject "DataStructure" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 1A85B9C9BBF8262CC28DD0D8;
@@ -166,16 +220,17 @@
 			projectRoot = "";
 			targets = (
 				1A85B15D7CC30605F66A3DB7 /* DataStructure */,
-				1A85BA4B59FE53DF323C4DFE /* TestFinonacci */,
+				3847EA1924D95B47008CD872 /* DataStructureUnitTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1A85BDB7D4EDE70F0082B7D8 /* Resources */ = {
+		3847EA1824D95B47008CD872 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3847EA3224D980B2008CD872 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,88 +243,30 @@
 			files = (
 				1A85BB611809110D6C480CD7 /* main.m in Sources */,
 				1A85B59DEFB5CC635235404A /* Fibonacci.m in Sources */,
-				1A85B563091FD5A9F8149B92 /* NSString+KMP.m in Sources */,
-				1A85BBE79E5FEA8D590EC32A /* PatternMatchingTestCase.m in Sources */,
+				46CE7E5317D9C836A863645F /* DynamicArray.m in Sources */,
+				46CE727C1B9F0A92E9C5366E /* LinkList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1A85BF3BFE38106214E65BF2 /* Sources */ = {
+		3847EA1624D95B47008CD872 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A85B9476186362F0BBE7414 /* TestFinonacci.m in Sources */,
-				1A85B0BE7035DD3066290E5D /* Fibonacci.m in Sources */,
-				1A85B58C149B8060EE181980 /* NSString+KMP.m in Sources */,
-				1A85BCA268EDD5B3B79DED6F /* PatternMatchingTestCase.m in Sources */,
+				3847EA3024D980A7008CD872 /* DataStructureUnitTest.m in Sources */,
+				3847EA2524D95B70008CD872 /* DynamicArray.m in Sources */,
+				3847EA2224D95B54008CD872 /* TestFinonacci.m in Sources */,
+				3847EA2424D95B54008CD872 /* TestDynamicArray.m in Sources */,
+				3847EA2624D95B74008CD872 /* LinkList.m in Sources */,
+				3847EA2824D95BEB008CD872 /* Fibonacci.m in Sources */,
+				3847EA2C24D98014008CD872 /* Person.m in Sources */,
+				3847EA2724D95B78008CD872 /* NSString+KMP.m in Sources */,
+				3847EA2324D95B54008CD872 /* PatternMatchingTestCase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		1A85B041F516E717F4DEBC33 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = TestFinonacci/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mzh.TestFinonacci;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
 		1A85B0AEF606A8C6D98E6258 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -342,62 +339,6 @@
 			};
 			name = Debug;
 		};
-		1A85B7B86B23E1A88D419B82 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = TestFinonacci/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mzh.TestFinonacci;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-			};
-			name = Release;
-		};
 		1A85BA12226878D051DFC1BA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -449,6 +390,34 @@
 			};
 			name = Release;
 		};
+		3847EA2024D95B47008CD872 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9C9K388S8H;
+				INFOPLIST_FILE = DataStructureUnitTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mozihen.DataStructureUnitTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3847EA2124D95B47008CD872 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9C9K388S8H;
+				INFOPLIST_FILE = DataStructureUnitTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mozihen.DataStructureUnitTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -461,14 +430,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1A85B371FC2A80638FCC6406 /* Build configuration list for PBXNativeTarget "TestFinonacci" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1A85B041F516E717F4DEBC33 /* Debug */,
-				1A85B7B86B23E1A88D419B82 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
 		1A85B6F47F7FF7443312EDA6 /* Build configuration list for PBXNativeTarget "DataStructure" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -476,6 +437,16 @@
 				1A85B5975D3D7100E8E5E9DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3847EA1F24D95B47008CD872 /* Build configuration list for PBXNativeTarget "DataStructureUnitTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3847EA2024D95B47008CD872 /* Debug */,
+				3847EA2124D95B47008CD872 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
