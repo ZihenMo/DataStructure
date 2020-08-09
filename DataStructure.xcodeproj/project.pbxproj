@@ -201,11 +201,12 @@
 				TargetAttributes = {
 					1A85B15D7CC30605F66A3DB7 = {
 						DevelopmentTeam = 9C9K388S8H;
+						ProvisioningStyle = Automatic;
 					};
 					3847EA1924D95B47008CD872 = {
 						CreatedOnToolsVersion = 11.2.1;
 						DevelopmentTeam = 9C9K388S8H;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -332,9 +333,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9C9K388S8H;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mzh.dataStructure;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -342,9 +345,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9C9K388S8H;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mzh.dataStructure;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -403,7 +408,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 9C9K388S8H;
 				INFOPLIST_FILE = DataStructureUnitTest/Info.plist;
@@ -419,7 +424,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 9C9K388S8H;
 				INFOPLIST_FILE = DataStructureUnitTest/Info.plist;

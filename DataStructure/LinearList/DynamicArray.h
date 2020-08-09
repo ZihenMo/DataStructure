@@ -10,10 +10,13 @@
 
 @property (nonatomic, assign, readonly) NSUInteger count;
 
-
++ (instancetype)array;
++ (instancetype)arrayWithCapacity:(NSUInteger)capacity;
 - (instancetype)initWithCapacity:(NSUInteger)capacity;
 
 - (void)addObject:(id)obj;
+
+- (void)setObject:(id)obj atIndex:(NSUInteger)idx;
 
 - (void)insertObject:(id)obj atIndex:(NSUInteger)idx;
 

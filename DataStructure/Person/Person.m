@@ -10,14 +10,33 @@
 
 @implementation Person
 
++ (instancetype)personWithName:(NSString *)name andAge:(NSUInteger)age {
+    Person *person = [[Person alloc] init];
+    person.name = name;
+    person.age = age;
+    return person;
+}
 
 - (NSString *)description
 {
-    return [NSString stringWithFormat:@"<%@ %@ %p>", _name, self.className, self];
+    return [NSString stringWithFormat:@"<%@ %@ %ld %p>", self.className, _name, _age, (__bridge  void *) self];
 }
 
 - (void)dealloc {
     NSLog(@"-[%@ %@]", self.className, NSStringFromSelector(_cmd));
 }
+
+- (BOOL)isEqualTo:(nullable id)other {
+    if ([other isKindOfClass:self.class]) {
+        Person *another = (Person *)other;
+        return [_name isEqualToString:another.name] && _age == another.age;
+    }
+    return [super isEqualTo:other];
+}
+
+- (BOOL)isEqual:(id)other {
+    return [self isEqualTo:other];
+}
+
 
 @end

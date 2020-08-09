@@ -11,7 +11,12 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        NSLog(@"Hello, World!");
+        
+        NSMutableArray *array = [NSMutableArray array];
+        [array insertObject:@0 atIndex:0];
+        [array addObject:@1];
+        [array insertObject:@10 atIndex:2];
+        NSLog(@"Hello, World! %@", array);
     }
     return 0;
 

@@ -21,7 +21,6 @@ static const NSUInteger kDefaultCapacity = 10;
     return [self initWithCapacity:kDefaultCapacity];
 }
 
-
 - (instancetype)initWithCapacity:(NSUInteger)capacity {
     if (self = [super init]) {
         _capacity = MAX(capacity, kDefaultCapacity);
@@ -31,16 +30,28 @@ static const NSUInteger kDefaultCapacity = 10;
     return self;
 }
 
++ (instancetype)array {
+    return [self arrayWithCapacity:kDefaultCapacity];
+}
+
++ (instancetype)arrayWithCapacity:(NSUInteger)capacity {
+    return [[DynamicArray alloc] initWithCapacity:capacity];
+}
+
 - (void)dealloc {
     NSLog(@"[%@ %@]",self.className, NSStringFromSelector(_cmd));
     free(_items);
     _items = NULL;
 }
 
-
 - (void)addObject:(id)obj {
-    if (_count == _capacity) {[self resize];}
-    _items[_count++] = (__bridge_retained void *) obj;
+    [self insertObject:obj atIndex:_count];
+}
+
+- (void)setObject:(id)obj atIndex:(NSUInteger)idx {
+    if (![self indexEnable:idx]) { return; }
+    id old = (__bridge_transfer id) _items[idx];    // 释放旧值
+    _items[idx] = (__bridge_retained void *)obj;    // 持有新值
 }
 
 - (void)insertObject:(id)obj atIndex:(NSUInteger)idx {
@@ -48,17 +59,12 @@ static const NSUInteger kDefaultCapacity = 10;
         return ;
     }
     if (_count == _capacity) {[self resize];}
-    if (idx == _count) {
-        [self addObject:obj];
+    for (NSUInteger i = _count; i > idx; --i) {
+        _items[i] = _items[i - 1];
     }
-    else {
-        for (NSUInteger i = _count; i > idx; --i) {
-            _items[i] = _items[i - 1];
-        }
-        
-        _items[idx] = (__bridge_retained void *) obj;;
-        ++_count;
-    }
+    
+    _items[idx] = (__bridge_retained void *) obj;;
+    ++_count;
 }
 
 - (id)replaceObject:(id)obj atIndex:(NSUInteger)idx {
@@ -76,14 +82,14 @@ static const NSUInteger kDefaultCapacity = 10;
 }
 
 - (id)removeObjectAtIndex:(NSUInteger)idx {
-    id obj;
-    if ([self indexEnable:idx]) {
-        obj = (__bridge_transfer id) _items[idx];
+    if (![self indexEnable:idx]) {
+        return nil;
     }
-    for (NSUInteger i = _count - 1; i > idx; --i) {
-        _items[i - 1] = _items[i];
+    id obj = (__bridge_transfer id) _items[idx];
+    for (NSUInteger i = idx + 1; i < _count; ++i) {
+        _items[i - 1] = _items[i];                 // 注意由前往后覆盖
     }
-    --_count;
+    _items[--_count] = nil;                        // 不要忘记清除最后一个
     return obj;
 }
 
