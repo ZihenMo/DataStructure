@@ -4,34 +4,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "List.h"
 
 
-@interface DynamicArray : NSObject
+@interface DynamicArray : NSObject <List>
 
-@property (nonatomic, assign, readonly) NSUInteger count;
 
 + (instancetype)array;
 + (instancetype)arrayWithCapacity:(NSUInteger)capacity;
 - (instancetype)initWithCapacity:(NSUInteger)capacity;
-
-- (void)addObject:(id)obj;
-
-- (void)setObject:(id)obj atIndex:(NSUInteger)idx;
-
-- (void)insertObject:(id)obj atIndex:(NSUInteger)idx;
-
-- (id)replaceObject:(id)obj atIndex:(NSUInteger)idx;
-
-- (void)removeObject:(id)obj;
-
-- (NSUInteger)indexOfObject:(id)obj;
-
-- (id)removeObjectAtIndex:(NSUInteger)idx;
-
-- (void)removeAllObjects;
-
-- (id)objectAtIndex:(NSUInteger)idx;
-
-- (BOOL)empty;
 
 @end

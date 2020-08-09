@@ -4,7 +4,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "List.h"
 
+@interface LinkedList : NSObject <List>
 
-@interface LinkList : NSObject
++ (instancetype)list;
+
 @end

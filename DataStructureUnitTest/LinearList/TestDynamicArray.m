@@ -123,9 +123,9 @@
     @autoreleasepool {
         dynamicArray = [[DynamicArray alloc] initWithCapacity:12];
         XCTAssertEqual(0, dynamicArray.count);
-        obj1 = [Person new];
-        obj2 = [Person new];
-        obj3 = [Person new];
+        obj1 = [Person personWithName:@"小一" andAge:18];
+        obj2 = [Person personWithName:@"小二" andAge:16];
+        obj3 = [Person personWithName:@"小三" andAge:19];
 
         [dynamicArray addObject:obj2];
         [dynamicArray insertObject:obj1 atIndex:0];

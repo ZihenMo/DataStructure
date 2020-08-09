@@ -7,16 +7,21 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Person.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        
-        NSMutableArray *array = [NSMutableArray array];
-        [array insertObject:@0 atIndex:0];
-        [array addObject:@1];
-        [array insertObject:@10 atIndex:2];
-        NSLog(@"Hello, World! %@", array);
+        NSString *name;
+        @autoreleasepool {
+            name = [NSString stringWithFormat:@"some body"];
+            @autoreleasepool {
+                Person *person = [[Person alloc] init];
+                person.name = name;
+            }
+        }
+        NSLog(@"%@", name);
+
     }
     return 0;
 

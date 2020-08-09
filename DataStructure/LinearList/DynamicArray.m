@@ -9,6 +9,8 @@ static const NSUInteger kDefaultCapacity = 10;
 
 @interface DynamicArray ()
 
+@property (nonatomic, assign, readwrite) NSUInteger count;
+
 @end
 
 
@@ -44,14 +46,22 @@ static const NSUInteger kDefaultCapacity = 10;
     _items = NULL;
 }
 
-- (void)addObject:(id)obj {
-    [self insertObject:obj atIndex:_count];
-}
 
 - (void)setObject:(id)obj atIndex:(NSUInteger)idx {
-    if (![self indexEnable:idx]) { return; }
-    id old = (__bridge_transfer id) _items[idx];    // 释放旧值
-    _items[idx] = (__bridge_retained void *)obj;    // 持有新值
+    [self replaceObject:obj atIndex:idx];
+}
+
+- (id)replaceObject:(id)obj atIndex:(NSUInteger)idx {
+    if (![self indexEnable:idx]) {
+        return nil;
+    }
+    id oldObj = (__bridge_transfer id)_items[idx];
+    _items[idx] = (__bridge_retained void *)obj;
+    return oldObj;
+}
+
+- (void)addObject:(id)obj {
+    [self insertObject:obj atIndex:_count];
 }
 
 - (void)insertObject:(id)obj atIndex:(NSUInteger)idx {
@@ -62,18 +72,9 @@ static const NSUInteger kDefaultCapacity = 10;
     for (NSUInteger i = _count; i > idx; --i) {
         _items[i] = _items[i - 1];
     }
-    
+
     _items[idx] = (__bridge_retained void *) obj;;
     ++_count;
-}
-
-- (id)replaceObject:(id)obj atIndex:(NSUInteger)idx {
-    if (![self indexEnable:idx]) {
-        return nil;
-    }
-    id oldObj = (__bridge_transfer id)_items[idx];
-    _items[idx] = (__bridge_retained void *)obj;
-    return oldObj;
 }
 
 - (void)removeObject:(id)obj {
@@ -119,6 +120,10 @@ static const NSUInteger kDefaultCapacity = 10;
     if (!([self indexEnable:idx])) { return nil; }
     id obj = (__bridge id)_items[idx];
     return obj;
+}
+
+- (BOOL)containsObject:(id)obj {
+    return [self indexOfObject:obj] != NSNotFound;
 }
 
 
