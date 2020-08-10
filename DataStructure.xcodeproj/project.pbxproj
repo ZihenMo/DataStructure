@@ -12,6 +12,8 @@
 		1A85B59DEFB5CC635235404A /* Fibonacci.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A85BA5AC5D0F27C7251F4F2 /* Fibonacci.m */; };
 		1A85B6A3C4721FEC88BD24E6 /* TestLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A85B3E0FA082132104BBAEE /* TestLinkedList.m */; };
 		1A85BB611809110D6C480CD7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A85B004E279F108DEE006F1 /* main.m */; };
+		38087D6D24E0E49200BFC94B /* DynamicArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38087D6C24E0E49200BFC94B /* DynamicArray.swift */; };
+		38087D6F24E0E64600BFC94B /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38087D6E24E0E64600BFC94B /* LinkedList.swift */; };
 		3847EA2224D95B54008CD872 /* TestFinonacci.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A85B912B2EC1438EEDB0AD9 /* TestFinonacci.m */; };
 		3847EA2324D95B54008CD872 /* TestPatternMatching.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A85BF1EDB53220329D88E39 /* TestPatternMatching.m */; };
 		3847EA2524D95B70008CD872 /* DynamicArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CE71B8C14230A24B43A666 /* DynamicArray.m */; };
@@ -49,6 +51,9 @@
 		1A85BA5AC5D0F27C7251F4F2 /* Fibonacci.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fibonacci.m; sourceTree = "<group>"; };
 		1A85BF1EDB53220329D88E39 /* TestPatternMatching.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPatternMatching.m; sourceTree = "<group>"; };
 		1A85BF710880F87335E58C41 /* NSString+KMP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+KMP.h"; sourceTree = "<group>"; };
+		38087D6924E0E3C900BFC94B /* DataStructure-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DataStructure-Bridging-Header.h"; sourceTree = "<group>"; };
+		38087D6C24E0E49200BFC94B /* DynamicArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicArray.swift; sourceTree = "<group>"; };
+		38087D6E24E0E64600BFC94B /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		3847EA1A24D95B47008CD872 /* DataStructureUnitTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataStructureUnitTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3847EA2924D9800F008CD872 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		3847EA2A24D9800F008CD872 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
@@ -99,9 +104,9 @@
 		1A85B9C9BBF8262CC28DD0D8 = {
 			isa = PBXGroup;
 			children = (
+				1A85BBF46EF3910EC3E0D5CE /* DataStructure */,
 				3847EA1B24D95B47008CD872 /* DataStructureUnitTest */,
 				1A85BEE039FB5111E047CC79 /* Products */,
-				1A85BBF46EF3910EC3E0D5CE /* DataStructure */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,6 +118,7 @@
 				3847EA2D24D9801E008CD872 /* Person */,
 				3847EA3324D980BF008CD872 /* String */,
 				1A85B004E279F108DEE006F1 /* main.m */,
+				38087D6924E0E3C900BFC94B /* DataStructure-Bridging-Header.h */,
 			);
 			path = DataStructure;
 			sourceTree = "<group>";
@@ -124,6 +130,27 @@
 				3847EA1A24D95B47008CD872 /* DataStructureUnitTest.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		38087D6524E0DF4C00BFC94B /* OC */ = {
+			isa = PBXGroup;
+			children = (
+				46CE71B8C14230A24B43A666 /* DynamicArray.m */,
+				46CE7C056C3FE1C6B5909359 /* DynamicArray.h */,
+				46CE752C11FE637AD0A5B3E8 /* LinkedList.m */,
+				46CE72C47F6F139BEAA9EC5B /* LinkedList.h */,
+				1A85B193C817779AAC350827 /* List.h */,
+			);
+			path = OC;
+			sourceTree = "<group>";
+		};
+		38087D6624E0DF5B00BFC94B /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				38087D6C24E0E49200BFC94B /* DynamicArray.swift */,
+				38087D6E24E0E64600BFC94B /* LinkedList.swift */,
+			);
+			path = Swift;
 			sourceTree = "<group>";
 		};
 		3847EA1B24D95B47008CD872 /* DataStructureUnitTest */ = {
@@ -159,11 +186,8 @@
 		46CE7A55E63E6B6EE4FD9F76 /* LinearList */ = {
 			isa = PBXGroup;
 			children = (
-				46CE71B8C14230A24B43A666 /* DynamicArray.m */,
-				46CE7C056C3FE1C6B5909359 /* DynamicArray.h */,
-				46CE752C11FE637AD0A5B3E8 /* LinkedList.m */,
-				46CE72C47F6F139BEAA9EC5B /* LinkedList.h */,
-				1A85B193C817779AAC350827 /* List.h */,
+				38087D6524E0DF4C00BFC94B /* OC */,
+				38087D6624E0DF5B00BFC94B /* Swift */,
 			);
 			path = LinearList;
 			sourceTree = "<group>";
@@ -215,6 +239,7 @@
 				TargetAttributes = {
 					1A85B15D7CC30605F66A3DB7 = {
 						DevelopmentTeam = 9C9K388S8H;
+						LastSwiftMigration = 1120;
 						ProvisioningStyle = Automatic;
 					};
 					3847EA1924D95B47008CD872 = {
@@ -259,11 +284,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38087D6D24E0E49200BFC94B /* DynamicArray.swift in Sources */,
 				1A85BB611809110D6C480CD7 /* main.m in Sources */,
 				1A85B59DEFB5CC635235404A /* Fibonacci.m in Sources */,
 				46CE7E5317D9C836A863645F /* DynamicArray.m in Sources */,
 				46CE727C1B9F0A92E9C5366E /* LinkedList.m in Sources */,
 				1A85B54B164947C3F5F308DF /* Person.m in Sources */,
+				38087D6F24E0E64600BFC94B /* LinkedList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,24 +375,33 @@
 		1A85B5975D3D7100E8E5E9DD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9C9K388S8H;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mzh.dataStructure;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "DataStructure/DataStructure-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
 		1A85B666A96CAEF41DF1BA2E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9C9K388S8H;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mzh.dataStructure;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "DataStructure/DataStructure-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
