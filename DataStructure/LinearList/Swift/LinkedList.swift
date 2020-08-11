@@ -186,6 +186,7 @@ extension LinkedList {
 
     /// 两两反转链表－反转两个相邻元素的顺序　LettCode_24
     /// - Parameter head:　头结点
+    /// 解法：创建一个假结点作为头结点前驱
     fileprivate func reversePairs(_ head: ListNode?) -> ListNode? {
         guard head != nil && head?.next != nil else {
             return head
@@ -193,18 +194,16 @@ extension LinkedList {
         let dummy = ListNode(data: nil)   // 假结点
         var pre:ListNode? = dummy
         pre?.next = head
-        var cur = head
         var a: ListNode?
         var b: ListNode?
-        while cur != nil && cur?.next != nil {
-            a = cur
-            b = cur?.next
+        while pre?.next != nil && pre?.next?.next != nil {
+            a = pre?.next
+            b = a?.next
 
             pre?.next = b
             a?.next = b?.next
             b?.next = a
             pre = a
-            cur = a?.next
         }
         return dummy.next
     }
