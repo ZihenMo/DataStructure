@@ -85,10 +85,15 @@ class TestLinkedList: XCTestCase {
         let obj1 = Person(name: "小一", andAge: 18)
         let obj2 = Person(name: "小二", andAge: 16)
         let obj3 = Person(name: "小三", andAge: 19)
+        let obj4 = Person(name: "小四", andAge: 22)
 
-        list.reverse(list.move(0))
+        list.add(obj4)
+        list.reverse()
 
         XCTAssertEqual(obj1, list[list.count - 1])
+        print(list)
+
+        list.reversePairs()
         print(list)
     }
 
