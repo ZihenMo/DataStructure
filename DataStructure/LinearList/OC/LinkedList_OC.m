@@ -3,7 +3,7 @@
 // Copyright (c) 2020 Hutter. All rights reserved.
 //
 
-#import "LinkedList.h"
+#import "LinkedList_OC.h"
 
 @interface Node : NSObject
 
@@ -24,7 +24,7 @@
 
 @end
 
-@interface LinkedList ()
+@interface LinkedList_OC ()
 
 @property(nonatomic, strong) Node *header;
 
@@ -32,9 +32,9 @@
 
 @end
 
-@implementation LinkedList
+@implementation LinkedList_OC
 + (instancetype)list {
-    return [[LinkedList alloc] init];
+    return [[LinkedList_OC alloc] init];
 }
 
 - (instancetype)init {

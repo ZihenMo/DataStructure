@@ -6,7 +6,7 @@
 #import <Foundation/Foundation.h>
 #import "List.h"
 
-@interface LinkedList : NSObject <List>
+@interface LinkedList_OC : NSObject <List>
 
 + (instancetype)list;
 

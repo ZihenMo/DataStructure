@@ -7,19 +7,19 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "LinkedList.h"
+#import "LinkedList_OC.h"
 #import "Person.h"
 
-@interface TestLinkedList : XCTestCase
+@interface TestLinkedList_OC : XCTestCase
 
-@property(nonatomic, strong) LinkedList *list;
+@property(nonatomic, strong) LinkedList_OC *list;
 @end
 
-@implementation TestLinkedList
+@implementation TestLinkedList_OC
 
 - (void)setUp {
     // Put setup code here. This method is called before the invocation of each test method in the class.
-    self.list = [LinkedList list];
+    self.list = [LinkedList_OC list];
 
     Person *obj1 = [Person personWithName:@"小一" andAge:18];
     Person *obj2 = [Person personWithName:@"小二" andAge:16];
@@ -32,7 +32,7 @@
 
 - (void)tearDown {
     // Put teardown code here. This method is called after the invocation of each test method in the class.
-    __weak LinkedList *list = _list;
+    __weak LinkedList_OC *list = _list;
     @autoreleasepool {
         [self.list removeAllObjects];
         _list = nil;
@@ -45,12 +45,12 @@
  * 测试构建与存储是否正常
  */
 - (void)testAccessObj {
-    LinkedList *list;
+    LinkedList_OC *list;
     Person *obj1;
     Person *obj2;
     Person *obj3;
     @autoreleasepool {
-        list = [LinkedList list];
+        list = [LinkedList_OC list];
 
         obj1 = [Person personWithName:@"小一" andAge:18];
         obj2 = [Person personWithName:@"小二" andAge:16];
@@ -79,7 +79,7 @@
  * 测试增删改查
  */
 - (void)testCRUD {
-    LinkedList *list = _list;
+    LinkedList_OC *list = _list;
     Person *obj1 = [Person personWithName:@"小一" andAge:18];
     Person *obj2 = [Person personWithName:@"小二" andAge:16];
     Person *obj3 = [Person personWithName:@"小三" andAge:19];
@@ -111,12 +111,12 @@
 }
 
 - (void)testLinkedList {
-    LinkedList *list;
+    LinkedList_OC *list;
     Person *obj1;
     Person *obj2;
     Person *obj3;
     @autoreleasepool {
-        list = [LinkedList list];
+        list = [LinkedList_OC list];
         XCTAssertEqual(0, list.count);
         obj1 = [Person personWithName:@"小一" andAge:18];
         obj2 = [Person personWithName:@"小二" andAge:16];
