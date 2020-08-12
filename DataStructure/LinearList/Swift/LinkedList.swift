@@ -116,7 +116,11 @@ extension LinkedList {
     }
 
     func reversePairs() {
+        #if false
         head = reversePairs(head)
+        #else
+        head = reversePairs2(head)
+        #endif
     }
 
     public var description: String {
@@ -187,25 +191,76 @@ extension LinkedList {
     /// 两两反转链表－反转两个相邻元素的顺序　LettCode_24
     /// - Parameter head:　头结点
     /// 解法：创建一个假结点作为头结点前驱
+    /// 一次走两步，将两个结点反转
     fileprivate func reversePairs(_ head: ListNode?) -> ListNode? {
         guard head != nil && head?.next != nil else {
             return head
         }
         let dummy = ListNode(data: nil)   // 假结点
-        var pre:ListNode? = dummy
+        var pre: ListNode? = dummy
         pre?.next = head
-        var a: ListNode?
-        var b: ListNode?
+        var cur: ListNode?
+        var next: ListNode?
         while pre?.next != nil && pre?.next?.next != nil {
-            a = pre?.next
-            b = a?.next
-
-            pre?.next = b
-            a?.next = b?.next
-            b?.next = a
-            pre = a
+            cur = pre?.next
+            next = cur?.next
+            // swapping
+            pre?.next = next
+            cur?.next = next?.next
+            next?.next = cur
+            // jump
+            pre = cur
         }
         return dummy.next
+    }
+
+
+    /// 两两反转元素 - 递规实现方案
+    fileprivate func reversePairs2(_ head: ListNode?) -> ListNode? {
+        guard head != nil && head?.next != nil else {
+            return head
+        }
+        var cur = head
+        var next = cur?.next
+
+        cur?.next = reversePairs2(next?.next) // 指向已反转的结点
+        next?.next = cur
+
+        return next
+    }
+
+
+    /// 环形链表 - LeetCode 141
+    ///
+    /// 哈希表或set方案
+    /// 注意需ListNode实现Hashable协议
+    fileprivate func hasCycle(_ head: ListNode?) -> Bool {
+        var cur = head
+        var set = Set<ListNode>()
+        while cur != nil {
+            if set.contains(cur!) { return true }
+            set.insert(cur!)
+            cur = cur?.next
+        }
+        return false
+    }
+
+
+    /// 环形链表 - LeetCode 141
+    ///
+    /// 快慢指针法，慢指针追上快指针时有环
+    /// 注意Swift可用 === 或实现Equatable协议
+    /// 相对Hash表方式，节省了内存空间 O(n)的时间复杂度 O(1)的空间复杂度
+    fileprivate func hasCycle2(_ head:ListNode?) -> Bool {
+        var cur = head
+        var next = cur?.next
+
+        while cur != nil {
+            if cur === next { return true }
+            cur = cur?.next
+            next = next?.next?.next
+        }
+        return false
     }
 
 }
@@ -213,12 +268,21 @@ extension LinkedList {
 // MARK: - ListNode
 extension LinkedList {
 
-    public class ListNode {
+    public class ListNode:Hashable {
+
         var data: T?
         var next: ListNode?
 
         init(data: T?) {
             self.data = data
         }
+
+        public func hash(into hasher: inout Hasher) {
+            hasher.combine(ObjectIdentifier(self))
+        }
+        public static func ==(lhs: LinkedList<T>.ListNode, rhs: LinkedList<T>.ListNode) -> Bool {
+            return lhs == rhs
+        }
     }
 }
+
