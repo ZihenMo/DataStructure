@@ -4,9 +4,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "List.h"
+#import "List_OC.h"
 
-@interface LinkedList_OC : NSObject <List>
+@interface LinkedList_OC : NSObject <List_OC>
 
 + (instancetype)list;
 

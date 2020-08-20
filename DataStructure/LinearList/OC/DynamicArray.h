@@ -4,10 +4,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "List.h"
+#import "List_OC.h"
 
 
-@interface DynamicArray : NSObject <List>
+@interface DynamicArray : NSObject <List_OC>
 
 
 + (instancetype)array;
