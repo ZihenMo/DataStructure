@@ -5,7 +5,7 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol List <NSObject>
+@protocol List_OC <NSObject>
 
 @property(nonatomic, assign, readonly) NSUInteger count;
 

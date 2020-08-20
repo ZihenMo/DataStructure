@@ -23,7 +23,7 @@
 }
 
 - (void)dealloc {
-    NSLog(@"-[%@ %@]", self.className, NSStringFromSelector(_cmd));
+    NSLog(@"-[%@ %@]", self, NSStringFromSelector(_cmd));
 }
 
 - (BOOL)isEqualTo:(nullable id)other {

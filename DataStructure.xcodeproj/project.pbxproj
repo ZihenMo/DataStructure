@@ -7,11 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A85B35AC7C725DF215A4DA7 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A85B33815BCCA7AFD6D7853 /* List.swift */; };
 		1A85B3AEF2F029B97643216A /* TestDynamicArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A85B53A5FF2063DA8F24701 /* TestDynamicArray.m */; };
+		1A85B3E458740C44A154F01C /* DoubleLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A85BBD9B4F6BFB577578245 /* DoubleLinkedList.swift */; };
 		1A85B54B164947C3F5F308DF /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 3847EA2A24D9800F008CD872 /* Person.m */; };
 		1A85B59DEFB5CC635235404A /* Fibonacci.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A85BA5AC5D0F27C7251F4F2 /* Fibonacci.m */; };
 		1A85B6A3C4721FEC88BD24E6 /* TestLinkedList_OC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A85B3E0FA082132104BBAEE /* TestLinkedList_OC.m */; };
+		1A85B76ACC1944F17009C9C5 /* DoubleLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A85BBD9B4F6BFB577578245 /* DoubleLinkedList.swift */; };
+		1A85B9E59DC0F23C197EAD94 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A85B33815BCCA7AFD6D7853 /* List.swift */; };
 		1A85BB611809110D6C480CD7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A85B004E279F108DEE006F1 /* main.m */; };
+		1A85BCC366A4371398038F2F /* TestDoubleLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A85B64C47F547BEAC351F87 /* TestDoubleLinkedList.swift */; };
 		38087D6F24E0E64600BFC94B /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38087D6E24E0E64600BFC94B /* LinkedList.swift */; };
 		3847EA2224D95B54008CD872 /* TestFinonacci.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A85B912B2EC1438EEDB0AD9 /* TestFinonacci.m */; };
 		3847EA2324D95B54008CD872 /* TestPatternMatching.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A85BF1EDB53220329D88E39 /* TestPatternMatching.m */; };
@@ -44,14 +49,17 @@
 
 /* Begin PBXFileReference section */
 		1A85B004E279F108DEE006F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1A85B193C817779AAC350827 /* List.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
+		1A85B193C817779AAC350827 /* List_OC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = List_OC.h; sourceTree = "<group>"; };
+		1A85B33815BCCA7AFD6D7853 /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		1A85B3E0FA082132104BBAEE /* TestLinkedList_OC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestLinkedList_OC.m; sourceTree = "<group>"; };
 		1A85B3FBBAB1C361052DAEBC /* DataStructure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructure; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A85B50B7C3DD8348F46505D /* Fibonacci.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fibonacci.h; sourceTree = "<group>"; };
 		1A85B53A5FF2063DA8F24701 /* TestDynamicArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDynamicArray.m; sourceTree = "<group>"; };
 		1A85B60CDF12E0C074A8C337 /* NSString+KMP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+KMP.m"; sourceTree = "<group>"; };
+		1A85B64C47F547BEAC351F87 /* TestDoubleLinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDoubleLinkedList.swift; sourceTree = "<group>"; };
 		1A85B912B2EC1438EEDB0AD9 /* TestFinonacci.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestFinonacci.m; sourceTree = "<group>"; };
 		1A85BA5AC5D0F27C7251F4F2 /* Fibonacci.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fibonacci.m; sourceTree = "<group>"; };
+		1A85BBD9B4F6BFB577578245 /* DoubleLinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleLinkedList.swift; sourceTree = "<group>"; };
 		1A85BF1EDB53220329D88E39 /* TestPatternMatching.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPatternMatching.m; sourceTree = "<group>"; };
 		1A85BF710880F87335E58C41 /* NSString+KMP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+KMP.h"; sourceTree = "<group>"; };
 		38087D6924E0E3C900BFC94B /* DataStructure-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DataStructure-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -104,6 +112,7 @@
 				1A85B53A5FF2063DA8F24701 /* TestDynamicArray.m */,
 				1A85B3E0FA082132104BBAEE /* TestLinkedList_OC.m */,
 				38F5D8E024E231E900CA5605 /* TestLinkedList.swift */,
+				1A85B64C47F547BEAC351F87 /* TestDoubleLinkedList.swift */,
 				46CE7012F87A55ABCA277F34 /* TestCircularLinkedList.swift */,
 			);
 			path = LinearList;
@@ -147,7 +156,7 @@
 				46CE7C056C3FE1C6B5909359 /* DynamicArray.h */,
 				46CE752C11FE637AD0A5B3E8 /* LinkedList_OC.m */,
 				46CE72C47F6F139BEAA9EC5B /* LinkedList_OC.h */,
-				1A85B193C817779AAC350827 /* List.h */,
+				1A85B193C817779AAC350827 /* List_OC.h */,
 			);
 			path = OC;
 			sourceTree = "<group>";
@@ -157,6 +166,8 @@
 			children = (
 				38087D6E24E0E64600BFC94B /* LinkedList.swift */,
 				46CE7B391CC4128209E7682E /* CircularLinkedList.swift */,
+				1A85BBD9B4F6BFB577578245 /* DoubleLinkedList.swift */,
+				1A85B33815BCCA7AFD6D7853 /* List.swift */,
 			);
 			path = Swift;
 			sourceTree = "<group>";
@@ -299,6 +310,8 @@
 				46CE727C1B9F0A92E9C5366E /* LinkedList_OC.m in Sources */,
 				1A85B54B164947C3F5F308DF /* Person.m in Sources */,
 				38087D6F24E0E64600BFC94B /* LinkedList.swift in Sources */,
+				1A85B76ACC1944F17009C9C5 /* DoubleLinkedList.swift in Sources */,
+				1A85B35AC7C725DF215A4DA7 /* List.swift in Sources */,
 				46CE726209274A23CCEF7AAB /* CircularLinkedList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,6 +332,9 @@
 				1A85B3AEF2F029B97643216A /* TestDynamicArray.m in Sources */,
 				1A85B6A3C4721FEC88BD24E6 /* TestLinkedList_OC.m in Sources */,
 				46CE7186978B7EE5B766B93E /* LinkedList.swift in Sources */,
+				1A85B3E458740C44A154F01C /* DoubleLinkedList.swift in Sources */,
+				1A85B9E59DC0F23C197EAD94 /* List.swift in Sources */,
+				1A85BCC366A4371398038F2F /* TestDoubleLinkedList.swift in Sources */,
 				46CE717E77E2C43E453D9F4F /* CircularLinkedList.swift in Sources */,
 				46CE7B65C2B855ADADE5B4A5 /* TestCircularLinkedList.swift in Sources */,
 			);
