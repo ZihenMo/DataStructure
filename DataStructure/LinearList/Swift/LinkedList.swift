@@ -4,11 +4,11 @@
 //
 //  Created by gshopper on 2020/8/10.
 //  Copyright © 2020 Hutter. All rights reserved.
-//
+//  单链表
 
 import Foundation
 
-public class LinkedList<T>: CustomStringConvertible {
+public class LinkedList<T>: List {
 
     private(set) var count: UInt = 0
     private var head: ListNode?
@@ -84,7 +84,7 @@ public class LinkedList<T>: CustomStringConvertible {
 }
 
 // MARK: - 工具方法
-extension LinkedList {
+extension LinkedList: CustomStringConvertible {
     func move(_ index: UInt) -> ListNode? {
         var node = head
         for _ in 0..<index {
@@ -95,13 +95,13 @@ extension LinkedList {
 
     func indexEnable(_ index: UInt) -> Bool {
         let condition = index >= 0 && index < count
-        assert(condition, "index:\(index) beyond the bounds [0,\(count))")
+        assert(condition, "index:\(index) out of range [0,\(count))")
         return condition
     }
 
     func indexEnableForAdd(_ index: UInt) -> Bool {
         let condition = index >= 0 && index <= count
-        assert(condition, "index:\(index) beyond the bounds [0,\(count)]")
+        assert(condition, "index:\(index) out of range [0,\(count)]")
         return condition
     }
 
@@ -124,11 +124,13 @@ extension LinkedList {
     }
 
     public var description: String {
-        var desc = "<\(NSStringFromClass(Self.self)) \n"
-        var preNode = head
+
+
+        var desc = "<\(Self.self) \(Unmanaged.passUnretained(self).toOpaque()) \n"
+        var node = head
         for _ in 0..<count {
-            desc += "\(String(describing: preNode?.data))\n"
-            preNode = preNode?.next
+            desc += "\t\(String(describing: node?.data))\n"
+            node = node?.next
         }
         desc += ">"
         return desc
