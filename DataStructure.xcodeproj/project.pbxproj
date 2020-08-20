@@ -22,8 +22,11 @@
 		3847EA2C24D98014008CD872 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 3847EA2A24D9800F008CD872 /* Person.m */; };
 		3847EA3024D980A7008CD872 /* DataStructureUnitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3847EA2F24D980A7008CD872 /* DataStructureUnitTest.m */; };
 		38F5D8E124E231E900CA5605 /* TestLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F5D8E024E231E900CA5605 /* TestLinkedList.swift */; };
+		46CE717E77E2C43E453D9F4F /* CircularLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CE7B391CC4128209E7682E /* CircularLinkedList.swift */; };
 		46CE7186978B7EE5B766B93E /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38087D6E24E0E64600BFC94B /* LinkedList.swift */; };
+		46CE726209274A23CCEF7AAB /* CircularLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CE7B391CC4128209E7682E /* CircularLinkedList.swift */; };
 		46CE727C1B9F0A92E9C5366E /* LinkedList_OC.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CE752C11FE637AD0A5B3E8 /* LinkedList_OC.m */; };
+		46CE7B65C2B855ADADE5B4A5 /* TestCircularLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CE7012F87A55ABCA277F34 /* TestCircularLinkedList.swift */; };
 		46CE7E5317D9C836A863645F /* DynamicArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CE71B8C14230A24B43A666 /* DynamicArray.m */; };
 /* End PBXBuildFile section */
 
@@ -60,9 +63,11 @@
 		3847EA3124D980B2008CD872 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38F5D8DF24E2319700CA5605 /* DataStructureUnitTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DataStructureUnitTest-Bridging-Header.h"; sourceTree = "<group>"; };
 		38F5D8E024E231E900CA5605 /* TestLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestLinkedList.swift; sourceTree = "<group>"; };
+		46CE7012F87A55ABCA277F34 /* TestCircularLinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCircularLinkedList.swift; sourceTree = "<group>"; };
 		46CE71B8C14230A24B43A666 /* DynamicArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicArray.m; sourceTree = "<group>"; };
 		46CE72C47F6F139BEAA9EC5B /* LinkedList_OC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedList_OC.h; sourceTree = "<group>"; };
 		46CE752C11FE637AD0A5B3E8 /* LinkedList_OC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedList_OC.m; sourceTree = "<group>"; };
+		46CE7B391CC4128209E7682E /* CircularLinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularLinkedList.swift; sourceTree = "<group>"; };
 		46CE7C056C3FE1C6B5909359 /* DynamicArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicArray.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,6 +104,7 @@
 				1A85B53A5FF2063DA8F24701 /* TestDynamicArray.m */,
 				1A85B3E0FA082132104BBAEE /* TestLinkedList_OC.m */,
 				38F5D8E024E231E900CA5605 /* TestLinkedList.swift */,
+				46CE7012F87A55ABCA277F34 /* TestCircularLinkedList.swift */,
 			);
 			path = LinearList;
 			sourceTree = "<group>";
@@ -150,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				38087D6E24E0E64600BFC94B /* LinkedList.swift */,
+				46CE7B391CC4128209E7682E /* CircularLinkedList.swift */,
 			);
 			path = Swift;
 			sourceTree = "<group>";
@@ -292,6 +299,7 @@
 				46CE727C1B9F0A92E9C5366E /* LinkedList_OC.m in Sources */,
 				1A85B54B164947C3F5F308DF /* Person.m in Sources */,
 				38087D6F24E0E64600BFC94B /* LinkedList.swift in Sources */,
+				46CE726209274A23CCEF7AAB /* CircularLinkedList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +319,8 @@
 				1A85B3AEF2F029B97643216A /* TestDynamicArray.m in Sources */,
 				1A85B6A3C4721FEC88BD24E6 /* TestLinkedList_OC.m in Sources */,
 				46CE7186978B7EE5B766B93E /* LinkedList.swift in Sources */,
+				46CE717E77E2C43E453D9F4F /* CircularLinkedList.swift in Sources */,
+				46CE7B65C2B855ADADE5B4A5 /* TestCircularLinkedList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
