@@ -24,13 +24,17 @@ class DoubleLinkedList<T>: List {
         var prev: ListNode?
 
         if index == 0 {
+            prev = head
             head = node
-        } else if index == count {
+        }
+        if index == count {
             prev = foot
             foot = node
-        } else {
-            prev = move(index)
         }
+        else {
+            prev = move(index - 1)
+        }
+
         node.next = prev?.next
         node.prev = prev
 
@@ -45,12 +49,12 @@ class DoubleLinkedList<T>: List {
             return nil
         }
         let node = move(index)
+        if index == count - 1 {
+            foot = node?.prev
+        }
         if index == 0 {
             head = head?.next
             head?.prev = nil
-        }
-        else if index == count {
-            foot = node?.prev
         }
         node?.prev?.next = node?.next
         node?.next?.prev = node?.prev
