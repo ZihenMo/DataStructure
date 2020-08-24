@@ -1,5 +1,5 @@
 //
-// Created by gshopper on 2020/8/19.
+// Created by 墨子痕 on 2020/8/22.
 // Copyright (c) 2020 Hutter. All rights reserved.
 //
 
@@ -9,6 +9,7 @@ class CircularLinkedList<T> {
 
     private(set) var count: UInt = 0
     private var head: ListNode?
+
 
     public func add(_ obj: T) {
         insert(obj, at: count)
@@ -20,15 +21,15 @@ class CircularLinkedList<T> {
         }
         let node = ListNode(data: obj)
         if index == 0 {
+            // 注意move语句需要未插入结点前使用，否则索引的元素不正确
+            let foot = count == 0 ? node  : move(count - 1)
             node.next = head
             head = node
+            foot?.next = head       // 修改最后一个结点的next，维持循环
         } else {
             let preNode = move(index - 1)
             node.next = preNode?.next
             preNode?.next = node
-        }
-        if (index == count) {
-            node.next = head
         }
         count += 1
     }
@@ -71,19 +72,37 @@ class CircularLinkedList<T> {
             return
         }
         if index == 0 {
-            head = count == 1 ? nil : head?.next
+            if count == 1 {
+                head = nil
+            }
+            else {
+                let foot = move(count - 1)
+                head = head?.next
+                foot?.next = head
+            }
         } else {
             let preNode = move(index - 1)
-            preNode?.next = index == count - 1 ? head : preNode?.next?.next
+            preNode?.next = preNode?.next?.next
         }
         count -= 1
     }
 
-
 }
 
-// MARK: - 工具方法
-extension CircularLinkedList : CustomStringConvertible {
+extension  CircularLinkedList: CustomStringConvertible {
+    public var description: String {
+
+
+        var desc = "<\(Self.self) \(Unmanaged.passUnretained(self).toOpaque()) \n"
+        var node = head
+        for _ in 0..<count {
+            desc += "\t\(String(describing: node?.data))\n"
+            node = node?.next
+        }
+        desc += ">"
+        return desc
+    }
+
     func move(_ index: UInt) -> ListNode? {
         var node = head
         for _ in 0..<index {
@@ -94,25 +113,38 @@ extension CircularLinkedList : CustomStringConvertible {
 
     func indexEnable(_ index: UInt) -> Bool {
         let condition = index >= 0 && index < count
-        assert(condition, "index:\(index) beyond the bounds [0,\(count))")
+        assert(condition, "index:\(index) out of range [0,\(count))")
         return condition
     }
 
     func indexEnableForAdd(_ index: UInt) -> Bool {
         let condition = index >= 0 && index <= count
-        assert(condition, "index:\(index) beyond the bounds [0,\(count)]")
+        assert(condition, "index:\(index) out of range [0,\(count)]")
         return condition
     }
-
-    public var description: String {
-        var desc = "<\(NSStringFromClass(Self.self)) \n"
-        var preNode = head
-        for _ in 0..<count {
-            desc += "\(String(describing: preNode?.data))\n"
-            preNode = preNode?.next
+    // 用于测试循环链表
+    func hasCycle(_ head: ListNode?) -> Bool {
+        var cur = head == nil ? self.head : head
+        var set = Set<ListNode>()
+        while cur != nil {
+            if set.contains(cur!) { return true }
+            set.insert(cur!)
+            cur = cur?.next
         }
-        desc += ">"
-        return desc
+        return false
+    }
+
+
+    func hasCycle2(_ head:ListNode?) -> Bool {
+        var cur = head == nil ? self.head : head
+        var next = cur?.next
+
+        while cur != nil {
+            if cur === next { return true }
+            cur = cur?.next
+            next = next?.next?.next
+        }
+        return false
     }
 }
 
@@ -132,12 +164,7 @@ extension CircularLinkedList {
             hasher.combine(ObjectIdentifier(self))
         }
         public static func ==(lhs: CircularLinkedList<T>.ListNode, rhs: CircularLinkedList<T>.ListNode) -> Bool {
-            return lhs == rhs
-        }
-
-        deinit {
-            print("\(self) deinit")
+            return Unmanaged.passUnretained(lhs).toOpaque() == Unmanaged.passUnretained(rhs).toOpaque()
         }
     }
 }
-
