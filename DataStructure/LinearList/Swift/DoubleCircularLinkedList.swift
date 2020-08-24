@@ -5,7 +5,7 @@
 
 import Foundation
 
-class DoubleCircularLinkedList<T> : List {
+class DoubleCircularLinkedList<T>: List {
     var count: UInt = 0
 
     private var head: ListNode?
@@ -31,11 +31,11 @@ class DoubleCircularLinkedList<T> : List {
             foot?.next = node
             node.prev = foot
             foot = node
+            node.next = head
             if count == 0 {
                 head = node
             }
-        }
-        else {
+        } else {
             var next = move(index)
             var prev = next?.prev
 
@@ -56,31 +56,26 @@ class DoubleCircularLinkedList<T> : List {
     /// 删除元素
     /// - Parameter index: 索引
     /// - Returns: 所删元素数据
-    func remove2(at index: UInt) -> T? {
+    func remove(at index: UInt) -> T? {
         let node = move(index)
         let prev = node?.prev
         let next = node?.next
-
-        if index == 0 {
-            head = next
+        if count == 1 {
+            head = nil
+            foot = nil
         }
         else {
-            prev?.next = next
+            if index == 0 {
+                head = next
+            } else {
+                prev?.next = next
+            }
+            if next == head {  // index == count - 1
+                foot = prev
+            } else {
+                next?.prev = prev
+            }
         }
-        if next == nil {  // index == count - 1
-            foot = prev
-        }
-        else {
-            next?.prev = prev
-        }
-        count -= 1
-        return node?.data
-    }
-    /// 简写
-    func remove(at index: UInt) -> T? {
-        let node = move(index)
-        index == 0 ? (head = node) : (node?.prev?.next = node?.next)
-        index == count - 1 ? (foot = node?.prev) : (node?.next?.prev = node?.prev)
         count -= 1
         return node?.data
     }
@@ -92,7 +87,9 @@ class DoubleCircularLinkedList<T> : List {
     }
 
     func replace(obj: T, at index: UInt) -> T? {
-        guard let node = move(index) else { return nil }
+        guard let node = move(index) else {
+            return nil
+        }
         let old = node.data
         node.data = obj
         return old
@@ -148,7 +145,30 @@ extension DoubleCircularLinkedList: CustomStringConvertible {
         }
         return node
     }
+    // 用于测试循环链表
+    func hasCycle(_ head: ListNode?) -> Bool {
+        var cur = head == nil ? self.head : head
+        var set = Set<ListNode>()
+        while cur != nil {
+            if set.contains(cur!) { return true }
+            set.insert(cur!)
+            cur = cur?.next
+        }
+        return false
+    }
 
+
+    func hasCycle2(_ head:ListNode?) -> Bool {
+        var cur = head == nil ? self.head : head
+        var next = cur?.next
+
+        while cur != nil {
+            if cur === next { return true }
+            cur = cur?.next
+            next = next?.next?.next
+        }
+        return false
+    }
 }
 
 // MARK: - ListNode
@@ -168,7 +188,7 @@ extension DoubleCircularLinkedList {
         }
 
         public static func ==(lhs: DoubleCircularLinkedList<T>.ListNode, rhs: DoubleCircularLinkedList<T>.ListNode) -> Bool {
-            return lhs == rhs
+            return Unmanaged.passUnretained(lhs).toOpaque() == Unmanaged.passUnretained(rhs).toOpaque()
         }
     }
 }

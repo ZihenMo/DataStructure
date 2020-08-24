@@ -33,6 +33,7 @@
 		38F5D8E124E231E900CA5605 /* TestLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F5D8E024E231E900CA5605 /* TestLinkedList.swift */; };
 		46CE7186978B7EE5B766B93E /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38087D6E24E0E64600BFC94B /* LinkedList.swift */; };
 		46CE727C1B9F0A92E9C5366E /* LinkedList_OC.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CE752C11FE637AD0A5B3E8 /* LinkedList_OC.m */; };
+		46CE757C972212F31091CF12 /* TestDoubleCircularLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CE766E1461EB7BDDEF1BBB /* TestDoubleCircularLinkedList.swift */; };
 		46CE7E5317D9C836A863645F /* DynamicArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CE71B8C14230A24B43A666 /* DynamicArray.m */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +78,7 @@
 		46CE71B8C14230A24B43A666 /* DynamicArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicArray.m; sourceTree = "<group>"; };
 		46CE72C47F6F139BEAA9EC5B /* LinkedList_OC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedList_OC.h; sourceTree = "<group>"; };
 		46CE752C11FE637AD0A5B3E8 /* LinkedList_OC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedList_OC.m; sourceTree = "<group>"; };
+		46CE766E1461EB7BDDEF1BBB /* TestDoubleCircularLinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDoubleCircularLinkedList.swift; sourceTree = "<group>"; };
 		46CE7C056C3FE1C6B5909359 /* DynamicArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicArray.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,6 +117,7 @@
 				38F5D8E024E231E900CA5605 /* TestLinkedList.swift */,
 				1A85B64C47F547BEAC351F87 /* TestDoubleLinkedList.swift */,
 				1A85BA6849EB85F6DFF1E8A9 /* TestCircularLinkedList.swift */,
+				46CE766E1461EB7BDDEF1BBB /* TestDoubleCircularLinkedList.swift */,
 			);
 			path = LinearList;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 				1A85B06460931288630B2C93 /* CircularLinkedList.swift in Sources */,
 				1A85B2D0A63ED4C544D8BA1F /* TestCircularLinkedList.swift in Sources */,
 				1A85BD4884C68DD1E89E96E8 /* DoubleCircularLinkedList.swift in Sources */,
+				46CE757C972212F31091CF12 /* TestDoubleCircularLinkedList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
