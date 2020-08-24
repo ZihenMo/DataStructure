@@ -1,12 +1,11 @@
 //
-// Created by 墨子痕 on 2020/8/17.
+// Created by 墨子痕 on 2020/8/22.
 // Copyright (c) 2020 Hutter. All rights reserved.
 //
 
 import Foundation
 
-
-class DoubleLinkedList<T>: List {
+class DoubleCircularLinkedList<T> : List {
     var count: UInt = 0
 
     private var head: ListNode?
@@ -121,7 +120,7 @@ class DoubleLinkedList<T>: List {
 }
 
 // MARK: - Utility
-extension DoubleLinkedList: CustomStringConvertible {
+extension DoubleCircularLinkedList: CustomStringConvertible {
     var description: String {
         var desc = "<\(Self.self) \(Unmanaged.passUnretained(self).toOpaque()) \n"
         var node = head
@@ -153,7 +152,7 @@ extension DoubleLinkedList: CustomStringConvertible {
 }
 
 // MARK: - ListNode
-extension DoubleLinkedList {
+extension DoubleCircularLinkedList {
     public class ListNode: Hashable {
 
         var data: T?
@@ -168,8 +167,8 @@ extension DoubleLinkedList {
             hasher.combine(ObjectIdentifier(self))
         }
 
-        public static func ==(lhs: DoubleLinkedList<T>.ListNode, rhs: DoubleLinkedList<T>.ListNode) -> Bool {
-            return Unmanaged.passUnretained(lhs).toOpaque() == Unmanaged.passUnretained(rhs).toOpaque()
+        public static func ==(lhs: DoubleCircularLinkedList<T>.ListNode, rhs: DoubleCircularLinkedList<T>.ListNode) -> Bool {
+            return lhs == rhs
         }
     }
 }
