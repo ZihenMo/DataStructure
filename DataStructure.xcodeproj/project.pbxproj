@@ -33,7 +33,10 @@
 		38F5D8E124E231E900CA5605 /* TestLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F5D8E024E231E900CA5605 /* TestLinkedList.swift */; };
 		46CE7186978B7EE5B766B93E /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38087D6E24E0E64600BFC94B /* LinkedList.swift */; };
 		46CE727C1B9F0A92E9C5366E /* LinkedList_OC.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CE752C11FE637AD0A5B3E8 /* LinkedList_OC.m */; };
+		46CE73BF45656F11005463F2 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CE78822664DA245E9D9CF6 /* Stack.swift */; };
 		46CE757C972212F31091CF12 /* TestDoubleCircularLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CE766E1461EB7BDDEF1BBB /* TestDoubleCircularLinkedList.swift */; };
+		46CE75D926287AB280D6D9F5 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CE73C9ABDE098D27AB8492 /* Test.swift */; };
+		46CE7A9EDE1A27EADAB03D83 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CE78822664DA245E9D9CF6 /* Stack.swift */; };
 		46CE7E5317D9C836A863645F /* DynamicArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CE71B8C14230A24B43A666 /* DynamicArray.m */; };
 /* End PBXBuildFile section */
 
@@ -77,8 +80,10 @@
 		38F5D8E024E231E900CA5605 /* TestLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestLinkedList.swift; sourceTree = "<group>"; };
 		46CE71B8C14230A24B43A666 /* DynamicArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicArray.m; sourceTree = "<group>"; };
 		46CE72C47F6F139BEAA9EC5B /* LinkedList_OC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedList_OC.h; sourceTree = "<group>"; };
+		46CE73C9ABDE098D27AB8492 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		46CE752C11FE637AD0A5B3E8 /* LinkedList_OC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedList_OC.m; sourceTree = "<group>"; };
 		46CE766E1461EB7BDDEF1BBB /* TestDoubleCircularLinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDoubleCircularLinkedList.swift; sourceTree = "<group>"; };
+		46CE78822664DA245E9D9CF6 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		46CE7C056C3FE1C6B5909359 /* DynamicArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicArray.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +123,7 @@
 				1A85B64C47F547BEAC351F87 /* TestDoubleLinkedList.swift */,
 				1A85BA6849EB85F6DFF1E8A9 /* TestCircularLinkedList.swift */,
 				46CE766E1461EB7BDDEF1BBB /* TestDoubleCircularLinkedList.swift */,
+				46CE73C9ABDE098D27AB8492 /* Test.swift */,
 			);
 			path = LinearList;
 			sourceTree = "<group>";
@@ -173,6 +179,7 @@
 				1A85B33815BCCA7AFD6D7853 /* List.swift */,
 				1A85BFB0049D7A245FDD44B7 /* CircularLinkedList.swift */,
 				1A85BB6E3215E103A4DD71C8 /* DoubleCircularLinkedList.swift */,
+				46CE78822664DA245E9D9CF6 /* Stack.swift */,
 			);
 			path = Swift;
 			sourceTree = "<group>";
@@ -318,6 +325,7 @@
 				1A85B35AC7C725DF215A4DA7 /* List.swift in Sources */,
 				1A85BDFB1BBC5CB967738AB7 /* CircularLinkedList.swift in Sources */,
 				1A85BDEA5F7628B7F8C0190C /* DoubleCircularLinkedList.swift in Sources */,
+				46CE73BF45656F11005463F2 /* Stack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +351,8 @@
 				1A85B2D0A63ED4C544D8BA1F /* TestCircularLinkedList.swift in Sources */,
 				1A85BD4884C68DD1E89E96E8 /* DoubleCircularLinkedList.swift in Sources */,
 				46CE757C972212F31091CF12 /* TestDoubleCircularLinkedList.swift in Sources */,
+				46CE7A9EDE1A27EADAB03D83 /* Stack.swift in Sources */,
+				46CE75D926287AB280D6D9F5 /* Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

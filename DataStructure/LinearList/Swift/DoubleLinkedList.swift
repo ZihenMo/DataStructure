@@ -8,9 +8,13 @@ import Foundation
 
 class DoubleLinkedList<T>: List {
     var count: UInt = 0
+    var empty: Bool {
+        return count == 0;
+    }
 
     private var head: ListNode?
     private var foot: ListNode?
+
 
     func add(_ obj: T) {
         insert(obj, at: count)
