@@ -23,6 +23,17 @@
 		1A85BDEA5F7628B7F8C0190C /* DoubleCircularLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A85BB6E3215E103A4DD71C8 /* DoubleCircularLinkedList.swift */; };
 		1A85BDFB1BBC5CB967738AB7 /* CircularLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A85BFB0049D7A245FDD44B7 /* CircularLinkedList.swift */; };
 		38087D6F24E0E64600BFC94B /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38087D6E24E0E64600BFC94B /* LinkedList.swift */; };
+		380F9D61258306240080EFC1 /* Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380F9D60258306240080EFC1 /* Sort.swift */; };
+		380F9D66258307C00080EFC1 /* TestSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380F9D65258307C00080EFC1 /* TestSort.swift */; };
+		380F9D6B2583086F0080EFC1 /* Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380F9D60258306240080EFC1 /* Sort.swift */; };
+		380F9DA72583186B0080EFC1 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380F9DA62583186B0080EFC1 /* Common.swift */; };
+		380F9DA82583186B0080EFC1 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380F9DA62583186B0080EFC1 /* Common.swift */; };
+		380F9DEB258343780080EFC1 /* NSString+Reverse.m in Sources */ = {isa = PBXBuildFile; fileRef = 380F9DEA258343780080EFC1 /* NSString+Reverse.m */; };
+		380F9DEC258343780080EFC1 /* NSString+Reverse.m in Sources */ = {isa = PBXBuildFile; fileRef = 380F9DEA258343780080EFC1 /* NSString+Reverse.m */; };
+		380F9E01258345AD0080EFC1 /* TestString.m in Sources */ = {isa = PBXBuildFile; fileRef = 380F9E00258345AD0080EFC1 /* TestString.m */; };
+		380F9E0F258358930080EFC1 /* TestCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380F9E0E258358930080EFC1 /* TestCommon.swift */; };
+		380F9E14258359070080EFC1 /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380F9E13258359070080EFC1 /* Generator.swift */; };
+		380F9E15258359070080EFC1 /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380F9E13258359070080EFC1 /* Generator.swift */; };
 		3847EA2224D95B54008CD872 /* TestFinonacci.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A85B912B2EC1438EEDB0AD9 /* TestFinonacci.m */; };
 		3847EA2324D95B54008CD872 /* TestPatternMatching.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A85BF1EDB53220329D88E39 /* TestPatternMatching.m */; };
 		3847EA2524D95B70008CD872 /* DynamicArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CE71B8C14230A24B43A666 /* DynamicArray.m */; };
@@ -72,6 +83,14 @@
 		1A85BFB0049D7A245FDD44B7 /* CircularLinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularLinkedList.swift; sourceTree = "<group>"; };
 		38087D6924E0E3C900BFC94B /* DataStructure-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DataStructure-Bridging-Header.h"; sourceTree = "<group>"; };
 		38087D6E24E0E64600BFC94B /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		380F9D60258306240080EFC1 /* Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sort.swift; sourceTree = "<group>"; };
+		380F9D65258307C00080EFC1 /* TestSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSort.swift; sourceTree = "<group>"; };
+		380F9DA62583186B0080EFC1 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		380F9DE9258343780080EFC1 /* NSString+Reverse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Reverse.h"; sourceTree = "<group>"; };
+		380F9DEA258343780080EFC1 /* NSString+Reverse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Reverse.m"; sourceTree = "<group>"; };
+		380F9E00258345AD0080EFC1 /* TestString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestString.m; sourceTree = "<group>"; };
+		380F9E0E258358930080EFC1 /* TestCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCommon.swift; sourceTree = "<group>"; };
+		380F9E13258359070080EFC1 /* Generator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
 		3847EA1A24D95B47008CD872 /* DataStructureUnitTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataStructureUnitTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3847EA2924D9800F008CD872 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		3847EA2A24D9800F008CD872 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
@@ -140,6 +159,9 @@
 		1A85BBF46EF3910EC3E0D5CE /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				380F9E12258358F70080EFC1 /* Generator */,
+				380F9DA5258318530080EFC1 /* Normal */,
+				380F9D5F2583060A0080EFC1 /* Sort */,
 				1A85B16D8542D6F7CB7E01F3 /* Fibonacci */,
 				46CE7A55E63E6B6EE4FD9F76 /* LinearList */,
 				3847EA2D24D9801E008CD872 /* Person */,
@@ -184,11 +206,62 @@
 			path = Swift;
 			sourceTree = "<group>";
 		};
+		380F9D5F2583060A0080EFC1 /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				380F9D60258306240080EFC1 /* Sort.swift */,
+			);
+			path = Sort;
+			sourceTree = "<group>";
+		};
+		380F9D642583079B0080EFC1 /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				380F9D65258307C00080EFC1 /* TestSort.swift */,
+			);
+			path = Sort;
+			sourceTree = "<group>";
+		};
+		380F9DA5258318530080EFC1 /* Normal */ = {
+			isa = PBXGroup;
+			children = (
+				380F9DA62583186B0080EFC1 /* Common.swift */,
+			);
+			path = Normal;
+			sourceTree = "<group>";
+		};
+		380F9DF12583452E0080EFC1 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				380F9E00258345AD0080EFC1 /* TestString.m */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		380F9E09258358350080EFC1 /* Normal */ = {
+			isa = PBXGroup;
+			children = (
+				1A85B912B2EC1438EEDB0AD9 /* TestFinonacci.m */,
+				380F9E0E258358930080EFC1 /* TestCommon.swift */,
+			);
+			path = Normal;
+			sourceTree = "<group>";
+		};
+		380F9E12258358F70080EFC1 /* Generator */ = {
+			isa = PBXGroup;
+			children = (
+				380F9E13258359070080EFC1 /* Generator.swift */,
+			);
+			path = Generator;
+			sourceTree = "<group>";
+		};
 		3847EA1B24D95B47008CD872 /* DataStructureUnitTest */ = {
 			isa = PBXGroup;
 			children = (
+				380F9E09258358350080EFC1 /* Normal */,
+				380F9DF12583452E0080EFC1 /* String */,
+				380F9D642583079B0080EFC1 /* Sort */,
 				3847EA3124D980B2008CD872 /* Info.plist */,
-				1A85B912B2EC1438EEDB0AD9 /* TestFinonacci.m */,
 				1A85BF1EDB53220329D88E39 /* TestPatternMatching.m */,
 				1A85B3461374B329320FD9E4 /* LinearList */,
 				38F5D8DF24E2319700CA5605 /* DataStructureUnitTest-Bridging-Header.h */,
@@ -210,6 +283,8 @@
 			children = (
 				1A85BF710880F87335E58C41 /* NSString+KMP.h */,
 				1A85B60CDF12E0C074A8C337 /* NSString+KMP.m */,
+				380F9DE9258343780080EFC1 /* NSString+Reverse.h */,
+				380F9DEA258343780080EFC1 /* NSString+Reverse.m */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -316,11 +391,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A85BB611809110D6C480CD7 /* main.m in Sources */,
+				380F9DEB258343780080EFC1 /* NSString+Reverse.m in Sources */,
+				380F9DA72583186B0080EFC1 /* Common.swift in Sources */,
 				1A85B59DEFB5CC635235404A /* Fibonacci.m in Sources */,
 				46CE7E5317D9C836A863645F /* DynamicArray.m in Sources */,
 				46CE727C1B9F0A92E9C5366E /* LinkedList_OC.m in Sources */,
 				1A85B54B164947C3F5F308DF /* Person.m in Sources */,
+				380F9D61258306240080EFC1 /* Sort.swift in Sources */,
 				38087D6F24E0E64600BFC94B /* LinkedList.swift in Sources */,
+				380F9E14258359070080EFC1 /* Generator.swift in Sources */,
 				1A85B76ACC1944F17009C9C5 /* DoubleLinkedList.swift in Sources */,
 				1A85B35AC7C725DF215A4DA7 /* List.swift in Sources */,
 				1A85BDFB1BBC5CB967738AB7 /* CircularLinkedList.swift in Sources */,
@@ -334,18 +413,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				3847EA2524D95B70008CD872 /* DynamicArray.m in Sources */,
+				380F9DEC258343780080EFC1 /* NSString+Reverse.m in Sources */,
 				3847EA2224D95B54008CD872 /* TestFinonacci.m in Sources */,
+				380F9E01258345AD0080EFC1 /* TestString.m in Sources */,
 				3847EA2624D95B74008CD872 /* LinkedList_OC.m in Sources */,
 				3847EA2824D95BEB008CD872 /* Fibonacci.m in Sources */,
+				380F9E15258359070080EFC1 /* Generator.swift in Sources */,
+				380F9E0F258358930080EFC1 /* TestCommon.swift in Sources */,
 				3847EA2C24D98014008CD872 /* Person.m in Sources */,
 				38F5D8E124E231E900CA5605 /* TestLinkedList.swift in Sources */,
 				3847EA2724D95B78008CD872 /* NSString+KMP.m in Sources */,
+				380F9D6B2583086F0080EFC1 /* Sort.swift in Sources */,
 				3847EA2324D95B54008CD872 /* TestPatternMatching.m in Sources */,
 				1A85B3AEF2F029B97643216A /* TestDynamicArray.m in Sources */,
 				1A85B6A3C4721FEC88BD24E6 /* TestLinkedList_OC.m in Sources */,
 				46CE7186978B7EE5B766B93E /* LinkedList.swift in Sources */,
 				1A85B3E458740C44A154F01C /* DoubleLinkedList.swift in Sources */,
 				1A85B9E59DC0F23C197EAD94 /* List.swift in Sources */,
+				380F9D66258307C00080EFC1 /* TestSort.swift in Sources */,
+				380F9DA82583186B0080EFC1 /* Common.swift in Sources */,
 				1A85BCC366A4371398038F2F /* TestDoubleLinkedList.swift in Sources */,
 				1A85B06460931288630B2C93 /* CircularLinkedList.swift in Sources */,
 				1A85B2D0A63ED4C544D8BA1F /* TestCircularLinkedList.swift in Sources */,
