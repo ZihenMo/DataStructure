@@ -26,8 +26,8 @@ class TestCommon: XCTestCase {
     func testMergeOrderList() {
         var arr = Generator.randomArray()
         var another = Generator.randomArray()
-        QuickSort().sort(&arr)
-        QuickSort().sort(&another)
+        QuickSort.sort(&arr)
+        QuickSort.sort(&another)
         print("arr:\(arr)")
         print("another:\(another)")
         let result = MergeOrderList().merge(arr, another)
