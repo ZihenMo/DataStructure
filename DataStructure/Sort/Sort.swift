@@ -32,7 +32,7 @@ extension Sortable {
 }
 
 // MARK: - 冒泡排序
-class BubbleSort: Sortable {
+class BubbleSort2: Sortable {
     static func sort(_ arr: inout [Int]) {
         for i in 0..<arr.count {
             for j in 0..<arr.count - 1 - i {
@@ -40,6 +40,20 @@ class BubbleSort: Sortable {
                     let temp = arr[j]
                     arr[j] = arr[j + 1];
                     arr[j + 1] = temp;
+                }
+            }
+        }
+    }
+}
+
+class BubbleSort: Sortable {
+    static func sort(_ arr: inout [Int]) {
+        for i in 0..<arr.count {
+            for j in 0..<arr.count - i - 1 {
+                if arr[j] > arr[j + 1] {
+                    let temp = arr[j + 1]
+                    arr[j + 1] = arr[j]
+                    arr[j] = temp
                 }
             }
         }
@@ -62,7 +76,7 @@ class BruteForceSort: Sortable {
 }
 
 // MARK: - 选择排序
-class SelectionSort: Sortable {
+class SelectionSort2: Sortable {
     static func sort(_ arr: inout[Int]) -> Void {
         for i in 0..<arr.count {
             var minIdx = i
@@ -79,6 +93,23 @@ class SelectionSort: Sortable {
         }
     }
 }
+class SelectionSort: Sortable {
+    static func sort(_ arr: inout [Int]) {
+        for i in 0..<arr.count {
+            var idx = i
+            for j in i + 1..<arr.count {
+                if arr[j] < arr[idx] {
+                    idx = j
+                }
+            }
+            if i != idx {
+                let temp = arr[i]
+                arr[i] = arr[idx]
+                arr[idx] = temp
+            }
+        }
+    }
+}
 
 // MARK: - 插入排序
 class InsertionSort2: Sortable {
@@ -89,7 +120,7 @@ class InsertionSort2: Sortable {
         for i in 1..<arr.count {
             var j = i
             let tmp = arr[i]
-            while j > 0 && tmp < arr[j - 1] {       // 不使用arr[j] 因为参照值tmp是不需要变的
+            while j > 0 && tmp < arr[j - 1] {       // j > 0 需写前面 不使用arr[j] 因为参照值tmp是不需要变的
                 arr[j] = arr[j - 1]                 // 将不满足的元素往后挪
                 j -= 1
             }
@@ -100,10 +131,9 @@ class InsertionSort2: Sortable {
 
 class InsertionSort: Sortable {
     static func sort(_ arr: inout [Int]) {
-        guard arr.count > 2 else { return }
         for i in 1..<arr.count {
-            var j = i
             let temp = arr[i]
+            var j = i
             while j > 0 && arr[j - 1] > temp {
                 arr[j] = arr[j - 1]
                 j -= 1
@@ -116,6 +146,12 @@ class InsertionSort: Sortable {
 class QuickSort: Sortable {
     static func sort(_ arr: inout [Int]) {
         quickSort(&arr, 0, arr.count - 1)
+    }
+    static func quickSort(_ arr: inout [Int], _ left: Int, _ right: Int) {
+        guard left < right else { return }
+        let pivot = partition(&arr, left, right)
+        quickSort(&arr, left, pivot - 1)
+        quickSort(&arr, pivot + 1, right)
     }
     static func partition(_ arr: inout [Int], _ left: Int, _ right: Int) -> Int {
         var l = left
@@ -134,16 +170,10 @@ class QuickSort: Sortable {
         arr[l] = pivot
         return l
     }
-    static func quickSort(_ arr: inout [Int], _ left: Int, _ right: Int) {
-        guard left < right else { return }
-        let pivot = partition(&arr, left, right)
-        quickSort(&arr, left, pivot - 1)
-        quickSort(&arr, pivot + 1, right)
-    }
 }
 
 // MARK: - 快速排序
-class QuickSort2: Sortable {
+class QuickSort3: Sortable {
     static func sort(_ arr: inout[Int]) -> Void {
         guard arr.count > 1 else { return }
         quickSort(&arr, 0, arr.count - 1)

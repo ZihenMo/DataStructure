@@ -19,14 +19,7 @@ class TestSort: XCTestCase {
     }
     
     func testBubbleSort () throws {
-        for _ in 0..<200 {
-            var arr = BubbleSort.generateData(10)
-            var viceArr = [Int](arr)
-            BubbleSort.sort(&arr)
-            viceArr = viceArr.sorted()
-            print(arr)
-            XCTAssert(arr == viceArr, "结果错误")
-        }
+        testSort(sort: BubbleSort.sort(_:))
     }
     
     func testSelectionSort() throws {
@@ -51,13 +44,10 @@ class TestSort: XCTestCase {
     }
 
     func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
- 
-//        XCTAssert(QuickSort.sort(&arr) == viceArr.sort(), "不相等")
-//          XCTAssert(SelectionSort.sort(&arr) == viceArr.sort(), "不相等")
-//        BruteForceSort().test()
-//        InsertionSort().test()
+        try testBubbleSort()
+        try testSelectionSort()
+        try testInsertionSort()
+        try testQuickSort()
     }
 
     func testPerformanceExample() throws {
