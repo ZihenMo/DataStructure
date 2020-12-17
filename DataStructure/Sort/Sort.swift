@@ -46,20 +46,6 @@ class BubbleSort2: Sortable {
     }
 }
 
-class BubbleSort: Sortable {
-    static func sort(_ arr: inout [Int]) {
-        for i in 0..<arr.count {
-            for j in 0..<arr.count - i - 1 {
-                if arr[j] > arr[j + 1] {
-                    let temp = arr[j + 1]
-                    arr[j + 1] = arr[j]
-                    arr[j] = temp
-                }
-            }
-        }
-    }
-}
-
 // MARK: - 暴力排序
 class BruteForceSort: Sortable {
     static func sort(_ arr: inout[Int]) -> Void {
@@ -93,23 +79,6 @@ class SelectionSort2: Sortable {
         }
     }
 }
-class SelectionSort: Sortable {
-    static func sort(_ arr: inout [Int]) {
-        for i in 0..<arr.count {
-            var idx = i
-            for j in i + 1..<arr.count {
-                if arr[j] < arr[idx] {
-                    idx = j
-                }
-            }
-            if i != idx {
-                let temp = arr[i]
-                arr[i] = arr[idx]
-                arr[idx] = temp
-            }
-        }
-    }
-}
 
 // MARK: - 插入排序
 class InsertionSort2: Sortable {
@@ -126,49 +95,6 @@ class InsertionSort2: Sortable {
             }
             arr[j] = tmp                            // 找到tmp的位置并插入
         }
-    }
-}
-
-class InsertionSort: Sortable {
-    static func sort(_ arr: inout [Int]) {
-        for i in 1..<arr.count {
-            let temp = arr[i]
-            var j = i
-            while j > 0 && arr[j - 1] > temp {
-                arr[j] = arr[j - 1]
-                j -= 1
-            }
-            arr[j] = temp
-        }
-    }
-}
-
-class QuickSort: Sortable {
-    static func sort(_ arr: inout [Int]) {
-        quickSort(&arr, 0, arr.count - 1)
-    }
-    static func quickSort(_ arr: inout [Int], _ left: Int, _ right: Int) {
-        guard left < right else { return }
-        let pivot = partition(&arr, left, right)
-        quickSort(&arr, left, pivot - 1)
-        quickSort(&arr, pivot + 1, right)
-    }
-    static func partition(_ arr: inout [Int], _ left: Int, _ right: Int) -> Int {
-        var l = left
-        var r = right
-        let pivot = arr[left]
-        while l < r {
-            while l < r && arr[r] >= pivot {
-                r -= 1
-            }
-            arr[l] = arr[r]
-            while l < r && arr[l] <= pivot {
-                l += 1
-            }
-            arr[r] = arr[l]
-        }
-        arr[l] = pivot
-        return l
     }
 }
 
@@ -206,3 +132,80 @@ class QuickSort3: Sortable {
     }
 }
 
+class BubbleSort: Sortable {
+    static func sort(_ arr: inout [Int]) {
+        for i in 0..<arr.count {
+            for j in 0..<arr.count - 1 - i {
+                if arr[j] > arr[j + 1] {
+                    let temp = arr[j]
+                    arr[j] = arr[j + 1]
+                    arr[j + 1] = temp
+                }
+            }
+        }
+    }
+}
+
+class SelectionSort: Sortable {
+    static func sort(_ arr: inout [Int]) {
+        for i in 0..<arr.count {
+            var idx = i
+            for j in i..<arr.count {
+                if arr[idx] > arr[j] {
+                    idx = j
+                }
+            }
+            if idx != i {
+                let temp = arr[idx]
+                arr[idx] = arr[i]
+                arr[i] = temp
+            }
+        }
+    }
+}
+
+class InsertionSort: Sortable {
+    static func sort(_ arr: inout [Int]) {
+        for i in 1..<arr.count {
+            var j = i
+            let temp = arr[i]
+            while j > 0 && temp < arr[j - 1] {
+                arr[j] = arr[j - 1]
+                j -= 1
+            }
+            arr[j] = temp
+        }
+    }
+}
+class QuickSort: Sortable {
+    static func sort(_ arr: inout [Int]) {
+        quickSort(&arr, 0, arr.count - 1)
+    }
+    
+    static func quickSort(_ arr: inout [Int], _ left: Int, _ right: Int) {
+        guard left < right else {
+            return
+        }
+        let pivot = partition(&arr, left, right)
+        quickSort(&arr, left, pivot - 1)
+        quickSort(&arr, pivot + 1, right)
+    }
+    
+    static func partition(_ arr: inout [Int], _ left: Int, _ right: Int) -> Int {
+        var l = left
+        var r = right
+        let pivot = arr[left]
+        while l < r {
+            while l < r && arr[r] >= pivot {
+                r -= 1
+            }
+            arr[l] = arr[r]
+            while l < r && arr[l] <= pivot {
+                l += 1
+            }
+            arr[r] = arr[l]
+        }
+        arr[l] = pivot
+        return l
+    }
+}
