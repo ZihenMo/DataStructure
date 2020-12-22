@@ -31,8 +31,7 @@ class TestSort: XCTestCase {
             var vice = [Int](arr)
             sort(&arr)
             vice = vice.sorted()
-            print(arr)
-            XCTAssert(arr == vice, "结果错误")
+            XCTAssert(arr == vice, "结果错误:\(arr) answer:\(vice)")
         }
     }
     

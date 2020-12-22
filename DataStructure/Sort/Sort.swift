@@ -137,9 +137,9 @@ class BubbleSort: Sortable {
         for i in 0..<arr.count {
             for j in 0..<arr.count - 1 - i {
                 if arr[j] > arr[j + 1] {
-                    let temp = arr[j]
-                    arr[j] = arr[j + 1]
-                    arr[j + 1] = temp
+                    let temp = arr[j + 1]
+                    arr[j + 1] = arr[j]
+                    arr[j] = temp
                 }
             }
         }
@@ -150,15 +150,15 @@ class SelectionSort: Sortable {
     static func sort(_ arr: inout [Int]) {
         for i in 0..<arr.count {
             var idx = i
-            for j in i..<arr.count {
+            for j in i + 1..<arr.count {
                 if arr[idx] > arr[j] {
                     idx = j
                 }
             }
             if idx != i {
-                let temp = arr[idx]
-                arr[idx] = arr[i]
-                arr[i] = temp
+                let temp = arr[i]
+                arr[i] = arr[idx]
+                arr[idx] = temp
             }
         }
     }
@@ -166,6 +166,7 @@ class SelectionSort: Sortable {
 
 class InsertionSort: Sortable {
     static func sort(_ arr: inout [Int]) {
+        guard arr.count > 1 else { return }
         for i in 1..<arr.count {
             var j = i
             let temp = arr[i]
@@ -177,12 +178,12 @@ class InsertionSort: Sortable {
         }
     }
 }
+
 class QuickSort: Sortable {
     static func sort(_ arr: inout [Int]) {
         quickSort(&arr, 0, arr.count - 1)
     }
-    
-    static func quickSort(_ arr: inout [Int], _ left: Int, _ right: Int) {
+    static func quickSort(_ arr: inout[Int], _ left: Int, _ right: Int) -> Void {
         guard left < right else {
             return
         }
@@ -191,16 +192,16 @@ class QuickSort: Sortable {
         quickSort(&arr, pivot + 1, right)
     }
     
-    static func partition(_ arr: inout [Int], _ left: Int, _ right: Int) -> Int {
+    static func partition(_ arr: inout[Int], _ left: Int, _ right: Int) -> Int {
+        let pivot = arr[left]
         var l = left
         var r = right
-        let pivot = arr[left]
         while l < r {
-            while l < r && arr[r] >= pivot {
+            while l < r && pivot <= arr[r] {
                 r -= 1
             }
             arr[l] = arr[r]
-            while l < r && arr[l] <= pivot {
+            while l < r && pivot >= arr[l] {
                 l += 1
             }
             arr[r] = arr[l]
