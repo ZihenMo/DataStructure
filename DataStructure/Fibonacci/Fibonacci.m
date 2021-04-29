@@ -16,15 +16,10 @@
     self = [super init];
     if (self) {
         NSMutableArray *items = [NSMutableArray array];
-        NSInteger first = 0;
-        NSInteger second = 1;
-        [items addObject:@(first)];
         for (int i = 0; i < n - 1; ++i) {
-            second = first + second;
-            first = second - first;
-            [items addObject:@(first)];
+            NSNumber *number = @([Fibonacci which:i]);
+            [items addObject:number];
         }
-        [items addObject:@(second)];
     }
     return self;
 }
@@ -39,8 +34,14 @@
     [description appendString:@">"];
     return description;
 }
-
-
+/// 返回第几位的斐波那契数
+/// @param n 位置
+/// @return 结果数
+/// @discussion
+///     1. 小于1时直接返回。
+///     2. 正序循环至n-1的位置。
+///     3. b = a + b; a = b - a;
+///     4. 返回b。因为
 + (NSInteger)which:(NSInteger)n {
     if (n <= 1) { return n;}
     NSInteger first = 0;
@@ -51,6 +52,7 @@
     }
     return second;
 }
+
 
 
 @end

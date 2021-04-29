@@ -104,4 +104,16 @@ class TestLinkedList: XCTestCase {
         }
     }
 
+    // 测试合并有序链表
+    func testMergeTwoList() {
+        var l1 = LeetCode.ListNode.init(from: [1,2,4])
+        var l2 = LeetCode.ListNode.init(from: [1,3,4])
+        var l3 = LeetCode.mergeTwoLists(l1, l2)
+        XCTAssert([1,1,2,3,4,4] ==  l3?.toArray())
+//        var l1 = LeetCode.ListNode.init()
+//        var l2 = LeetCode.ListNode.init(0)
+//        var l3 = LeetCode.mergeTwoLists(nil, l2)
+//        XCTAssert([0] ==  l3?.toArray())
+    }
+
 }

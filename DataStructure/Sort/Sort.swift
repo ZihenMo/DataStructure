@@ -28,7 +28,6 @@ extension Sortable {
         sort(&data)
         print("after sort: \(data)")
     }
-    
 }
 
 // MARK: - 冒泡排序
@@ -112,7 +111,7 @@ class QuickSort3: Sortable {
         quickSort(&arr, left, pivot - 1)
         quickSort(&arr, pivot + 1, right)
     }
-    /// 排序并给出中轴索引
+    /// 分区，根据中轴数进行分区
     static func partition(_ arr: inout[Int], _ left: Int, _ right: Int) -> Int {
         var l = left
         var r = right
@@ -131,15 +130,36 @@ class QuickSort3: Sortable {
         return l
     }
 }
+// MARK: - 快排的另一实现
+extension QuickSort {
+    static func quickSort2(arr: [Int]) -> [Int] {
+        if arr.count < 2 {
+            return arr
+        }
+        let pivot = arr[0]
+        var less = [Int]()
+        var greater = [Int]()
+        for i in arr[1..<arr.count] {
+            if i <= pivot {
+                less.append(i);             // 小于中轴数的放至一块数据
+            }
+            else {
+                greater.append(i);          // 大于中轴数的放至另一块
+            }
+        }
+        // 将两块和中轴数拼接组成已排序数组
+        return quickSort2(arr: less) + [pivot] + quickSort2(arr: greater)
+    }
+}
 
 class BubbleSort: Sortable {
     static func sort(_ arr: inout [Int]) {
         for i in 0..<arr.count {
-            for j in 0..<arr.count - 1 - i {
+            for j in 0..<arr.count - i - 1 {
                 if arr[j] > arr[j + 1] {
-                    let temp = arr[j + 1]
-                    arr[j + 1] = arr[j]
-                    arr[j] = temp
+                   let temp = arr[j]
+                    arr[j] = arr[j + 1]
+                    arr[j + 1] = temp
                 }
             }
         }
@@ -149,16 +169,16 @@ class BubbleSort: Sortable {
 class SelectionSort: Sortable {
     static func sort(_ arr: inout [Int]) {
         for i in 0..<arr.count {
-            var idx = i
+            var mix = i
             for j in i + 1..<arr.count {
-                if arr[idx] > arr[j] {
-                    idx = j
+                if arr[mix] > arr[j] {
+                    mix = j
                 }
             }
-            if idx != i {
-                let temp = arr[i]
-                arr[i] = arr[idx]
-                arr[idx] = temp
+            if mix != i {
+                let temp = arr[mix]
+                arr[mix] = arr[i]
+                arr[i] = temp
             }
         }
     }
@@ -166,7 +186,6 @@ class SelectionSort: Sortable {
 
 class InsertionSort: Sortable {
     static func sort(_ arr: inout [Int]) {
-        guard arr.count > 1 else { return }
         for i in 1..<arr.count {
             var j = i
             let temp = arr[i]
@@ -183,25 +202,22 @@ class QuickSort: Sortable {
     static func sort(_ arr: inout [Int]) {
         quickSort(&arr, 0, arr.count - 1)
     }
-    static func quickSort(_ arr: inout[Int], _ left: Int, _ right: Int) -> Void {
-        guard left < right else {
-            return
-        }
+    static func quickSort(_ arr: inout [Int], _ left: Int, _ right: Int) {
+        guard left < right else { return }
         let pivot = partition(&arr, left, right)
         quickSort(&arr, left, pivot - 1)
         quickSort(&arr, pivot + 1, right)
     }
-    
-    static func partition(_ arr: inout[Int], _ left: Int, _ right: Int) -> Int {
+    static func partition(_ arr: inout [Int], _ left: Int, _ right: Int) -> Int {
         let pivot = arr[left]
         var l = left
         var r = right
         while l < r {
-            while l < r && pivot <= arr[r] {
+            while l < r && arr[r] >= pivot {
                 r -= 1
             }
             arr[l] = arr[r]
-            while l < r && pivot >= arr[l] {
+            while l < r && arr[l] <= pivot {
                 l += 1
             }
             arr[r] = arr[l]

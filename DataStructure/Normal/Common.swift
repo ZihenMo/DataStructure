@@ -4,7 +4,7 @@
 //
 //  Created by gshopper on 2020/12/11.
 //  Copyright © 2020 Hutter. All rights reserved.
-//
+//  常见算法题
 
 
 /// 最大公约数
@@ -47,6 +47,8 @@ class GCD {
 }
 
 /// 有序数组合并
+/// 将两个升序链表合并为一个新的 升序 链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。
+/// 解法一样
 class MergeOrderList {
     func merge(_ arr: [Int], _ another: [Int]) -> [Int] {
         var result = [Int]()

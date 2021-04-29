@@ -240,7 +240,9 @@ extension LinkedList {
         var cur = head
         var set = Set<ListNode>()
         while cur != nil {
-            if set.contains(cur!) { return true }
+            if set.contains(cur!) {
+                return true
+            }
             set.insert(cur!)
             cur = cur?.next
         }
@@ -253,12 +255,14 @@ extension LinkedList {
     /// 快慢指针法，慢指针追上快指针时有环
     /// 注意Swift可用 === 或实现Equatable协议
     /// 相对Hash表方式，节省了内存空间 O(n)的时间复杂度 O(1)的空间复杂度
-    fileprivate func hasCycle2(_ head:ListNode?) -> Bool {
+    fileprivate func hasCycle2(_ head: ListNode?) -> Bool {
         var cur = head
         var next = cur?.next
 
         while cur != nil {
-            if cur === next { return true }
+            if cur === next {
+                return true
+            }
             cur = cur?.next
             next = next?.next?.next
         }
@@ -270,7 +274,7 @@ extension LinkedList {
 // MARK: - ListNode
 extension LinkedList {
 
-    public class ListNode:Hashable {
+    public class ListNode: Hashable {
 
         var data: T?
         var next: ListNode?
@@ -282,9 +286,78 @@ extension LinkedList {
         public func hash(into hasher: inout Hasher) {
             hasher.combine(ObjectIdentifier(self))
         }
+
         public static func ==(lhs: LinkedList<T>.ListNode, rhs: LinkedList<T>.ListNode) -> Bool {
             return lhs == rhs
         }
+    }
+}
+
+// MARK: - 合并两个有序链表
+extension LeetCode {
+    public class ListNode {
+        public var val: Int
+        public var next: ListNode?
+
+        public init() {
+            self.val = 0; self.next = nil;
+        }
+
+        public init(_ val: Int) {
+            self.val = val; self.next = nil;
+        }
+
+        public init(_ val: Int, _ next: ListNode?) {
+            self.val = val; self.next = next;
+        }
+
+        convenience public init(from: [Int]) {
+            guard from.count > 1 else {
+                fatalError("Cannot convert a empty array to list")
+            }
+            var i = 1
+            var last = ListNode(from[0])
+            self.init(last.val)
+            while i < from.count {
+                var node = ListNode(from[i])
+                last.next = node
+                last = node
+                if i == 1 {
+                    self.next = node
+                }
+                i += 1
+            }
+        }
+
+        public func toArray() -> [Int] {
+            var r = [Int]()
+            var node: ListNode? = self
+            while node != nil {
+                r.append(node!.val)
+                node = node?.next
+            }
+            return r
+        }
+    }
+
+    class func mergeTwoLists(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
+        var prevHead = ListNode() // 占位头结点
+        var prev:ListNode? = prevHead
+        var list1 = l1
+        var list2 = l2
+        while list1 != nil && list2 != nil {
+            if list1!.val  <= list2!.val {
+                prev?.next = list1
+                list1 = list1?.next
+            }
+            else {
+                prev?.next = list2
+                list2 = list2?.next
+            }
+            prev = prev?.next            // important
+        }
+        prev?.next = list1 == nil ? list2 : list1
+        return prevHead.next
     }
 }
 
