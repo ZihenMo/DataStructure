@@ -1,0 +1,863 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0EF136142893C56D940D2419 /* libPods-DataStructuresAndAlgorithm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 592B2FDF0691BDED78263725 /* libPods-DataStructuresAndAlgorithm.a */; };
+		1A85B06460931288630B2C93 /* CircularLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A85BFB0049D7A245FDD44B7 /* CircularLinkedList.swift */; };
+		1A85B35AC7C725DF215A4DA7 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A85B33815BCCA7AFD6D7853 /* List.swift */; };
+		1A85B3AEF2F029B97643216A /* TestDynamicArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A85B53A5FF2063DA8F24701 /* TestDynamicArray.m */; };
+		1A85B3E458740C44A154F01C /* DoubleLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A85BBD9B4F6BFB577578245 /* DoubleLinkedList.swift */; };
+		1A85B59DEFB5CC635235404A /* Fibonacci.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A85BA5AC5D0F27C7251F4F2 /* Fibonacci.m */; };
+		1A85B6A3C4721FEC88BD24E6 /* TestLinkedList.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1A85B3E0FA082132104BBAEE /* TestLinkedList.mm */; };
+		1A85B76ACC1944F17009C9C5 /* DoubleLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A85BBD9B4F6BFB577578245 /* DoubleLinkedList.swift */; };
+		1A85B9E59DC0F23C197EAD94 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A85B33815BCCA7AFD6D7853 /* List.swift */; };
+		1A85BB611809110D6C480CD7 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1A85B004E279F108DEE006F1 /* main.mm */; };
+		1A85BD4884C68DD1E89E96E8 /* DoubleCircularLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A85BB6E3215E103A4DD71C8 /* DoubleCircularLinkedList.swift */; };
+		1A85BDEA5F7628B7F8C0190C /* DoubleCircularLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A85BB6E3215E103A4DD71C8 /* DoubleCircularLinkedList.swift */; };
+		1A85BDFB1BBC5CB967738AB7 /* CircularLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A85BFB0049D7A245FDD44B7 /* CircularLinkedList.swift */; };
+		38087D6F24E0E64600BFC94B /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38087D6E24E0E64600BFC94B /* LinkedList.swift */; };
+		380F9D61258306240080EFC1 /* Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380F9D60258306240080EFC1 /* Sort.swift */; };
+		380F9D66258307C00080EFC1 /* TestSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380F9D65258307C00080EFC1 /* TestSort.swift */; };
+		380F9D6B2583086F0080EFC1 /* Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380F9D60258306240080EFC1 /* Sort.swift */; };
+		380F9DA72583186B0080EFC1 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380F9DA62583186B0080EFC1 /* Common.swift */; };
+		380F9DA82583186B0080EFC1 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380F9DA62583186B0080EFC1 /* Common.swift */; };
+		380F9DEB258343780080EFC1 /* NSString+Reverse.m in Sources */ = {isa = PBXBuildFile; fileRef = 380F9DEA258343780080EFC1 /* NSString+Reverse.m */; };
+		380F9DEC258343780080EFC1 /* NSString+Reverse.m in Sources */ = {isa = PBXBuildFile; fileRef = 380F9DEA258343780080EFC1 /* NSString+Reverse.m */; };
+		380F9E01258345AD0080EFC1 /* TestString.m in Sources */ = {isa = PBXBuildFile; fileRef = 380F9E00258345AD0080EFC1 /* TestString.m */; };
+		380F9E0F258358930080EFC1 /* TestCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380F9E0E258358930080EFC1 /* TestCommon.swift */; };
+		380F9E14258359070080EFC1 /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380F9E13258359070080EFC1 /* Generator.swift */; };
+		380F9E15258359070080EFC1 /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380F9E13258359070080EFC1 /* Generator.swift */; };
+		3847EA2224D95B54008CD872 /* TestFinonacci.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A85B912B2EC1438EEDB0AD9 /* TestFinonacci.m */; };
+		3847EA2324D95B54008CD872 /* TestPatternMatching.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A85BF1EDB53220329D88E39 /* TestPatternMatching.m */; };
+		3847EA2724D95B78008CD872 /* NSString+KMP.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A85B60CDF12E0C074A8C337 /* NSString+KMP.m */; };
+		3847EA2824D95BEB008CD872 /* Fibonacci.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A85BA5AC5D0F27C7251F4F2 /* Fibonacci.m */; };
+		46CE7186978B7EE5B766B93E /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38087D6E24E0E64600BFC94B /* LinkedList.swift */; };
+		46CE73BF45656F11005463F2 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CE78822664DA245E9D9CF6 /* Stack.swift */; };
+		46CE7A9EDE1A27EADAB03D83 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CE78822664DA245E9D9CF6 /* Stack.swift */; };
+		4A59A0294F95F810F788AE66 /* DSListNode+IntersectionNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AAB55B795CB54075D16F /* DSListNode+IntersectionNode.mm */; };
+		4A59A04DA09B35F6E37E5165 /* DSListNode+Reverse.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A43F23ECF0DD8C52F7DA /* DSListNode+Reverse.mm */; };
+		4A59A0C8EE61248A172B0038 /* TestCircularLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A795C8B6372B20432F9A /* TestCircularLinkedList.swift */; };
+		4A59A297BA631BBBBB65D972 /* RotateArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A3A25E9BF96682ECB00A /* RotateArray.swift */; };
+		4A59A2DA8F06BE80E2201A70 /* DSListNode+IntersectionNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AAB55B795CB54075D16F /* DSListNode+IntersectionNode.mm */; };
+		4A59A6A0C1BBF0FCE1800156 /* KthLargestNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AD84972FCBBB0FB3ABBE /* KthLargestNumber.swift */; };
+		4A59A6DDA6FAA6F65B1D6DB1 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AC8759E01FDBED36475B /* Person.m */; };
+		4A59A6DFFD42457DEE397624 /* DSListNode+Swap.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59ACCB9F507B265252ABF7 /* DSListNode+Swap.mm */; };
+		4A59A6E8F56C1EE766FBE5C1 /* TestDoubleCircularLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A4D1ADC8E4F163374A02 /* TestDoubleCircularLinkedList.swift */; };
+		4A59A7E17C999B9256220D2B /* RotateArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A3A25E9BF96682ECB00A /* RotateArray.swift */; };
+		4A59A89552B5B553D450E2AF /* DSListNode+Reverse.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A43F23ECF0DD8C52F7DA /* DSListNode+Reverse.mm */; };
+		4A59A8FAD46FABF17EA044A1 /* TestLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A8432FD81F4D811394EC /* TestLinkedList.swift */; };
+		4A59A9407256820ED1D53707 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AC8759E01FDBED36475B /* Person.m */; };
+		4A59A9D5C5314A9F54AA5ED8 /* KthLargestNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AD84972FCBBB0FB3ABBE /* KthLargestNumber.swift */; };
+		4A59A9FA4B969E90859CCD15 /* DSListNode+Cycle.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AF514DCD2B04A1B0E071 /* DSListNode+Cycle.mm */; };
+		4A59AA050AF550157ECE7836 /* DSListNode+Swap.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59ACCB9F507B265252ABF7 /* DSListNode+Swap.mm */; };
+		4A59AA695F576E9996E214B0 /* TestDoubleLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A53837E58FD592A23375 /* TestDoubleLinkedList.swift */; };
+		4A59AB4C48D906288B7AF3EF /* DSListNode+Cycle.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AF514DCD2B04A1B0E071 /* DSListNode+Cycle.mm */; };
+		4A59AD57BA23BFF21203042F /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A59ACABD788367CEA925ADD /* Test.swift */; };
+		4A59AD6EFFB8EEC09AB3D64C /* TestRotateArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AEADF00B218067D8A63C /* TestRotateArray.swift */; };
+		4A59AD7D2AA0FAD459E7C589 /* TestKthLargestNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A4BDD25BE3E95C714954 /* TestKthLargestNumber.swift */; };
+		554716489858F006ABD93362 /* Pods_DataStructuresAndAlgorithmUnitTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8312B3A6DC57F77781BFAF0 /* Pods_DataStructuresAndAlgorithmUnitTest.framework */; };
+		96431ED32697660800177773 /* DAExchangeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 96431ED22697660800177773 /* DAExchangeNode.m */; };
+		96431ED4269771CA00177773 /* DAExchangeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 96431ED22697660800177773 /* DAExchangeNode.m */; };
+		96572B032697EB5600A536EC /* LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96572B022697EB5600A536EC /* LeetCode.swift */; };
+		96572B052697EB5D00A536EC /* LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96572B022697EB5600A536EC /* LeetCode.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		1FA5FC350318AA254F6D902C /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = folder.assetcatalog;
+			inputFiles = (
+			);
+			isEditable = 0;
+			name = "Assets Compiler";
+			outputFiles = (
+				"$(DERIVED_FILE_DIR)/$(INPUT_FILE_NAME)",
+			);
+			script = "# Xcode Image Assets Compiler\n\ncp -rf \"${INPUT_FILE_PATH}\" \"${DERIVED_FILE_DIR}/${INPUT_FILE_NAME}\"\n\nxcrun actool --minimum-deployment-target \"${IPHONEOS_DEPLOYMENT_TARGET}\"  --platform \"${PLATFORM_NAME}\" --compile \"${CODESIGNING_FOLDER_PATH}\" \"${DERIVED_FILE_DIR}/${INPUT_FILE_NAME}\"\n\n\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/xcassets.folder\" true\n\n";
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1A85BEE14B37BC031C373C64 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1A85B004E279F108DEE006F1 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		1A85B33815BCCA7AFD6D7853 /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		1A85B3E0FA082132104BBAEE /* TestLinkedList.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TestLinkedList.mm; sourceTree = "<group>"; };
+		1A85B3FBBAB1C361052DAEBC /* DataStructuresAndAlgorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructuresAndAlgorithm; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A85B50B7C3DD8348F46505D /* Fibonacci.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fibonacci.h; sourceTree = "<group>"; };
+		1A85B53A5FF2063DA8F24701 /* TestDynamicArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDynamicArray.m; sourceTree = "<group>"; };
+		1A85B60CDF12E0C074A8C337 /* NSString+KMP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+KMP.m"; sourceTree = "<group>"; };
+		1A85B912B2EC1438EEDB0AD9 /* TestFinonacci.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestFinonacci.m; sourceTree = "<group>"; };
+		1A85BA5AC5D0F27C7251F4F2 /* Fibonacci.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fibonacci.m; sourceTree = "<group>"; };
+		1A85BB6E3215E103A4DD71C8 /* DoubleCircularLinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleCircularLinkedList.swift; sourceTree = "<group>"; };
+		1A85BBD9B4F6BFB577578245 /* DoubleLinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleLinkedList.swift; sourceTree = "<group>"; };
+		1A85BF1EDB53220329D88E39 /* TestPatternMatching.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPatternMatching.m; sourceTree = "<group>"; };
+		1A85BF710880F87335E58C41 /* NSString+KMP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+KMP.h"; sourceTree = "<group>"; };
+		1A85BFB0049D7A245FDD44B7 /* CircularLinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularLinkedList.swift; sourceTree = "<group>"; };
+		2CEB8AF33F0FD905E27F3DBB /* Pods-DataStructuresAndAlgorithmUnitTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataStructuresAndAlgorithmUnitTest.release.xcconfig"; path = "Target Support Files/Pods-DataStructuresAndAlgorithmUnitTest/Pods-DataStructuresAndAlgorithmUnitTest.release.xcconfig"; sourceTree = "<group>"; };
+		38087D6924E0E3C900BFC94B /* DataStructuresAndAlgorithm-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DataStructuresAndAlgorithm-Bridging-Header.h"; sourceTree = "<group>"; };
+		38087D6E24E0E64600BFC94B /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		380F9D60258306240080EFC1 /* Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sort.swift; sourceTree = "<group>"; };
+		380F9D65258307C00080EFC1 /* TestSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSort.swift; sourceTree = "<group>"; };
+		380F9DA62583186B0080EFC1 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		380F9DE9258343780080EFC1 /* NSString+Reverse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Reverse.h"; sourceTree = "<group>"; };
+		380F9DEA258343780080EFC1 /* NSString+Reverse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Reverse.m"; sourceTree = "<group>"; };
+		380F9E00258345AD0080EFC1 /* TestString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestString.m; sourceTree = "<group>"; };
+		380F9E0E258358930080EFC1 /* TestCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCommon.swift; sourceTree = "<group>"; };
+		380F9E13258359070080EFC1 /* Generator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
+		3847EA1A24D95B47008CD872 /* DataStructuresAndAlgorithmUnitTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataStructuresAndAlgorithmUnitTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3847EA3124D980B2008CD872 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38F5D8DF24E2319700CA5605 /* DataStructuresAndAlgorithmUnitTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DataStructuresAndAlgorithmUnitTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		3AFAD6503EB3322499B4E2B9 /* Pods-DataStructuresAndAlgorithm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataStructuresAndAlgorithm.debug.xcconfig"; path = "Target Support Files/Pods-DataStructuresAndAlgorithm/Pods-DataStructuresAndAlgorithm.debug.xcconfig"; sourceTree = "<group>"; };
+		46CE78822664DA245E9D9CF6 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		46DCBEB996BBD5D1ECE3E856 /* Pods-DataStructureUnitTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataStructureUnitTest.release.xcconfig"; path = "Target Support Files/Pods-DataStructureUnitTest/Pods-DataStructureUnitTest.release.xcconfig"; sourceTree = "<group>"; };
+		4739D209BD42CE98E1BF6393 /* Pods-DataStructure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataStructure.release.xcconfig"; path = "Target Support Files/Pods-DataStructure/Pods-DataStructure.release.xcconfig"; sourceTree = "<group>"; };
+		4A59A3A25E9BF96682ECB00A /* RotateArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotateArray.swift; sourceTree = "<group>"; };
+		4A59A409F8328EAD444C5107 /* DSListNode+Reverse.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "DSListNode+Reverse.hpp"; sourceTree = "<group>"; };
+		4A59A43F23ECF0DD8C52F7DA /* DSListNode+Reverse.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "DSListNode+Reverse.mm"; sourceTree = "<group>"; };
+		4A59A455B585E31359303E0B /* DSListNode+Swap.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "DSListNode+Swap.hpp"; sourceTree = "<group>"; };
+		4A59A4BDD25BE3E95C714954 /* TestKthLargestNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestKthLargestNumber.swift; sourceTree = "<group>"; };
+		4A59A4D1ADC8E4F163374A02 /* TestDoubleCircularLinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDoubleCircularLinkedList.swift; sourceTree = "<group>"; };
+		4A59A53837E58FD592A23375 /* TestDoubleLinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDoubleLinkedList.swift; sourceTree = "<group>"; };
+		4A59A66586F571A3FB48113E /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		4A59A795C8B6372B20432F9A /* TestCircularLinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCircularLinkedList.swift; sourceTree = "<group>"; };
+		4A59A82A939EA28587362A5C /* DSListNode+Cycle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "DSListNode+Cycle.hpp"; sourceTree = "<group>"; };
+		4A59A8432FD81F4D811394EC /* TestLinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestLinkedList.swift; sourceTree = "<group>"; };
+		4A59AAB55B795CB54075D16F /* DSListNode+IntersectionNode.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "DSListNode+IntersectionNode.mm"; sourceTree = "<group>"; };
+		4A59AC79E4755BC92FA55190 /* DSListNode+IntersectionNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "DSListNode+IntersectionNode.hpp"; sourceTree = "<group>"; };
+		4A59AC8759E01FDBED36475B /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		4A59ACABD788367CEA925ADD /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		4A59ACCB9F507B265252ABF7 /* DSListNode+Swap.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "DSListNode+Swap.mm"; sourceTree = "<group>"; };
+		4A59AD84972FCBBB0FB3ABBE /* KthLargestNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KthLargestNumber.swift; sourceTree = "<group>"; };
+		4A59AEADF00B218067D8A63C /* TestRotateArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestRotateArray.swift; sourceTree = "<group>"; };
+		4A59AF514DCD2B04A1B0E071 /* DSListNode+Cycle.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "DSListNode+Cycle.mm"; sourceTree = "<group>"; };
+		592B2FDF0691BDED78263725 /* libPods-DataStructuresAndAlgorithm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DataStructuresAndAlgorithm.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D1A75671C44A6C28D3A46 /* Pods-DataStructure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataStructure.debug.xcconfig"; path = "Target Support Files/Pods-DataStructure/Pods-DataStructure.debug.xcconfig"; sourceTree = "<group>"; };
+		6D2AF9A6EE3C5E90ACF542F4 /* Pods-DataStructuresAndAlgorithm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataStructuresAndAlgorithm.release.xcconfig"; path = "Target Support Files/Pods-DataStructuresAndAlgorithm/Pods-DataStructuresAndAlgorithm.release.xcconfig"; sourceTree = "<group>"; };
+		758C9D5C8606C287BAAD8E5A /* Pods-common-DataStructuresAndAlgorithm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-common-DataStructuresAndAlgorithm.debug.xcconfig"; path = "Target Support Files/Pods-common-DataStructuresAndAlgorithm/Pods-common-DataStructuresAndAlgorithm.debug.xcconfig"; sourceTree = "<group>"; };
+		96431ED12697660800177773 /* DAExchangeNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DAExchangeNode.h; sourceTree = "<group>"; };
+		96431ED22697660800177773 /* DAExchangeNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DAExchangeNode.m; sourceTree = "<group>"; };
+		96572B022697EB5600A536EC /* LeetCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeetCode.swift; sourceTree = "<group>"; };
+		B3906B5BDD9E259A0DCC3731 /* Pods-DataStructuresAndAlgorithmUnitTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataStructuresAndAlgorithmUnitTest.debug.xcconfig"; path = "Target Support Files/Pods-DataStructuresAndAlgorithmUnitTest/Pods-DataStructuresAndAlgorithmUnitTest.debug.xcconfig"; sourceTree = "<group>"; };
+		BB4BA146A3149A48E3D5B251 /* Pods-common-DataStructuresAndAlgorithm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-common-DataStructuresAndAlgorithm.release.xcconfig"; path = "Target Support Files/Pods-common-DataStructuresAndAlgorithm/Pods-common-DataStructuresAndAlgorithm.release.xcconfig"; sourceTree = "<group>"; };
+		C33050053F497C2FADE6F197 /* Pods-DataStructureUnitTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataStructureUnitTest.debug.xcconfig"; path = "Target Support Files/Pods-DataStructureUnitTest/Pods-DataStructureUnitTest.debug.xcconfig"; sourceTree = "<group>"; };
+		C8312B3A6DC57F77781BFAF0 /* Pods_DataStructuresAndAlgorithmUnitTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DataStructuresAndAlgorithmUnitTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A85B63A35C5B091853D34D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EF136142893C56D940D2419 /* libPods-DataStructuresAndAlgorithm.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3847EA1724D95B47008CD872 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				554716489858F006ABD93362 /* Pods_DataStructuresAndAlgorithmUnitTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A85B16D8542D6F7CB7E01F3 /* Fibonacci */ = {
+			isa = PBXGroup;
+			children = (
+				1A85B50B7C3DD8348F46505D /* Fibonacci.h */,
+				1A85BA5AC5D0F27C7251F4F2 /* Fibonacci.m */,
+			);
+			path = Fibonacci;
+			sourceTree = "<group>";
+		};
+		1A85B3461374B329320FD9E4 /* LinearList */ = {
+			isa = PBXGroup;
+			children = (
+				1A85B53A5FF2063DA8F24701 /* TestDynamicArray.m */,
+				1A85B3E0FA082132104BBAEE /* TestLinkedList.mm */,
+				4A59A157739E85C161644896 /* Swift */,
+			);
+			path = LinearList;
+			sourceTree = "<group>";
+		};
+		1A85B9C9BBF8262CC28DD0D8 = {
+			isa = PBXGroup;
+			children = (
+				1A85BBF46EF3910EC3E0D5CE /* DataStructuresAndAlgorithm */,
+				3847EA1B24D95B47008CD872 /* DataStructuresAndAlgorithmUnitTest */,
+				1A85BEE039FB5111E047CC79 /* Products */,
+				90B5566D3B862457463593B4 /* Pods */,
+				9369C11098AF0A045933C607 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1A85BBF46EF3910EC3E0D5CE /* DataStructuresAndAlgorithm */ = {
+			isa = PBXGroup;
+			children = (
+				380F9E12258358F70080EFC1 /* Generator */,
+				380F9DA5258318530080EFC1 /* Normal */,
+				380F9D5F2583060A0080EFC1 /* Sort */,
+				46CE7A55E63E6B6EE4FD9F76 /* LinearList */,
+				3847EA3324D980BF008CD872 /* String */,
+				1A85B004E279F108DEE006F1 /* main.mm */,
+				38087D6924E0E3C900BFC94B /* DataStructuresAndAlgorithm-Bridging-Header.h */,
+			);
+			path = DataStructuresAndAlgorithm;
+			sourceTree = "<group>";
+		};
+		1A85BEE039FB5111E047CC79 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A85B3FBBAB1C361052DAEBC /* DataStructuresAndAlgorithm */,
+				3847EA1A24D95B47008CD872 /* DataStructuresAndAlgorithmUnitTest.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		38087D6624E0DF5B00BFC94B /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				38087D6E24E0E64600BFC94B /* LinkedList.swift */,
+				1A85BBD9B4F6BFB577578245 /* DoubleLinkedList.swift */,
+				1A85B33815BCCA7AFD6D7853 /* List.swift */,
+				1A85BFB0049D7A245FDD44B7 /* CircularLinkedList.swift */,
+				1A85BB6E3215E103A4DD71C8 /* DoubleCircularLinkedList.swift */,
+				46CE78822664DA245E9D9CF6 /* Stack.swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		380F9D5F2583060A0080EFC1 /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				380F9D60258306240080EFC1 /* Sort.swift */,
+			);
+			path = Sort;
+			sourceTree = "<group>";
+		};
+		380F9D642583079B0080EFC1 /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				380F9D65258307C00080EFC1 /* TestSort.swift */,
+			);
+			path = Sort;
+			sourceTree = "<group>";
+		};
+		380F9DA5258318530080EFC1 /* Normal */ = {
+			isa = PBXGroup;
+			children = (
+				96572B022697EB5600A536EC /* LeetCode.swift */,
+				1A85B16D8542D6F7CB7E01F3 /* Fibonacci */,
+				380F9DA62583186B0080EFC1 /* Common.swift */,
+				4A59AC8759E01FDBED36475B /* Person.m */,
+				4A59A66586F571A3FB48113E /* Person.h */,
+				4A59AD84972FCBBB0FB3ABBE /* KthLargestNumber.swift */,
+				4A59A3A25E9BF96682ECB00A /* RotateArray.swift */,
+			);
+			path = Normal;
+			sourceTree = "<group>";
+		};
+		380F9DF12583452E0080EFC1 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				380F9E00258345AD0080EFC1 /* TestString.m */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		380F9E09258358350080EFC1 /* Normal */ = {
+			isa = PBXGroup;
+			children = (
+				1A85B912B2EC1438EEDB0AD9 /* TestFinonacci.m */,
+				380F9E0E258358930080EFC1 /* TestCommon.swift */,
+			);
+			path = Normal;
+			sourceTree = "<group>";
+		};
+		380F9E12258358F70080EFC1 /* Generator */ = {
+			isa = PBXGroup;
+			children = (
+				380F9E13258359070080EFC1 /* Generator.swift */,
+			);
+			path = Generator;
+			sourceTree = "<group>";
+		};
+		3847EA1B24D95B47008CD872 /* DataStructuresAndAlgorithmUnitTest */ = {
+			isa = PBXGroup;
+			children = (
+				380F9E09258358350080EFC1 /* Normal */,
+				380F9DF12583452E0080EFC1 /* String */,
+				380F9D642583079B0080EFC1 /* Sort */,
+				3847EA3124D980B2008CD872 /* Info.plist */,
+				1A85BF1EDB53220329D88E39 /* TestPatternMatching.m */,
+				1A85B3461374B329320FD9E4 /* LinearList */,
+				38F5D8DF24E2319700CA5605 /* DataStructuresAndAlgorithmUnitTest-Bridging-Header.h */,
+			);
+			path = DataStructuresAndAlgorithmUnitTest;
+			sourceTree = "<group>";
+		};
+		3847EA3324D980BF008CD872 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				1A85BF710880F87335E58C41 /* NSString+KMP.h */,
+				1A85B60CDF12E0C074A8C337 /* NSString+KMP.m */,
+				380F9DE9258343780080EFC1 /* NSString+Reverse.h */,
+				380F9DEA258343780080EFC1 /* NSString+Reverse.m */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		46CE7A55E63E6B6EE4FD9F76 /* LinearList */ = {
+			isa = PBXGroup;
+			children = (
+				38087D6624E0DF5B00BFC94B /* Swift */,
+				96431ED12697660800177773 /* DAExchangeNode.h */,
+				96431ED22697660800177773 /* DAExchangeNode.m */,
+				4A59AAB55B795CB54075D16F /* DSListNode+IntersectionNode.mm */,
+				4A59AC79E4755BC92FA55190 /* DSListNode+IntersectionNode.hpp */,
+				4A59A43F23ECF0DD8C52F7DA /* DSListNode+Reverse.mm */,
+				4A59A409F8328EAD444C5107 /* DSListNode+Reverse.hpp */,
+				4A59ACCB9F507B265252ABF7 /* DSListNode+Swap.mm */,
+				4A59A455B585E31359303E0B /* DSListNode+Swap.hpp */,
+				4A59AF514DCD2B04A1B0E071 /* DSListNode+Cycle.mm */,
+				4A59A82A939EA28587362A5C /* DSListNode+Cycle.hpp */,
+			);
+			path = LinearList;
+			sourceTree = "<group>";
+		};
+		4A59A157739E85C161644896 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				4A59A53837E58FD592A23375 /* TestDoubleLinkedList.swift */,
+				4A59ACABD788367CEA925ADD /* Test.swift */,
+				4A59A4D1ADC8E4F163374A02 /* TestDoubleCircularLinkedList.swift */,
+				4A59A795C8B6372B20432F9A /* TestCircularLinkedList.swift */,
+				4A59A4BDD25BE3E95C714954 /* TestKthLargestNumber.swift */,
+				4A59AEADF00B218067D8A63C /* TestRotateArray.swift */,
+				4A59A8432FD81F4D811394EC /* TestLinkedList.swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		90B5566D3B862457463593B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F4D1A75671C44A6C28D3A46 /* Pods-DataStructure.debug.xcconfig */,
+				4739D209BD42CE98E1BF6393 /* Pods-DataStructure.release.xcconfig */,
+				C33050053F497C2FADE6F197 /* Pods-DataStructureUnitTest.debug.xcconfig */,
+				46DCBEB996BBD5D1ECE3E856 /* Pods-DataStructureUnitTest.release.xcconfig */,
+				3AFAD6503EB3322499B4E2B9 /* Pods-DataStructuresAndAlgorithm.debug.xcconfig */,
+				6D2AF9A6EE3C5E90ACF542F4 /* Pods-DataStructuresAndAlgorithm.release.xcconfig */,
+				B3906B5BDD9E259A0DCC3731 /* Pods-DataStructuresAndAlgorithmUnitTest.debug.xcconfig */,
+				2CEB8AF33F0FD905E27F3DBB /* Pods-DataStructuresAndAlgorithmUnitTest.release.xcconfig */,
+				758C9D5C8606C287BAAD8E5A /* Pods-common-DataStructuresAndAlgorithm.debug.xcconfig */,
+				BB4BA146A3149A48E3D5B251 /* Pods-common-DataStructuresAndAlgorithm.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9369C11098AF0A045933C607 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				592B2FDF0691BDED78263725 /* libPods-DataStructuresAndAlgorithm.a */,
+				C8312B3A6DC57F77781BFAF0 /* Pods_DataStructuresAndAlgorithmUnitTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A85B15D7CC30605F66A3DB7 /* DataStructuresAndAlgorithm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A85B6F47F7FF7443312EDA6 /* Build configuration list for PBXNativeTarget "DataStructuresAndAlgorithm" */;
+			buildPhases = (
+				5FA7F6304F006E924689F792 /* [CP] Check Pods Manifest.lock */,
+				1A85BBC4003AC097DFBBC514 /* Sources */,
+				1A85B63A35C5B091853D34D7 /* Frameworks */,
+				1A85BEE14B37BC031C373C64 /* CopyFiles */,
+			);
+			buildRules = (
+				1FA5FC350318AA254F6D902C /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = DataStructuresAndAlgorithm;
+			productName = DataStructure;
+			productReference = 1A85B3FBBAB1C361052DAEBC /* DataStructuresAndAlgorithm */;
+			productType = "com.apple.product-type.tool";
+		};
+		3847EA1924D95B47008CD872 /* DataStructuresAndAlgorithmUnitTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3847EA1F24D95B47008CD872 /* Build configuration list for PBXNativeTarget "DataStructuresAndAlgorithmUnitTest" */;
+			buildPhases = (
+				19B78B29A313ECE6DA56BC74 /* [CP] Check Pods Manifest.lock */,
+				3847EA1624D95B47008CD872 /* Sources */,
+				3847EA1724D95B47008CD872 /* Frameworks */,
+				3847EA1824D95B47008CD872 /* Resources */,
+				B996D155F72651F110D7F17F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DataStructuresAndAlgorithmUnitTest;
+			productName = DataStructureUnitTest;
+			productReference = 3847EA1A24D95B47008CD872 /* DataStructuresAndAlgorithmUnitTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A85BCDE60532B7F0010164D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = Hutter;
+				TargetAttributes = {
+					1A85B15D7CC30605F66A3DB7 = {
+						DevelopmentTeam = 9C9K388S8H;
+						LastSwiftMigration = 1120;
+						ProvisioningStyle = Manual;
+					};
+					3847EA1924D95B47008CD872 = {
+						CreatedOnToolsVersion = 11.2.1;
+						DevelopmentTeam = 9C9K388S8H;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 1A85B0BB06F0AF00A5427884 /* Build configuration list for PBXProject "DataStructuresAndAlgorithm" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = 1A85B9C9BBF8262CC28DD0D8;
+			productRefGroup = 1A85BEE039FB5111E047CC79 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A85B15D7CC30605F66A3DB7 /* DataStructuresAndAlgorithm */,
+				3847EA1924D95B47008CD872 /* DataStructuresAndAlgorithmUnitTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3847EA1824D95B47008CD872 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19B78B29A313ECE6DA56BC74 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DataStructuresAndAlgorithmUnitTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FA7F6304F006E924689F792 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DataStructuresAndAlgorithm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B996D155F72651F110D7F17F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DataStructuresAndAlgorithmUnitTest/Pods-DataStructuresAndAlgorithmUnitTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DSContainerForObjC-framework/DSContainerForObjC.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DSContainerForObjC.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DataStructuresAndAlgorithmUnitTest/Pods-DataStructuresAndAlgorithmUnitTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A85BBC4003AC097DFBBC514 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A85BB611809110D6C480CD7 /* main.mm in Sources */,
+				380F9DEB258343780080EFC1 /* NSString+Reverse.m in Sources */,
+				380F9DA72583186B0080EFC1 /* Common.swift in Sources */,
+				1A85B59DEFB5CC635235404A /* Fibonacci.m in Sources */,
+				380F9D61258306240080EFC1 /* Sort.swift in Sources */,
+				38087D6F24E0E64600BFC94B /* LinkedList.swift in Sources */,
+				96431ED32697660800177773 /* DAExchangeNode.m in Sources */,
+				380F9E14258359070080EFC1 /* Generator.swift in Sources */,
+				1A85B76ACC1944F17009C9C5 /* DoubleLinkedList.swift in Sources */,
+				1A85B35AC7C725DF215A4DA7 /* List.swift in Sources */,
+				1A85BDFB1BBC5CB967738AB7 /* CircularLinkedList.swift in Sources */,
+				1A85BDEA5F7628B7F8C0190C /* DoubleCircularLinkedList.swift in Sources */,
+				46CE73BF45656F11005463F2 /* Stack.swift in Sources */,
+				96572B032697EB5600A536EC /* LeetCode.swift in Sources */,
+				4A59A9407256820ED1D53707 /* Person.m in Sources */,
+				4A59A0294F95F810F788AE66 /* DSListNode+IntersectionNode.mm in Sources */,
+				4A59A6A0C1BBF0FCE1800156 /* KthLargestNumber.swift in Sources */,
+				4A59A7E17C999B9256220D2B /* RotateArray.swift in Sources */,
+				4A59A89552B5B553D450E2AF /* DSListNode+Reverse.mm in Sources */,
+				4A59AA050AF550157ECE7836 /* DSListNode+Swap.mm in Sources */,
+				4A59A9FA4B969E90859CCD15 /* DSListNode+Cycle.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3847EA1624D95B47008CD872 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96431ED4269771CA00177773 /* DAExchangeNode.m in Sources */,
+				380F9DEC258343780080EFC1 /* NSString+Reverse.m in Sources */,
+				3847EA2224D95B54008CD872 /* TestFinonacci.m in Sources */,
+				380F9E01258345AD0080EFC1 /* TestString.m in Sources */,
+				3847EA2824D95BEB008CD872 /* Fibonacci.m in Sources */,
+				380F9E15258359070080EFC1 /* Generator.swift in Sources */,
+				380F9E0F258358930080EFC1 /* TestCommon.swift in Sources */,
+				3847EA2724D95B78008CD872 /* NSString+KMP.m in Sources */,
+				380F9D6B2583086F0080EFC1 /* Sort.swift in Sources */,
+				3847EA2324D95B54008CD872 /* TestPatternMatching.m in Sources */,
+				1A85B3AEF2F029B97643216A /* TestDynamicArray.m in Sources */,
+				1A85B6A3C4721FEC88BD24E6 /* TestLinkedList.mm in Sources */,
+				46CE7186978B7EE5B766B93E /* LinkedList.swift in Sources */,
+				96572B052697EB5D00A536EC /* LeetCode.swift in Sources */,
+				1A85B3E458740C44A154F01C /* DoubleLinkedList.swift in Sources */,
+				1A85B9E59DC0F23C197EAD94 /* List.swift in Sources */,
+				380F9D66258307C00080EFC1 /* TestSort.swift in Sources */,
+				380F9DA82583186B0080EFC1 /* Common.swift in Sources */,
+				1A85B06460931288630B2C93 /* CircularLinkedList.swift in Sources */,
+				1A85BD4884C68DD1E89E96E8 /* DoubleCircularLinkedList.swift in Sources */,
+				46CE7A9EDE1A27EADAB03D83 /* Stack.swift in Sources */,
+				4A59A6DDA6FAA6F65B1D6DB1 /* Person.m in Sources */,
+				4A59A2DA8F06BE80E2201A70 /* DSListNode+IntersectionNode.mm in Sources */,
+				4A59A9D5C5314A9F54AA5ED8 /* KthLargestNumber.swift in Sources */,
+				4A59A297BA631BBBBB65D972 /* RotateArray.swift in Sources */,
+				4A59AA695F576E9996E214B0 /* TestDoubleLinkedList.swift in Sources */,
+				4A59AD57BA23BFF21203042F /* Test.swift in Sources */,
+				4A59A6E8F56C1EE766FBE5C1 /* TestDoubleCircularLinkedList.swift in Sources */,
+				4A59A0C8EE61248A172B0038 /* TestCircularLinkedList.swift in Sources */,
+				4A59AD7D2AA0FAD459E7C589 /* TestKthLargestNumber.swift in Sources */,
+				4A59AD6EFFB8EEC09AB3D64C /* TestRotateArray.swift in Sources */,
+				4A59A8FAD46FABF17EA044A1 /* TestLinkedList.swift in Sources */,
+				4A59A04DA09B35F6E37E5165 /* DSListNode+Reverse.mm in Sources */,
+				4A59A6DFFD42457DEE397624 /* DSListNode+Swap.mm in Sources */,
+				4A59AB4C48D906288B7AF3EF /* DSListNode+Cycle.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1A85B0AEF606A8C6D98E6258 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/$(PROJECT_NAME)/info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-fcxx-modules",
+				);
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1A85B5975D3D7100E8E5E9DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D2AF9A6EE3C5E90ACF542F4 /* Pods-DataStructuresAndAlgorithm.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9C9K388S8H;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/$(PROJECT_NAME)/info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mzh.dataStructure;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/DataStructuresAndAlgorithm-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		1A85B666A96CAEF41DF1BA2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AFAD6503EB3322499B4E2B9 /* Pods-DataStructuresAndAlgorithm.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9C9K388S8H;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/$(PROJECT_NAME)/info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mzh.dataStructure;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/DataStructuresAndAlgorithm-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1A85BA12226878D051DFC1BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/$(PROJECT_NAME)/info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-fcxx-modules",
+				);
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Release;
+		};
+		3847EA2024D95B47008CD872 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3906B5BDD9E259A0DCC3731 /* Pods-DataStructuresAndAlgorithmUnitTest.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9C9K388S8H;
+				INFOPLIST_FILE = "$(SRCROOT)/$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-fcxx-modules",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mozihen.DataStructureUnitTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(TARGET_NAME)/DataStructuresAndAlgorithmUnitTest-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3847EA2124D95B47008CD872 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CEB8AF33F0FD905E27F3DBB /* Pods-DataStructuresAndAlgorithmUnitTest.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9C9K388S8H;
+				INFOPLIST_FILE = "$(SRCROOT)/$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-fcxx-modules",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mozihen.DataStructureUnitTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(TARGET_NAME)/DataStructuresAndAlgorithmUnitTest-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A85B0BB06F0AF00A5427884 /* Build configuration list for PBXProject "DataStructuresAndAlgorithm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A85B0AEF606A8C6D98E6258 /* Debug */,
+				1A85BA12226878D051DFC1BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A85B6F47F7FF7443312EDA6 /* Build configuration list for PBXNativeTarget "DataStructuresAndAlgorithm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A85B666A96CAEF41DF1BA2E /* Debug */,
+				1A85B5975D3D7100E8E5E9DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3847EA1F24D95B47008CD872 /* Build configuration list for PBXNativeTarget "DataStructuresAndAlgorithmUnitTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3847EA2024D95B47008CD872 /* Debug */,
+				3847EA2124D95B47008CD872 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A85BCDE60532B7F0010164D /* Project object */;
+}

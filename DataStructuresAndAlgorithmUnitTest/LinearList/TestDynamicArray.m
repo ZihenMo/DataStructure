@@ -7,21 +7,21 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "DynamicArray.h"
+#import <DSContainerForObjC/DSArray.h>
 #import "Person.h"
 
-@interface TestDynamicArray : XCTestCase
+@interface TestDSArray : XCTestCase
 
 
-@property(nonatomic, strong) DynamicArray *dynamicArray;
+@property(nonatomic, strong) DSArray *dynamicArray;
 
 @end
 
-@implementation TestDynamicArray
+@implementation TestDSArray
 
 - (void)setUp {
     // Put setup code here. This method is called before the invocation of each test method in the class.
-    self.dynamicArray = [DynamicArray array];
+    self.dynamicArray = [DSArray array];
 
     Person *obj1 = [Person personWithName:@"小一" andAge:18];
     Person *obj2 = [Person personWithName:@"小二" andAge:16];
@@ -38,7 +38,7 @@
  */
 - (void)tearDown {
     // Put teardown code here. This method is called after the invocation of each test method in the class.
-    __weak DynamicArray *dynamicArray = _dynamicArray;
+    __weak DSArray *dynamicArray = _dynamicArray;
     @autoreleasepool {
         [self.dynamicArray removeAllObjects];
         _dynamicArray = nil;
@@ -50,12 +50,12 @@
  * 测试构建与存储是否正常
  */
 - (void)testAccessObj {
-    DynamicArray *dynamicArray;
+    DSArray *dynamicArray;
     Person *obj1;
     Person *obj2;
     Person *obj3;
     @autoreleasepool {
-        dynamicArray = [DynamicArray array];
+        dynamicArray = [DSArray array];
 
         obj1 = [Person personWithName:@"小一" andAge:18];
         obj2 = [Person personWithName:@"小二" andAge:16];
@@ -84,7 +84,7 @@
  * 测试增删改查
  */
 - (void)testCRUD {
-    DynamicArray *dynamicArray = _dynamicArray;
+    DSArray *dynamicArray = _dynamicArray;
     Person *obj1 = [Person personWithName:@"小一" andAge:18];
     Person *obj2 = [Person personWithName:@"小二" andAge:16];
     Person *obj3 = [Person personWithName:@"小三" andAge:19];
@@ -115,13 +115,13 @@
     NSLog(@"%@", dynamicArray);
 }
 
-- (void)testDynamicArray {
-    DynamicArray *dynamicArray;
+- (void)testDSArray {
+    DSArray *dynamicArray;
     Person *obj1;
     Person *obj2;
     Person *obj3;
     @autoreleasepool {
-        dynamicArray = [[DynamicArray alloc] initWithCapacity:12];
+        dynamicArray = [[DSArray alloc] initWithCapacity:12];
         XCTAssertEqual(0, dynamicArray.count);
         obj1 = [Person personWithName:@"小一" andAge:18];
         obj2 = [Person personWithName:@"小二" andAge:16];
