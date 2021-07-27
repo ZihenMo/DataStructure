@@ -16,7 +16,7 @@
 #import "DSListNode.h"
 #import <ListNode.hpp>
 
-class FindFirstCommonNodeSolution {
+struct FindFirstCommonNodeSolution {
 public:
     ListNode *getIntersectionNode(ListNode *headA, ListNode *headB);
 };

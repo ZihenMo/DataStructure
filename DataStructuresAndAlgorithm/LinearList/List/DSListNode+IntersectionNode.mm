@@ -23,7 +23,7 @@ ListNode *solution3(ListNode *headA, ListNode *headB);
 
 /// 方案1 双指针两遍遍历法（最佳）
 ///    分别用两个指针遍历list1+list2与list2+lis1的合并链表（遍历其中一个再遍历另一个）。
-///    这样在第二遍的首个交叉结点会相遇。(须保证无环)
+///    这样在第二遍的首个交叉结点会相遇。(须保证无环且有解)
 ///
 /// @param head 另一个链表头节点
 /// @return 交叉节点
@@ -31,8 +31,8 @@ ListNode *solution3(ListNode *headA, ListNode *headB);
     DSListNode *p = self;
     DSListNode *q = head;
     while (p != q) {                // 遍历的总次数一定是相等的，因此只考虑值相等性
-        p = !p ? head : p.next;
-        q = !q ? self : q.next;
+        p = !p ? head : p.next;         // p = p.next ? : head;
+        q = !q ? self : q.next;         // q = q.next ? : self;
     }
     return p;
 }
@@ -57,7 +57,7 @@ getIntersectionNode(ListNode *headA, ListNode *headB) {
     ListNode *p = headA;
     ListNode *q = headB;
     while (p != q) {
-        p = p != nullptr ? p->next : headB;
+        p = p != nullptr ? p->next : headB;     // 注意空指针问题
         q = q != nullptr ? q->next : headA;
     }
     return p;

@@ -10,6 +10,7 @@
 #import <DSContainerForObjC/DSLinkedList.h>
 #import "Person.h"
 #import "DAExchangeNode.h"
+#import "DSListNode.h"
 #import "DSListNode+IntersectionNode.hpp"
 #import "DSListNode+Cycle.hpp"
 
@@ -170,20 +171,20 @@
 /* 测试链表交叉节点 */
 - (void)testFindFirstCommonNode {
     int arr1[] = {1,2,3,4,5};
-    int arr2[] = {8,7,4,5};
+    int arr2[] = {8,7,9,6};
     size_t len1 = 5;
     size_t len2 = 4;
 
     ListNode *list1 = constructList(arr1, 5);
     ListNode *list2 = new ListNode(8);
-    list2->next = new ListNode(7);
-    list2->next->next = list1->next->next->next;
+//    list2->next = new ListNode(7);
+//    list2->next->next = list1->next->next->next;
     
     list1->printList();
     list2->printList();
     
     ListNode *result = (new FindFirstCommonNodeSolution())->getIntersectionNode(list1, list2);
-    XCTAssertEqual(result->val, 4);
+    XCTAssertEqual(result, nullptr);
     
 }
 

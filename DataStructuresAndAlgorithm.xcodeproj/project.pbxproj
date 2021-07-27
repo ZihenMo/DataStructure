@@ -12,7 +12,6 @@
 		1A85B35AC7C725DF215A4DA7 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A85B33815BCCA7AFD6D7853 /* List.swift */; };
 		1A85B3AEF2F029B97643216A /* TestDynamicArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A85B53A5FF2063DA8F24701 /* TestDynamicArray.m */; };
 		1A85B3E458740C44A154F01C /* DoubleLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A85BBD9B4F6BFB577578245 /* DoubleLinkedList.swift */; };
-		1A85B59DEFB5CC635235404A /* Fibonacci.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A85BA5AC5D0F27C7251F4F2 /* Fibonacci.m */; };
 		1A85B6A3C4721FEC88BD24E6 /* TestLinkedList.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1A85B3E0FA082132104BBAEE /* TestLinkedList.mm */; };
 		1A85B76ACC1944F17009C9C5 /* DoubleLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A85BBD9B4F6BFB577578245 /* DoubleLinkedList.swift */; };
 		1A85B9E59DC0F23C197EAD94 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A85B33815BCCA7AFD6D7853 /* List.swift */; };
@@ -28,43 +27,104 @@
 		380F9DA82583186B0080EFC1 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380F9DA62583186B0080EFC1 /* Common.swift */; };
 		380F9DEB258343780080EFC1 /* NSString+Reverse.m in Sources */ = {isa = PBXBuildFile; fileRef = 380F9DEA258343780080EFC1 /* NSString+Reverse.m */; };
 		380F9DEC258343780080EFC1 /* NSString+Reverse.m in Sources */ = {isa = PBXBuildFile; fileRef = 380F9DEA258343780080EFC1 /* NSString+Reverse.m */; };
-		380F9E01258345AD0080EFC1 /* TestString.m in Sources */ = {isa = PBXBuildFile; fileRef = 380F9E00258345AD0080EFC1 /* TestString.m */; };
+		380F9E01258345AD0080EFC1 /* TestString.mm in Sources */ = {isa = PBXBuildFile; fileRef = 380F9E00258345AD0080EFC1 /* TestString.mm */; };
 		380F9E0F258358930080EFC1 /* TestCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380F9E0E258358930080EFC1 /* TestCommon.swift */; };
 		380F9E14258359070080EFC1 /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380F9E13258359070080EFC1 /* Generator.swift */; };
 		380F9E15258359070080EFC1 /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380F9E13258359070080EFC1 /* Generator.swift */; };
 		3847EA2224D95B54008CD872 /* TestFinonacci.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A85B912B2EC1438EEDB0AD9 /* TestFinonacci.m */; };
 		3847EA2324D95B54008CD872 /* TestPatternMatching.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A85BF1EDB53220329D88E39 /* TestPatternMatching.m */; };
 		3847EA2724D95B78008CD872 /* NSString+KMP.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A85B60CDF12E0C074A8C337 /* NSString+KMP.m */; };
-		3847EA2824D95BEB008CD872 /* Fibonacci.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A85BA5AC5D0F27C7251F4F2 /* Fibonacci.m */; };
 		46CE7186978B7EE5B766B93E /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38087D6E24E0E64600BFC94B /* LinkedList.swift */; };
 		46CE73BF45656F11005463F2 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CE78822664DA245E9D9CF6 /* Stack.swift */; };
 		46CE7A9EDE1A27EADAB03D83 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CE78822664DA245E9D9CF6 /* Stack.swift */; };
-		4A59A0294F95F810F788AE66 /* DSListNode+IntersectionNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AAB55B795CB54075D16F /* DSListNode+IntersectionNode.mm */; };
-		4A59A04DA09B35F6E37E5165 /* DSListNode+Reverse.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A43F23ECF0DD8C52F7DA /* DSListNode+Reverse.mm */; };
+		4A59A0243322ACBF60762CB1 /* DSListNode+Swap.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A9D7D9023683C823A345 /* DSListNode+Swap.mm */; };
+		4A59A08C796B035FE7D698B7 /* TestBinarySearch.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AC7D21F48D5AC19441A4 /* TestBinarySearch.mm */; };
+		4A59A09C70790ACB113D2D12 /* DSDeque+SlidingWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A8020C5DDD1B0E5272EB /* DSDeque+SlidingWindow.m */; };
+		4A59A0B2A7276837F2E4EA12 /* DSTreeNode+ValidBST.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A244E1BCDF0C372584ED /* DSTreeNode+ValidBST.mm */; };
+		4A59A0B55F232DD01D867DCD /* Trie.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A8CD27E0122D4B59D910 /* Trie.mm */; };
 		4A59A0C8EE61248A172B0038 /* TestCircularLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A795C8B6372B20432F9A /* TestCircularLinkedList.swift */; };
+		4A59A0D80E4D168E5D534452 /* Fibonacci.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A407469CAC8CFEBEA22C /* Fibonacci.mm */; };
+		4A59A0E2A1110A86D933E967 /* ThreeSum.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A654839D48F0AD777245 /* ThreeSum.mm */; };
+		4A59A166BE7478BD72D55D8C /* DSListNode+Reverse.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A6E6A7C2DB0C3CA9D490 /* DSListNode+Reverse.mm */; };
+		4A59A1D068D7DCF1993A51F9 /* DSTreeNode+Bracket.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59ABB6286514915F919DBA /* DSTreeNode+Bracket.mm */; };
+		4A59A1F28A729A71045BBD10 /* DSListNode+Cycle.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AC35FF49E8C6CB17BAB1 /* DSListNode+Cycle.mm */; };
+		4A59A21F094CDC7BC79DBB7D /* Pow.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A1A8C54E2444E67A9037 /* Pow.mm */; };
+		4A59A229989527ED2F23B981 /* DSStack+Min.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AC6B0F02B92FACDA16DC /* DSStack+Min.mm */; };
 		4A59A297BA631BBBBB65D972 /* RotateArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A3A25E9BF96682ECB00A /* RotateArray.swift */; };
-		4A59A2DA8F06BE80E2201A70 /* DSListNode+IntersectionNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AAB55B795CB54075D16F /* DSListNode+IntersectionNode.mm */; };
+		4A59A2B25E6F4E5C888FB59A /* KthLargest.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59ABC2A006FFF556E05E88 /* KthLargest.mm */; };
+		4A59A2BE295CB3A04EEE2FE7 /* DSStack+Queue.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59ACA8F7E4832BBF6C0C06 /* DSStack+Queue.mm */; };
+		4A59A2CFB7F3D4A93F681B07 /* DSTreeNode+Queen.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A5085EC00A7BFED947DE /* DSTreeNode+Queen.mm */; };
+		4A59A2D9077DC5BC4F8BD050 /* DSTreeNode+Depth.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AEEF974AAD767DB8F100 /* DSTreeNode+Depth.mm */; };
+		4A59A2F931CFE4AFCE28A94D /* DSListNode+IntersectionNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A064C0D83D7C66CCC591 /* DSListNode+IntersectionNode.mm */; };
+		4A59A3323FF0C52985668B42 /* SlideWindow.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A641827284BC888BCF7B /* SlideWindow.mm */; };
+		4A59A370B6C81BC5F3883204 /* DSStack+Min.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AC6B0F02B92FACDA16DC /* DSStack+Min.mm */; };
+		4A59A3FB864988566B623D75 /* DSTreeNode+Traverse.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A132D51A83ACA73B9A19 /* DSTreeNode+Traverse.mm */; };
+		4A59A3FFC97DAF1138ABBC6C /* DSListNode+Reverse.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A6E6A7C2DB0C3CA9D490 /* DSListNode+Reverse.mm */; };
+		4A59A3FFD983D3285D063C45 /* DAExchangeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A98AADF5B858A1C6F028 /* DAExchangeNode.m */; };
+		4A59A4174A6DA93216C5CD1A /* TestQueue.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AC01EB6D2BB9EA11BF1F /* TestQueue.mm */; };
+		4A59A4358B7F8FEF06D04B78 /* Pow.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A1A8C54E2444E67A9037 /* Pow.mm */; };
+		4A59A45376F57E49BE24776D /* DSStack+BracketMatching.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A91E857ACEAD51479397 /* DSStack+BracketMatching.mm */; };
+		4A59A4AE408F9425D2F266E5 /* NSString+Anagram.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AC0CD827C2EFF6342F29 /* NSString+Anagram.mm */; };
+		4A59A4B04339B343248E1672 /* DSListNode+Cycle.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AC35FF49E8C6CB17BAB1 /* DSListNode+Cycle.mm */; };
+		4A59A53262DC7A354102C1A9 /* TestBinarySearch.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AC7D21F48D5AC19441A4 /* TestBinarySearch.mm */; };
+		4A59A54DBA189B3A56C73319 /* KthLargest.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59ABC2A006FFF556E05E88 /* KthLargest.mm */; };
+		4A59A57DCC2C61D5BC3D103D /* TestTree.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AA56AA77D32C218790EA /* TestTree.mm */; };
+		4A59A5AF4DBAD4EBBC34B1AB /* TestDeque.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AE83AB26875B622851FA /* TestDeque.mm */; };
+		4A59A5E59CB80027DEE8C369 /* Stock.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A08E4DB7A17A58C5942C /* Stock.mm */; };
+		4A59A5EA33C2DCF440E60322 /* Trie.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A8CD27E0122D4B59D910 /* Trie.mm */; };
+		4A59A5F7FB6BA2A1502C7889 /* TestDivideConquer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A7B2D7C4A1248FB2CC50 /* TestDivideConquer.mm */; };
+		4A59A6875843B93572AF4BAD /* TestTrie.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AEC5F31E5E2BDF67E530 /* TestTrie.mm */; };
 		4A59A6A0C1BBF0FCE1800156 /* KthLargestNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AD84972FCBBB0FB3ABBE /* KthLargestNumber.swift */; };
+		4A59A6B21320E80A75181E1B /* DSListNode+Swap.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A9D7D9023683C823A345 /* DSListNode+Swap.mm */; };
+		4A59A6C9176BD0B2435F63A2 /* DSQueue+Stack.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AC81F596A34D674B7520 /* DSQueue+Stack.mm */; };
 		4A59A6DDA6FAA6F65B1D6DB1 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AC8759E01FDBED36475B /* Person.m */; };
-		4A59A6DFFD42457DEE397624 /* DSListNode+Swap.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59ACCB9F507B265252ABF7 /* DSListNode+Swap.mm */; };
 		4A59A6E8F56C1EE766FBE5C1 /* TestDoubleCircularLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A4D1ADC8E4F163374A02 /* TestDoubleCircularLinkedList.swift */; };
+		4A59A728AD55C468DC95E2D3 /* DSTreeNode+Sudoku.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A6616BD51911FA20AA93 /* DSTreeNode+Sudoku.mm */; };
+		4A59A73C09BC309C56C9816E /* SlideWindow.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A641827284BC888BCF7B /* SlideWindow.mm */; };
+		4A59A744041A7B00D20DE0B9 /* NSString+Anagram.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AC0CD827C2EFF6342F29 /* NSString+Anagram.mm */; };
+		4A59A7892905DE03BC1880D0 /* Sqrt.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A7CD09166DA196CB38E4 /* Sqrt.mm */; };
+		4A59A7B55D60D935FD584226 /* Stock.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A08E4DB7A17A58C5942C /* Stock.mm */; };
 		4A59A7E17C999B9256220D2B /* RotateArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A3A25E9BF96682ECB00A /* RotateArray.swift */; };
-		4A59A89552B5B553D450E2AF /* DSListNode+Reverse.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A43F23ECF0DD8C52F7DA /* DSListNode+Reverse.mm */; };
+		4A59A814E77F37E90A6BF006 /* ThreeSum.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A654839D48F0AD777245 /* ThreeSum.mm */; };
+		4A59A8AF32B22D45B044F5AE /* MajorityElement.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AAADB1982CB4BADE2064 /* MajorityElement.mm */; };
 		4A59A8FAD46FABF17EA044A1 /* TestLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A8432FD81F4D811394EC /* TestLinkedList.swift */; };
+		4A59A8FE50F1026C5CE412DD /* DSTreeNode+Depth.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AEEF974AAD767DB8F100 /* DSTreeNode+Depth.mm */; };
+		4A59A9299DDAB22ED6EFC68C /* DSTreeNode+ValidBST.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A244E1BCDF0C372584ED /* DSTreeNode+ValidBST.mm */; };
 		4A59A9407256820ED1D53707 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AC8759E01FDBED36475B /* Person.m */; };
+		4A59A9979EE62B05C7C9EA21 /* DAExchangeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A98AADF5B858A1C6F028 /* DAExchangeNode.m */; };
 		4A59A9D5C5314A9F54AA5ED8 /* KthLargestNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AD84972FCBBB0FB3ABBE /* KthLargestNumber.swift */; };
-		4A59A9FA4B969E90859CCD15 /* DSListNode+Cycle.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AF514DCD2B04A1B0E071 /* DSListNode+Cycle.mm */; };
-		4A59AA050AF550157ECE7836 /* DSListNode+Swap.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59ACCB9F507B265252ABF7 /* DSListNode+Swap.mm */; };
 		4A59AA695F576E9996E214B0 /* TestDoubleLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A53837E58FD592A23375 /* TestDoubleLinkedList.swift */; };
-		4A59AB4C48D906288B7AF3EF /* DSListNode+Cycle.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AF514DCD2B04A1B0E071 /* DSListNode+Cycle.mm */; };
+		4A59ABEC4BDA2D3AFA5B1422 /* TestDivideConquer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A7B2D7C4A1248FB2CC50 /* TestDivideConquer.mm */; };
+		4A59ABF57528D5892D441AB5 /* TestGreedy.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A27B230F9E63C452EA41 /* TestGreedy.mm */; };
+		4A59AC2878C1400F3F2900C7 /* TestTrie.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AEC5F31E5E2BDF67E530 /* TestTrie.mm */; };
+		4A59AC3CF2362A4C1CD5D2F8 /* TestGreedy.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A27B230F9E63C452EA41 /* TestGreedy.mm */; };
+		4A59AD0ABF10F6C0939B2FF1 /* DSTreeNode+Sudoku.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A6616BD51911FA20AA93 /* DSTreeNode+Sudoku.mm */; };
+		4A59AD210CF35DD4DF1D87DD /* MajorityElement.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AAADB1982CB4BADE2064 /* MajorityElement.mm */; };
+		4A59AD22DD03D1B4D691D8E8 /* TestSum.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A4AAE126259CA295A5CC /* TestSum.mm */; };
+		4A59AD55989F5B764150331C /* DSListNode+IntersectionNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A064C0D83D7C66CCC591 /* DSListNode+IntersectionNode.mm */; };
 		4A59AD57BA23BFF21203042F /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A59ACABD788367CEA925ADD /* Test.swift */; };
 		4A59AD6EFFB8EEC09AB3D64C /* TestRotateArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AEADF00B218067D8A63C /* TestRotateArray.swift */; };
 		4A59AD7D2AA0FAD459E7C589 /* TestKthLargestNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A4BDD25BE3E95C714954 /* TestKthLargestNumber.swift */; };
+		4A59AD91EE9A62FA39C967FD /* DSTreeNode+Traverse.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A132D51A83ACA73B9A19 /* DSTreeNode+Traverse.mm */; };
+		4A59AE2379EDA34510F06E6E /* TestSum.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A4AAE126259CA295A5CC /* TestSum.mm */; };
+		4A59AE4367EA09E31BE8B1AE /* Sqrt.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A7CD09166DA196CB38E4 /* Sqrt.mm */; };
+		4A59AE655B308C73FDE76532 /* DSTreeNode+Queen.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A5085EC00A7BFED947DE /* DSTreeNode+Queen.mm */; };
+		4A59AEA5A55D9779D1DFADF9 /* Fibonacci.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A407469CAC8CFEBEA22C /* Fibonacci.mm */; };
+		4A59AEBFF56DA0EAF40D4DE9 /* DSTreeNode+Bracket.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59ABB6286514915F919DBA /* DSTreeNode+Bracket.mm */; };
+		4A59AF20DB14FFC505414C2E /* DSDeque+SlidingWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A8020C5DDD1B0E5272EB /* DSDeque+SlidingWindow.m */; };
 		554716489858F006ABD93362 /* Pods_DataStructuresAndAlgorithmUnitTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8312B3A6DC57F77781BFAF0 /* Pods_DataStructuresAndAlgorithmUnitTest.framework */; };
-		96431ED32697660800177773 /* DAExchangeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 96431ED22697660800177773 /* DAExchangeNode.m */; };
-		96431ED4269771CA00177773 /* DAExchangeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 96431ED22697660800177773 /* DAExchangeNode.m */; };
 		96572B032697EB5600A536EC /* LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96572B022697EB5600A536EC /* LeetCode.swift */; };
 		96572B052697EB5D00A536EC /* LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96572B022697EB5600A536EC /* LeetCode.swift */; };
+		9662963D26A3460A00703CAD /* DSTreeNode+CommonAncestor.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9662963C26A3460A00703CAD /* DSTreeNode+CommonAncestor.mm */; };
+		9662963E26A3460A00703CAD /* DSTreeNode+CommonAncestor.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9662963C26A3460A00703CAD /* DSTreeNode+CommonAncestor.mm */; };
+		9662964126A3F50100703CAD /* DSTreeNode+PathSum.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9662964026A3F50100703CAD /* DSTreeNode+PathSum.mm */; };
+		9662964226A3F50100703CAD /* DSTreeNode+PathSum.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9662964026A3F50100703CAD /* DSTreeNode+PathSum.mm */; };
+		96BD5569269C205000E8F805 /* TestStack.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96BD5568269C205000E8F805 /* TestStack.mm */; };
+		96BD556A269C2A4700E8F805 /* DSStack+BracketMatching.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A91E857ACEAD51479397 /* DSStack+BracketMatching.mm */; };
+		96BD556D269C557700E8F805 /* TestQueue.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AC01EB6D2BB9EA11BF1F /* TestQueue.mm */; };
+		96BD556E269C55AE00E8F805 /* DSStack+Queue.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59ACA8F7E4832BBF6C0C06 /* DSStack+Queue.mm */; };
+		96BD556F269C5E7800E8F805 /* DSQueue+Stack.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AC81F596A34D674B7520 /* DSQueue+Stack.mm */; };
+		96BD5570269D33B000E8F805 /* TestKthLargest.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AAD3BA8893D3BA99E0D3 /* TestKthLargest.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -100,17 +160,15 @@
 		1A85B33815BCCA7AFD6D7853 /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		1A85B3E0FA082132104BBAEE /* TestLinkedList.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TestLinkedList.mm; sourceTree = "<group>"; };
 		1A85B3FBBAB1C361052DAEBC /* DataStructuresAndAlgorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructuresAndAlgorithm; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A85B50B7C3DD8348F46505D /* Fibonacci.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fibonacci.h; sourceTree = "<group>"; };
 		1A85B53A5FF2063DA8F24701 /* TestDynamicArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDynamicArray.m; sourceTree = "<group>"; };
 		1A85B60CDF12E0C074A8C337 /* NSString+KMP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+KMP.m"; sourceTree = "<group>"; };
 		1A85B912B2EC1438EEDB0AD9 /* TestFinonacci.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestFinonacci.m; sourceTree = "<group>"; };
-		1A85BA5AC5D0F27C7251F4F2 /* Fibonacci.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fibonacci.m; sourceTree = "<group>"; };
 		1A85BB6E3215E103A4DD71C8 /* DoubleCircularLinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleCircularLinkedList.swift; sourceTree = "<group>"; };
 		1A85BBD9B4F6BFB577578245 /* DoubleLinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleLinkedList.swift; sourceTree = "<group>"; };
 		1A85BF1EDB53220329D88E39 /* TestPatternMatching.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPatternMatching.m; sourceTree = "<group>"; };
 		1A85BF710880F87335E58C41 /* NSString+KMP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+KMP.h"; sourceTree = "<group>"; };
 		1A85BFB0049D7A245FDD44B7 /* CircularLinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularLinkedList.swift; sourceTree = "<group>"; };
-		2CEB8AF33F0FD905E27F3DBB /* Pods-DataStructuresAndAlgorithmUnitTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataStructuresAndAlgorithmUnitTest.release.xcconfig"; path = "Target Support Files/Pods-DataStructuresAndAlgorithmUnitTest/Pods-DataStructuresAndAlgorithmUnitTest.release.xcconfig"; sourceTree = "<group>"; };
+		2F18BDFDF48F4B0AEB31630D /* Pods-DataStructuresAndAlgorithm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataStructuresAndAlgorithm.debug.xcconfig"; path = "Target Support Files/Pods-DataStructuresAndAlgorithm/Pods-DataStructuresAndAlgorithm.debug.xcconfig"; sourceTree = "<group>"; };
 		38087D6924E0E3C900BFC94B /* DataStructuresAndAlgorithm-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DataStructuresAndAlgorithm-Bridging-Header.h"; sourceTree = "<group>"; };
 		38087D6E24E0E64600BFC94B /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		380F9D60258306240080EFC1 /* Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sort.swift; sourceTree = "<group>"; };
@@ -118,46 +176,96 @@
 		380F9DA62583186B0080EFC1 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		380F9DE9258343780080EFC1 /* NSString+Reverse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Reverse.h"; sourceTree = "<group>"; };
 		380F9DEA258343780080EFC1 /* NSString+Reverse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Reverse.m"; sourceTree = "<group>"; };
-		380F9E00258345AD0080EFC1 /* TestString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestString.m; sourceTree = "<group>"; };
+		380F9E00258345AD0080EFC1 /* TestString.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TestString.mm; sourceTree = "<group>"; };
 		380F9E0E258358930080EFC1 /* TestCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCommon.swift; sourceTree = "<group>"; };
 		380F9E13258359070080EFC1 /* Generator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
 		3847EA1A24D95B47008CD872 /* DataStructuresAndAlgorithmUnitTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataStructuresAndAlgorithmUnitTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3847EA3124D980B2008CD872 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38F5D8DF24E2319700CA5605 /* DataStructuresAndAlgorithmUnitTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DataStructuresAndAlgorithmUnitTest-Bridging-Header.h"; sourceTree = "<group>"; };
-		3AFAD6503EB3322499B4E2B9 /* Pods-DataStructuresAndAlgorithm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataStructuresAndAlgorithm.debug.xcconfig"; path = "Target Support Files/Pods-DataStructuresAndAlgorithm/Pods-DataStructuresAndAlgorithm.debug.xcconfig"; sourceTree = "<group>"; };
 		46CE78822664DA245E9D9CF6 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
-		46DCBEB996BBD5D1ECE3E856 /* Pods-DataStructureUnitTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataStructureUnitTest.release.xcconfig"; path = "Target Support Files/Pods-DataStructureUnitTest/Pods-DataStructureUnitTest.release.xcconfig"; sourceTree = "<group>"; };
-		4739D209BD42CE98E1BF6393 /* Pods-DataStructure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataStructure.release.xcconfig"; path = "Target Support Files/Pods-DataStructure/Pods-DataStructure.release.xcconfig"; sourceTree = "<group>"; };
+		4A59A064C0D83D7C66CCC591 /* DSListNode+IntersectionNode.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "DSListNode+IntersectionNode.mm"; sourceTree = "<group>"; };
+		4A59A06EDA297630A79AF74E /* DSListNode+IntersectionNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "DSListNode+IntersectionNode.hpp"; sourceTree = "<group>"; };
+		4A59A08E4DB7A17A58C5942C /* Stock.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Stock.mm; sourceTree = "<group>"; };
+		4A59A1104AA71E2AE3EDCBF6 /* SlideWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideWindow.h; sourceTree = "<group>"; };
+		4A59A132D51A83ACA73B9A19 /* DSTreeNode+Traverse.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "DSTreeNode+Traverse.mm"; sourceTree = "<group>"; };
+		4A59A14D5216A912039081FE /* DSStack+Min.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DSStack+Min.h"; sourceTree = "<group>"; };
+		4A59A1524CDF3FB5F56AEF1D /* Fibonacci.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fibonacci.h; sourceTree = "<group>"; };
+		4A59A1A8C54E2444E67A9037 /* Pow.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Pow.mm; sourceTree = "<group>"; };
+		4A59A1F52E0AD2EF5C9D2EBE /* DSListNode+Swap.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "DSListNode+Swap.hpp"; sourceTree = "<group>"; };
+		4A59A244E1BCDF0C372584ED /* DSTreeNode+ValidBST.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "DSTreeNode+ValidBST.mm"; sourceTree = "<group>"; };
+		4A59A25B665805EC8DE62EBB /* Sqrt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sqrt.h; sourceTree = "<group>"; };
+		4A59A27B230F9E63C452EA41 /* TestGreedy.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TestGreedy.mm; sourceTree = "<group>"; };
 		4A59A3A25E9BF96682ECB00A /* RotateArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotateArray.swift; sourceTree = "<group>"; };
-		4A59A409F8328EAD444C5107 /* DSListNode+Reverse.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "DSListNode+Reverse.hpp"; sourceTree = "<group>"; };
-		4A59A43F23ECF0DD8C52F7DA /* DSListNode+Reverse.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "DSListNode+Reverse.mm"; sourceTree = "<group>"; };
-		4A59A455B585E31359303E0B /* DSListNode+Swap.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "DSListNode+Swap.hpp"; sourceTree = "<group>"; };
+		4A59A407469CAC8CFEBEA22C /* Fibonacci.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Fibonacci.mm; sourceTree = "<group>"; };
+		4A59A4AAE126259CA295A5CC /* TestSum.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TestSum.mm; sourceTree = "<group>"; };
 		4A59A4BDD25BE3E95C714954 /* TestKthLargestNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestKthLargestNumber.swift; sourceTree = "<group>"; };
+		4A59A4D011B8F16587C51F6B /* DSStack+Queue.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "DSStack+Queue.hpp"; sourceTree = "<group>"; };
 		4A59A4D1ADC8E4F163374A02 /* TestDoubleCircularLinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDoubleCircularLinkedList.swift; sourceTree = "<group>"; };
+		4A59A5085EC00A7BFED947DE /* DSTreeNode+Queen.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "DSTreeNode+Queen.mm"; sourceTree = "<group>"; };
+		4A59A51AF22F8AD40C02EED5 /* MajorityElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MajorityElement.h; sourceTree = "<group>"; };
 		4A59A53837E58FD592A23375 /* TestDoubleLinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDoubleLinkedList.swift; sourceTree = "<group>"; };
+		4A59A5E27FE6E517381AC557 /* DSTreeNode+Sudoku.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DSTreeNode+Sudoku.h"; sourceTree = "<group>"; };
+		4A59A616F1A3217E34553902 /* DSQueue+Stack.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "DSQueue+Stack.hpp"; sourceTree = "<group>"; };
+		4A59A641827284BC888BCF7B /* SlideWindow.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SlideWindow.mm; sourceTree = "<group>"; };
+		4A59A6481E000C4AF260DDA6 /* DSTreeNode+ValidBST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DSTreeNode+ValidBST.h"; sourceTree = "<group>"; };
+		4A59A654839D48F0AD777245 /* ThreeSum.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ThreeSum.mm; sourceTree = "<group>"; };
+		4A59A65C958021E648911EBC /* KthLargest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KthLargest.h; sourceTree = "<group>"; };
+		4A59A6616BD51911FA20AA93 /* DSTreeNode+Sudoku.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "DSTreeNode+Sudoku.mm"; sourceTree = "<group>"; };
 		4A59A66586F571A3FB48113E /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		4A59A6E6A7C2DB0C3CA9D490 /* DSListNode+Reverse.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "DSListNode+Reverse.mm"; sourceTree = "<group>"; };
+		4A59A74BF16EC49A64881C17 /* DSListNode+Reverse.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "DSListNode+Reverse.hpp"; sourceTree = "<group>"; };
+		4A59A792E22613530C8528FC /* Pow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pow.h; sourceTree = "<group>"; };
 		4A59A795C8B6372B20432F9A /* TestCircularLinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCircularLinkedList.swift; sourceTree = "<group>"; };
-		4A59A82A939EA28587362A5C /* DSListNode+Cycle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "DSListNode+Cycle.hpp"; sourceTree = "<group>"; };
+		4A59A7B2D7C4A1248FB2CC50 /* TestDivideConquer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TestDivideConquer.mm; sourceTree = "<group>"; };
+		4A59A7CD09166DA196CB38E4 /* Sqrt.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Sqrt.mm; sourceTree = "<group>"; };
+		4A59A8020C5DDD1B0E5272EB /* DSDeque+SlidingWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DSDeque+SlidingWindow.m"; sourceTree = "<group>"; };
+		4A59A817E5953498DC528529 /* DSTreeNode+Queen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DSTreeNode+Queen.h"; sourceTree = "<group>"; };
+		4A59A82A2C137378D645ACA0 /* DSTreeNode+Bracket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DSTreeNode+Bracket.h"; sourceTree = "<group>"; };
 		4A59A8432FD81F4D811394EC /* TestLinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestLinkedList.swift; sourceTree = "<group>"; };
-		4A59AAB55B795CB54075D16F /* DSListNode+IntersectionNode.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "DSListNode+IntersectionNode.mm"; sourceTree = "<group>"; };
-		4A59AC79E4755BC92FA55190 /* DSListNode+IntersectionNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "DSListNode+IntersectionNode.hpp"; sourceTree = "<group>"; };
+		4A59A8CD27E0122D4B59D910 /* Trie.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Trie.mm; sourceTree = "<group>"; };
+		4A59A91E857ACEAD51479397 /* DSStack+BracketMatching.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "DSStack+BracketMatching.mm"; sourceTree = "<group>"; };
+		4A59A977E2D06E9080D9633E /* NSString+Anagram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Anagram.h"; sourceTree = "<group>"; };
+		4A59A98AADF5B858A1C6F028 /* DAExchangeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAExchangeNode.m; sourceTree = "<group>"; };
+		4A59A9D7D9023683C823A345 /* DSListNode+Swap.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "DSListNode+Swap.mm"; sourceTree = "<group>"; };
+		4A59A9E3100052983148B2EC /* DAExchangeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAExchangeNode.h; sourceTree = "<group>"; };
+		4A59AA5247AD41D06EFE6F12 /* DSDeque+SlidingWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DSDeque+SlidingWindow.h"; sourceTree = "<group>"; };
+		4A59AA56AA77D32C218790EA /* TestTree.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TestTree.mm; sourceTree = "<group>"; };
+		4A59AA86066CF506E7F05973 /* ThreeSum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeSum.h; sourceTree = "<group>"; };
+		4A59AAADB1982CB4BADE2064 /* MajorityElement.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MajorityElement.mm; sourceTree = "<group>"; };
+		4A59AAD3BA8893D3BA99E0D3 /* TestKthLargest.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TestKthLargest.mm; sourceTree = "<group>"; };
+		4A59ABB6286514915F919DBA /* DSTreeNode+Bracket.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "DSTreeNode+Bracket.mm"; sourceTree = "<group>"; };
+		4A59ABC2A006FFF556E05E88 /* KthLargest.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = KthLargest.mm; sourceTree = "<group>"; };
+		4A59ABEF33E00488C5AE0F8B /* Trie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Trie.h; sourceTree = "<group>"; };
+		4A59AC01EB6D2BB9EA11BF1F /* TestQueue.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TestQueue.mm; sourceTree = "<group>"; };
+		4A59AC0CD827C2EFF6342F29 /* NSString+Anagram.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSString+Anagram.mm"; sourceTree = "<group>"; };
+		4A59AC10239C6AD2F787F857 /* DSTreeNode+Traverse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DSTreeNode+Traverse.h"; sourceTree = "<group>"; };
+		4A59AC35FF49E8C6CB17BAB1 /* DSListNode+Cycle.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "DSListNode+Cycle.mm"; sourceTree = "<group>"; };
+		4A59AC6B0F02B92FACDA16DC /* DSStack+Min.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "DSStack+Min.mm"; sourceTree = "<group>"; };
+		4A59AC7D21F48D5AC19441A4 /* TestBinarySearch.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TestBinarySearch.mm; sourceTree = "<group>"; };
+		4A59AC81F596A34D674B7520 /* DSQueue+Stack.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "DSQueue+Stack.mm"; sourceTree = "<group>"; };
 		4A59AC8759E01FDBED36475B /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		4A59ACA8F7E4832BBF6C0C06 /* DSStack+Queue.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "DSStack+Queue.mm"; sourceTree = "<group>"; };
 		4A59ACABD788367CEA925ADD /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
-		4A59ACCB9F507B265252ABF7 /* DSListNode+Swap.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "DSListNode+Swap.mm"; sourceTree = "<group>"; };
+		4A59ACB80BEBFA6F987620DB /* DSStack+BracketMatching.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "DSStack+BracketMatching.hpp"; sourceTree = "<group>"; };
+		4A59ACD244E7805F8798D355 /* DSTreeNode+Depth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DSTreeNode+Depth.h"; sourceTree = "<group>"; };
 		4A59AD84972FCBBB0FB3ABBE /* KthLargestNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KthLargestNumber.swift; sourceTree = "<group>"; };
+		4A59AE83AB26875B622851FA /* TestDeque.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TestDeque.mm; sourceTree = "<group>"; };
 		4A59AEADF00B218067D8A63C /* TestRotateArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestRotateArray.swift; sourceTree = "<group>"; };
-		4A59AF514DCD2B04A1B0E071 /* DSListNode+Cycle.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "DSListNode+Cycle.mm"; sourceTree = "<group>"; };
+		4A59AEC5F31E5E2BDF67E530 /* TestTrie.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TestTrie.mm; sourceTree = "<group>"; };
+		4A59AEEF974AAD767DB8F100 /* DSTreeNode+Depth.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "DSTreeNode+Depth.mm"; sourceTree = "<group>"; };
+		4A59AF5880F89E391AF1316E /* DSListNode+Cycle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "DSListNode+Cycle.hpp"; sourceTree = "<group>"; };
+		4A59AFB29C126FD330926378 /* Stock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stock.h; sourceTree = "<group>"; };
 		592B2FDF0691BDED78263725 /* libPods-DataStructuresAndAlgorithm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DataStructuresAndAlgorithm.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5F4D1A75671C44A6C28D3A46 /* Pods-DataStructure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataStructure.debug.xcconfig"; path = "Target Support Files/Pods-DataStructure/Pods-DataStructure.debug.xcconfig"; sourceTree = "<group>"; };
-		6D2AF9A6EE3C5E90ACF542F4 /* Pods-DataStructuresAndAlgorithm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataStructuresAndAlgorithm.release.xcconfig"; path = "Target Support Files/Pods-DataStructuresAndAlgorithm/Pods-DataStructuresAndAlgorithm.release.xcconfig"; sourceTree = "<group>"; };
-		758C9D5C8606C287BAAD8E5A /* Pods-common-DataStructuresAndAlgorithm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-common-DataStructuresAndAlgorithm.debug.xcconfig"; path = "Target Support Files/Pods-common-DataStructuresAndAlgorithm/Pods-common-DataStructuresAndAlgorithm.debug.xcconfig"; sourceTree = "<group>"; };
-		96431ED12697660800177773 /* DAExchangeNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DAExchangeNode.h; sourceTree = "<group>"; };
-		96431ED22697660800177773 /* DAExchangeNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DAExchangeNode.m; sourceTree = "<group>"; };
+		5BCBF18366AE8540084FA1C5 /* Pods-DataStructuresAndAlgorithmUnitTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataStructuresAndAlgorithmUnitTest.debug.xcconfig"; path = "Target Support Files/Pods-DataStructuresAndAlgorithmUnitTest/Pods-DataStructuresAndAlgorithmUnitTest.debug.xcconfig"; sourceTree = "<group>"; };
+		93D7D138099BE7C6F58FA079 /* Pods-DataStructuresAndAlgorithm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataStructuresAndAlgorithm.release.xcconfig"; path = "Target Support Files/Pods-DataStructuresAndAlgorithm/Pods-DataStructuresAndAlgorithm.release.xcconfig"; sourceTree = "<group>"; };
 		96572B022697EB5600A536EC /* LeetCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeetCode.swift; sourceTree = "<group>"; };
-		B3906B5BDD9E259A0DCC3731 /* Pods-DataStructuresAndAlgorithmUnitTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataStructuresAndAlgorithmUnitTest.debug.xcconfig"; path = "Target Support Files/Pods-DataStructuresAndAlgorithmUnitTest/Pods-DataStructuresAndAlgorithmUnitTest.debug.xcconfig"; sourceTree = "<group>"; };
-		BB4BA146A3149A48E3D5B251 /* Pods-common-DataStructuresAndAlgorithm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-common-DataStructuresAndAlgorithm.release.xcconfig"; path = "Target Support Files/Pods-common-DataStructuresAndAlgorithm/Pods-common-DataStructuresAndAlgorithm.release.xcconfig"; sourceTree = "<group>"; };
-		C33050053F497C2FADE6F197 /* Pods-DataStructureUnitTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataStructureUnitTest.debug.xcconfig"; path = "Target Support Files/Pods-DataStructureUnitTest/Pods-DataStructureUnitTest.debug.xcconfig"; sourceTree = "<group>"; };
+		9662963B26A3460A00703CAD /* DSTreeNode+CommonAncestor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DSTreeNode+CommonAncestor.h"; sourceTree = "<group>"; };
+		9662963C26A3460A00703CAD /* DSTreeNode+CommonAncestor.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "DSTreeNode+CommonAncestor.mm"; sourceTree = "<group>"; };
+		9662963F26A3F50100703CAD /* DSTreeNode+PathSum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DSTreeNode+PathSum.h"; sourceTree = "<group>"; };
+		9662964026A3F50100703CAD /* DSTreeNode+PathSum.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "DSTreeNode+PathSum.mm"; sourceTree = "<group>"; };
+		96BD5568269C205000E8F805 /* TestStack.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TestStack.mm; sourceTree = "<group>"; };
 		C8312B3A6DC57F77781BFAF0 /* Pods_DataStructuresAndAlgorithmUnitTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DataStructuresAndAlgorithmUnitTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7E4741474EABEA67E2858CE /* Pods-DataStructuresAndAlgorithmUnitTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataStructuresAndAlgorithmUnitTest.release.xcconfig"; path = "Target Support Files/Pods-DataStructuresAndAlgorithmUnitTest/Pods-DataStructuresAndAlgorithmUnitTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,15 +288,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1A85B16D8542D6F7CB7E01F3 /* Fibonacci */ = {
-			isa = PBXGroup;
-			children = (
-				1A85B50B7C3DD8348F46505D /* Fibonacci.h */,
-				1A85BA5AC5D0F27C7251F4F2 /* Fibonacci.m */,
-			);
-			path = Fibonacci;
-			sourceTree = "<group>";
-		};
 		1A85B3461374B329320FD9E4 /* LinearList */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,8 +304,8 @@
 				1A85BBF46EF3910EC3E0D5CE /* DataStructuresAndAlgorithm */,
 				3847EA1B24D95B47008CD872 /* DataStructuresAndAlgorithmUnitTest */,
 				1A85BEE039FB5111E047CC79 /* Products */,
-				90B5566D3B862457463593B4 /* Pods */,
 				9369C11098AF0A045933C607 /* Frameworks */,
+				F19D3EC133717C09E9E8FF74 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -220,6 +319,15 @@
 				3847EA3324D980BF008CD872 /* String */,
 				1A85B004E279F108DEE006F1 /* main.mm */,
 				38087D6924E0E3C900BFC94B /* DataStructuresAndAlgorithm-Bridging-Header.h */,
+				4A59A09846D44EFD7BCB928E /* KthLargest */,
+				4A59AE4A81E7C3D50A2C027B /* SlideWindow */,
+				4A59AD21FA1877E3655316EB /* Map */,
+				4A59A93D92657CE960ACD170 /* Sum */,
+				4A59A67A785C234C0D598C44 /* Tree */,
+				4A59A0C76E3040649FE63A71 /* Divide&Conquer */,
+				4A59A02BF571F79E700480F6 /* Greendy */,
+				4A59A368EFB17DC67E19D2FA /* BinarySearch */,
+				4A59A2DF52E294A95D2437ED /* Trie */,
 			);
 			path = DataStructuresAndAlgorithm;
 			sourceTree = "<group>";
@@ -266,7 +374,6 @@
 			isa = PBXGroup;
 			children = (
 				96572B022697EB5600A536EC /* LeetCode.swift */,
-				1A85B16D8542D6F7CB7E01F3 /* Fibonacci */,
 				380F9DA62583186B0080EFC1 /* Common.swift */,
 				4A59AC8759E01FDBED36475B /* Person.m */,
 				4A59A66586F571A3FB48113E /* Person.h */,
@@ -279,7 +386,7 @@
 		380F9DF12583452E0080EFC1 /* String */ = {
 			isa = PBXGroup;
 			children = (
-				380F9E00258345AD0080EFC1 /* TestString.m */,
+				380F9E00258345AD0080EFC1 /* TestString.mm */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -304,6 +411,7 @@
 		3847EA1B24D95B47008CD872 /* DataStructuresAndAlgorithmUnitTest */ = {
 			isa = PBXGroup;
 			children = (
+				96BD5567269C202600E8F805 /* Stack */,
 				380F9E09258358350080EFC1 /* Normal */,
 				380F9DF12583452E0080EFC1 /* String */,
 				380F9D642583079B0080EFC1 /* Sort */,
@@ -311,6 +419,14 @@
 				1A85BF1EDB53220329D88E39 /* TestPatternMatching.m */,
 				1A85B3461374B329320FD9E4 /* LinearList */,
 				38F5D8DF24E2319700CA5605 /* DataStructuresAndAlgorithmUnitTest-Bridging-Header.h */,
+				4A59A119139736DF05023992 /* Queue */,
+				4A59AEA4E0557F75F6180761 /* KthLargest */,
+				4A59A7E704F612102E4BCD93 /* Sum */,
+				4A59A8673B2C47B6EA89B72E /* Tree */,
+				4A59AC3B0C3C1008593B20B9 /* Divide&Conquer */,
+				4A59AF90B277CF14457B1996 /* Greedy */,
+				4A59ACDAB9CDA55A93EE30A9 /* BinarySearch */,
+				4A59AE0365C65D56F631DAE7 /* Trie */,
 			);
 			path = DataStructuresAndAlgorithmUnitTest;
 			sourceTree = "<group>";
@@ -322,6 +438,8 @@
 				1A85B60CDF12E0C074A8C337 /* NSString+KMP.m */,
 				380F9DE9258343780080EFC1 /* NSString+Reverse.h */,
 				380F9DEA258343780080EFC1 /* NSString+Reverse.m */,
+				4A59AC0CD827C2EFF6342F29 /* NSString+Anagram.mm */,
+				4A59A977E2D06E9080D9633E /* NSString+Anagram.h */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -330,18 +448,50 @@
 			isa = PBXGroup;
 			children = (
 				38087D6624E0DF5B00BFC94B /* Swift */,
-				96431ED12697660800177773 /* DAExchangeNode.h */,
-				96431ED22697660800177773 /* DAExchangeNode.m */,
-				4A59AAB55B795CB54075D16F /* DSListNode+IntersectionNode.mm */,
-				4A59AC79E4755BC92FA55190 /* DSListNode+IntersectionNode.hpp */,
-				4A59A43F23ECF0DD8C52F7DA /* DSListNode+Reverse.mm */,
-				4A59A409F8328EAD444C5107 /* DSListNode+Reverse.hpp */,
-				4A59ACCB9F507B265252ABF7 /* DSListNode+Swap.mm */,
-				4A59A455B585E31359303E0B /* DSListNode+Swap.hpp */,
-				4A59AF514DCD2B04A1B0E071 /* DSListNode+Cycle.mm */,
-				4A59A82A939EA28587362A5C /* DSListNode+Cycle.hpp */,
+				4A59ABB67F01E6BA911FD2C9 /* Stack */,
+				4A59A5E0B6D38A2A4B0BFE0A /* List */,
+				4A59A5F2B60FA47FFECB5100 /* Queue */,
 			);
 			path = LinearList;
+			sourceTree = "<group>";
+		};
+		4A59A02BF571F79E700480F6 /* Greendy */ = {
+			isa = PBXGroup;
+			children = (
+				4A59A08E4DB7A17A58C5942C /* Stock.mm */,
+				4A59AFB29C126FD330926378 /* Stock.h */,
+			);
+			path = Greendy;
+			sourceTree = "<group>";
+		};
+		4A59A09846D44EFD7BCB928E /* KthLargest */ = {
+			isa = PBXGroup;
+			children = (
+				4A59ABC2A006FFF556E05E88 /* KthLargest.mm */,
+				4A59A65C958021E648911EBC /* KthLargest.h */,
+			);
+			path = KthLargest;
+			sourceTree = "<group>";
+		};
+		4A59A0C76E3040649FE63A71 /* Divide&Conquer */ = {
+			isa = PBXGroup;
+			children = (
+				4A59ADB1522BA247F00D637E /* Fibonacci */,
+				4A59A1A8C54E2444E67A9037 /* Pow.mm */,
+				4A59A792E22613530C8528FC /* Pow.h */,
+				4A59AAADB1982CB4BADE2064 /* MajorityElement.mm */,
+				4A59A51AF22F8AD40C02EED5 /* MajorityElement.h */,
+			);
+			path = "Divide&Conquer";
+			sourceTree = "<group>";
+		};
+		4A59A119139736DF05023992 /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				4A59AC01EB6D2BB9EA11BF1F /* TestQueue.mm */,
+				4A59AE83AB26875B622851FA /* TestDeque.mm */,
+			);
+			path = Queue;
 			sourceTree = "<group>";
 		};
 		4A59A157739E85C161644896 /* Swift */ = {
@@ -358,21 +508,176 @@
 			path = Swift;
 			sourceTree = "<group>";
 		};
-		90B5566D3B862457463593B4 /* Pods */ = {
+		4A59A2DF52E294A95D2437ED /* Trie */ = {
 			isa = PBXGroup;
 			children = (
-				5F4D1A75671C44A6C28D3A46 /* Pods-DataStructure.debug.xcconfig */,
-				4739D209BD42CE98E1BF6393 /* Pods-DataStructure.release.xcconfig */,
-				C33050053F497C2FADE6F197 /* Pods-DataStructureUnitTest.debug.xcconfig */,
-				46DCBEB996BBD5D1ECE3E856 /* Pods-DataStructureUnitTest.release.xcconfig */,
-				3AFAD6503EB3322499B4E2B9 /* Pods-DataStructuresAndAlgorithm.debug.xcconfig */,
-				6D2AF9A6EE3C5E90ACF542F4 /* Pods-DataStructuresAndAlgorithm.release.xcconfig */,
-				B3906B5BDD9E259A0DCC3731 /* Pods-DataStructuresAndAlgorithmUnitTest.debug.xcconfig */,
-				2CEB8AF33F0FD905E27F3DBB /* Pods-DataStructuresAndAlgorithmUnitTest.release.xcconfig */,
-				758C9D5C8606C287BAAD8E5A /* Pods-common-DataStructuresAndAlgorithm.debug.xcconfig */,
-				BB4BA146A3149A48E3D5B251 /* Pods-common-DataStructuresAndAlgorithm.release.xcconfig */,
+				4A59A8CD27E0122D4B59D910 /* Trie.mm */,
+				4A59ABEF33E00488C5AE0F8B /* Trie.h */,
 			);
-			path = Pods;
+			path = Trie;
+			sourceTree = "<group>";
+		};
+		4A59A368EFB17DC67E19D2FA /* BinarySearch */ = {
+			isa = PBXGroup;
+			children = (
+				4A59A7CD09166DA196CB38E4 /* Sqrt.mm */,
+				4A59A25B665805EC8DE62EBB /* Sqrt.h */,
+			);
+			path = BinarySearch;
+			sourceTree = "<group>";
+		};
+		4A59A5E0B6D38A2A4B0BFE0A /* List */ = {
+			isa = PBXGroup;
+			children = (
+				4A59A98AADF5B858A1C6F028 /* DAExchangeNode.m */,
+				4A59AC35FF49E8C6CB17BAB1 /* DSListNode+Cycle.mm */,
+				4A59A064C0D83D7C66CCC591 /* DSListNode+IntersectionNode.mm */,
+				4A59A74BF16EC49A64881C17 /* DSListNode+Reverse.hpp */,
+				4A59A9D7D9023683C823A345 /* DSListNode+Swap.mm */,
+				4A59A6E6A7C2DB0C3CA9D490 /* DSListNode+Reverse.mm */,
+				4A59A06EDA297630A79AF74E /* DSListNode+IntersectionNode.hpp */,
+				4A59AF5880F89E391AF1316E /* DSListNode+Cycle.hpp */,
+				4A59A9E3100052983148B2EC /* DAExchangeNode.h */,
+				4A59A1F52E0AD2EF5C9D2EBE /* DSListNode+Swap.hpp */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		4A59A5F2B60FA47FFECB5100 /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				4A59AC81F596A34D674B7520 /* DSQueue+Stack.mm */,
+				4A59A616F1A3217E34553902 /* DSQueue+Stack.hpp */,
+				4A59A8020C5DDD1B0E5272EB /* DSDeque+SlidingWindow.m */,
+				4A59AA5247AD41D06EFE6F12 /* DSDeque+SlidingWindow.h */,
+			);
+			path = Queue;
+			sourceTree = "<group>";
+		};
+		4A59A67A785C234C0D598C44 /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				4A59A244E1BCDF0C372584ED /* DSTreeNode+ValidBST.mm */,
+				4A59A6481E000C4AF260DDA6 /* DSTreeNode+ValidBST.h */,
+				4A59A132D51A83ACA73B9A19 /* DSTreeNode+Traverse.mm */,
+				4A59AC10239C6AD2F787F857 /* DSTreeNode+Traverse.h */,
+				9662963B26A3460A00703CAD /* DSTreeNode+CommonAncestor.h */,
+				9662963C26A3460A00703CAD /* DSTreeNode+CommonAncestor.mm */,
+				9662963F26A3F50100703CAD /* DSTreeNode+PathSum.h */,
+				9662964026A3F50100703CAD /* DSTreeNode+PathSum.mm */,
+				4A59AEEF974AAD767DB8F100 /* DSTreeNode+Depth.mm */,
+				4A59ACD244E7805F8798D355 /* DSTreeNode+Depth.h */,
+				4A59ABB6286514915F919DBA /* DSTreeNode+Bracket.mm */,
+				4A59A82A2C137378D645ACA0 /* DSTreeNode+Bracket.h */,
+				4A59A5085EC00A7BFED947DE /* DSTreeNode+Queen.mm */,
+				4A59A817E5953498DC528529 /* DSTreeNode+Queen.h */,
+				4A59A6616BD51911FA20AA93 /* DSTreeNode+Sudoku.mm */,
+				4A59A5E27FE6E517381AC557 /* DSTreeNode+Sudoku.h */,
+			);
+			path = Tree;
+			sourceTree = "<group>";
+		};
+		4A59A7E704F612102E4BCD93 /* Sum */ = {
+			isa = PBXGroup;
+			children = (
+				4A59A4AAE126259CA295A5CC /* TestSum.mm */,
+			);
+			path = Sum;
+			sourceTree = "<group>";
+		};
+		4A59A8673B2C47B6EA89B72E /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				4A59AA56AA77D32C218790EA /* TestTree.mm */,
+			);
+			path = Tree;
+			sourceTree = "<group>";
+		};
+		4A59A93D92657CE960ACD170 /* Sum */ = {
+			isa = PBXGroup;
+			children = (
+				4A59A654839D48F0AD777245 /* ThreeSum.mm */,
+				4A59AA86066CF506E7F05973 /* ThreeSum.h */,
+			);
+			path = Sum;
+			sourceTree = "<group>";
+		};
+		4A59ABB67F01E6BA911FD2C9 /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				4A59A91E857ACEAD51479397 /* DSStack+BracketMatching.mm */,
+				4A59ACB80BEBFA6F987620DB /* DSStack+BracketMatching.hpp */,
+				4A59ACA8F7E4832BBF6C0C06 /* DSStack+Queue.mm */,
+				4A59A4D011B8F16587C51F6B /* DSStack+Queue.hpp */,
+				4A59AC6B0F02B92FACDA16DC /* DSStack+Min.mm */,
+				4A59A14D5216A912039081FE /* DSStack+Min.h */,
+			);
+			path = Stack;
+			sourceTree = "<group>";
+		};
+		4A59AC3B0C3C1008593B20B9 /* Divide&Conquer */ = {
+			isa = PBXGroup;
+			children = (
+				4A59A7B2D7C4A1248FB2CC50 /* TestDivideConquer.mm */,
+			);
+			path = "Divide&Conquer";
+			sourceTree = "<group>";
+		};
+		4A59ACDAB9CDA55A93EE30A9 /* BinarySearch */ = {
+			isa = PBXGroup;
+			children = (
+				4A59AC7D21F48D5AC19441A4 /* TestBinarySearch.mm */,
+			);
+			path = BinarySearch;
+			sourceTree = "<group>";
+		};
+		4A59AD21FA1877E3655316EB /* Map */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		4A59ADB1522BA247F00D637E /* Fibonacci */ = {
+			isa = PBXGroup;
+			children = (
+				4A59A1524CDF3FB5F56AEF1D /* Fibonacci.h */,
+				4A59A407469CAC8CFEBEA22C /* Fibonacci.mm */,
+			);
+			path = Fibonacci;
+			sourceTree = "<group>";
+		};
+		4A59AE0365C65D56F631DAE7 /* Trie */ = {
+			isa = PBXGroup;
+			children = (
+				4A59AEC5F31E5E2BDF67E530 /* TestTrie.mm */,
+			);
+			path = Trie;
+			sourceTree = "<group>";
+		};
+		4A59AE4A81E7C3D50A2C027B /* SlideWindow */ = {
+			isa = PBXGroup;
+			children = (
+				4A59A641827284BC888BCF7B /* SlideWindow.mm */,
+				4A59A1104AA71E2AE3EDCBF6 /* SlideWindow.h */,
+			);
+			path = SlideWindow;
+			sourceTree = "<group>";
+		};
+		4A59AEA4E0557F75F6180761 /* KthLargest */ = {
+			isa = PBXGroup;
+			children = (
+				4A59AAD3BA8893D3BA99E0D3 /* TestKthLargest.mm */,
+			);
+			path = KthLargest;
+			sourceTree = "<group>";
+		};
+		4A59AF90B277CF14457B1996 /* Greedy */ = {
+			isa = PBXGroup;
+			children = (
+				4A59A27B230F9E63C452EA41 /* TestGreedy.mm */,
+			);
+			path = Greedy;
 			sourceTree = "<group>";
 		};
 		9369C11098AF0A045933C607 /* Frameworks */ = {
@@ -382,6 +687,25 @@
 				C8312B3A6DC57F77781BFAF0 /* Pods_DataStructuresAndAlgorithmUnitTest.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		96BD5567269C202600E8F805 /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				96BD5568269C205000E8F805 /* TestStack.mm */,
+			);
+			path = Stack;
+			sourceTree = "<group>";
+		};
+		F19D3EC133717C09E9E8FF74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2F18BDFDF48F4B0AEB31630D /* Pods-DataStructuresAndAlgorithm.debug.xcconfig */,
+				93D7D138099BE7C6F58FA079 /* Pods-DataStructuresAndAlgorithm.release.xcconfig */,
+				5BCBF18366AE8540084FA1C5 /* Pods-DataStructuresAndAlgorithmUnitTest.debug.xcconfig */,
+				F7E4741474EABEA67E2858CE /* Pods-DataStructuresAndAlgorithmUnitTest.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -414,7 +738,7 @@
 				3847EA1624D95B47008CD872 /* Sources */,
 				3847EA1724D95B47008CD872 /* Frameworks */,
 				3847EA1824D95B47008CD872 /* Resources */,
-				B996D155F72651F110D7F17F /* [CP] Embed Pods Frameworks */,
+				07BFB4AEBBF639D5A46BC0CD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -476,6 +800,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		07BFB4AEBBF639D5A46BC0CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DataStructuresAndAlgorithmUnitTest/Pods-DataStructuresAndAlgorithmUnitTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DSContainerForObjC-framework/DSContainerForObjC.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DSContainerForObjC.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DataStructuresAndAlgorithmUnitTest/Pods-DataStructuresAndAlgorithmUnitTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		19B78B29A313ECE6DA56BC74 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -520,24 +862,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B996D155F72651F110D7F17F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DataStructuresAndAlgorithmUnitTest/Pods-DataStructuresAndAlgorithmUnitTest-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/DSContainerForObjC-framework/DSContainerForObjC.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DSContainerForObjC.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DataStructuresAndAlgorithmUnitTest/Pods-DataStructuresAndAlgorithmUnitTest-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -548,24 +872,52 @@
 				1A85BB611809110D6C480CD7 /* main.mm in Sources */,
 				380F9DEB258343780080EFC1 /* NSString+Reverse.m in Sources */,
 				380F9DA72583186B0080EFC1 /* Common.swift in Sources */,
-				1A85B59DEFB5CC635235404A /* Fibonacci.m in Sources */,
 				380F9D61258306240080EFC1 /* Sort.swift in Sources */,
 				38087D6F24E0E64600BFC94B /* LinkedList.swift in Sources */,
-				96431ED32697660800177773 /* DAExchangeNode.m in Sources */,
 				380F9E14258359070080EFC1 /* Generator.swift in Sources */,
 				1A85B76ACC1944F17009C9C5 /* DoubleLinkedList.swift in Sources */,
 				1A85B35AC7C725DF215A4DA7 /* List.swift in Sources */,
 				1A85BDFB1BBC5CB967738AB7 /* CircularLinkedList.swift in Sources */,
 				1A85BDEA5F7628B7F8C0190C /* DoubleCircularLinkedList.swift in Sources */,
 				46CE73BF45656F11005463F2 /* Stack.swift in Sources */,
+				9662964126A3F50100703CAD /* DSTreeNode+PathSum.mm in Sources */,
 				96572B032697EB5600A536EC /* LeetCode.swift in Sources */,
 				4A59A9407256820ED1D53707 /* Person.m in Sources */,
-				4A59A0294F95F810F788AE66 /* DSListNode+IntersectionNode.mm in Sources */,
 				4A59A6A0C1BBF0FCE1800156 /* KthLargestNumber.swift in Sources */,
 				4A59A7E17C999B9256220D2B /* RotateArray.swift in Sources */,
-				4A59A89552B5B553D450E2AF /* DSListNode+Reverse.mm in Sources */,
-				4A59AA050AF550157ECE7836 /* DSListNode+Swap.mm in Sources */,
-				4A59A9FA4B969E90859CCD15 /* DSListNode+Cycle.mm in Sources */,
+				4A59A3FFD983D3285D063C45 /* DAExchangeNode.m in Sources */,
+				4A59A1F28A729A71045BBD10 /* DSListNode+Cycle.mm in Sources */,
+				4A59A2F931CFE4AFCE28A94D /* DSListNode+IntersectionNode.mm in Sources */,
+				4A59A0243322ACBF60762CB1 /* DSListNode+Swap.mm in Sources */,
+				4A59A3FFC97DAF1138ABBC6C /* DSListNode+Reverse.mm in Sources */,
+				4A59A45376F57E49BE24776D /* DSStack+BracketMatching.mm in Sources */,
+				4A59A2BE295CB3A04EEE2FE7 /* DSStack+Queue.mm in Sources */,
+				4A59A6C9176BD0B2435F63A2 /* DSQueue+Stack.mm in Sources */,
+				4A59A4174A6DA93216C5CD1A /* TestQueue.mm in Sources */,
+				4A59A2B25E6F4E5C888FB59A /* KthLargest.mm in Sources */,
+				4A59A09C70790ACB113D2D12 /* DSDeque+SlidingWindow.m in Sources */,
+				4A59A3323FF0C52985668B42 /* SlideWindow.mm in Sources */,
+				4A59A229989527ED2F23B981 /* DSStack+Min.mm in Sources */,
+				4A59A744041A7B00D20DE0B9 /* NSString+Anagram.mm in Sources */,
+				4A59A0E2A1110A86D933E967 /* ThreeSum.mm in Sources */,
+				4A59AE2379EDA34510F06E6E /* TestSum.mm in Sources */,
+				4A59A0B2A7276837F2E4EA12 /* DSTreeNode+ValidBST.mm in Sources */,
+				9662963D26A3460A00703CAD /* DSTreeNode+CommonAncestor.mm in Sources */,
+				4A59AD91EE9A62FA39C967FD /* DSTreeNode+Traverse.mm in Sources */,
+				4A59AEA5A55D9779D1DFADF9 /* Fibonacci.mm in Sources */,
+				4A59ABEC4BDA2D3AFA5B1422 /* TestDivideConquer.mm in Sources */,
+				4A59A21F094CDC7BC79DBB7D /* Pow.mm in Sources */,
+				4A59A8AF32B22D45B044F5AE /* MajorityElement.mm in Sources */,
+				4A59A5E59CB80027DEE8C369 /* Stock.mm in Sources */,
+				4A59AC3CF2362A4C1CD5D2F8 /* TestGreedy.mm in Sources */,
+				4A59A2D9077DC5BC4F8BD050 /* DSTreeNode+Depth.mm in Sources */,
+				4A59A1D068D7DCF1993A51F9 /* DSTreeNode+Bracket.mm in Sources */,
+				4A59A2CFB7F3D4A93F681B07 /* DSTreeNode+Queen.mm in Sources */,
+				4A59A728AD55C468DC95E2D3 /* DSTreeNode+Sudoku.mm in Sources */,
+				4A59AE4367EA09E31BE8B1AE /* Sqrt.mm in Sources */,
+				4A59A53262DC7A354102C1A9 /* TestBinarySearch.mm in Sources */,
+				4A59A0B55F232DD01D867DCD /* Trie.mm in Sources */,
+				4A59AC2878C1400F3F2900C7 /* TestTrie.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,14 +925,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96431ED4269771CA00177773 /* DAExchangeNode.m in Sources */,
 				380F9DEC258343780080EFC1 /* NSString+Reverse.m in Sources */,
 				3847EA2224D95B54008CD872 /* TestFinonacci.m in Sources */,
-				380F9E01258345AD0080EFC1 /* TestString.m in Sources */,
-				3847EA2824D95BEB008CD872 /* Fibonacci.m in Sources */,
+				380F9E01258345AD0080EFC1 /* TestString.mm in Sources */,
 				380F9E15258359070080EFC1 /* Generator.swift in Sources */,
 				380F9E0F258358930080EFC1 /* TestCommon.swift in Sources */,
 				3847EA2724D95B78008CD872 /* NSString+KMP.m in Sources */,
+				96BD556A269C2A4700E8F805 /* DSStack+BracketMatching.mm in Sources */,
 				380F9D6B2583086F0080EFC1 /* Sort.swift in Sources */,
 				3847EA2324D95B54008CD872 /* TestPatternMatching.m in Sources */,
 				1A85B3AEF2F029B97643216A /* TestDynamicArray.m in Sources */,
@@ -594,20 +945,53 @@
 				1A85B06460931288630B2C93 /* CircularLinkedList.swift in Sources */,
 				1A85BD4884C68DD1E89E96E8 /* DoubleCircularLinkedList.swift in Sources */,
 				46CE7A9EDE1A27EADAB03D83 /* Stack.swift in Sources */,
+				96BD556F269C5E7800E8F805 /* DSQueue+Stack.mm in Sources */,
+				96BD5569269C205000E8F805 /* TestStack.mm in Sources */,
 				4A59A6DDA6FAA6F65B1D6DB1 /* Person.m in Sources */,
-				4A59A2DA8F06BE80E2201A70 /* DSListNode+IntersectionNode.mm in Sources */,
+				96BD556D269C557700E8F805 /* TestQueue.mm in Sources */,
 				4A59A9D5C5314A9F54AA5ED8 /* KthLargestNumber.swift in Sources */,
 				4A59A297BA631BBBBB65D972 /* RotateArray.swift in Sources */,
 				4A59AA695F576E9996E214B0 /* TestDoubleLinkedList.swift in Sources */,
 				4A59AD57BA23BFF21203042F /* Test.swift in Sources */,
 				4A59A6E8F56C1EE766FBE5C1 /* TestDoubleCircularLinkedList.swift in Sources */,
 				4A59A0C8EE61248A172B0038 /* TestCircularLinkedList.swift in Sources */,
+				96BD5570269D33B000E8F805 /* TestKthLargest.mm in Sources */,
 				4A59AD7D2AA0FAD459E7C589 /* TestKthLargestNumber.swift in Sources */,
 				4A59AD6EFFB8EEC09AB3D64C /* TestRotateArray.swift in Sources */,
 				4A59A8FAD46FABF17EA044A1 /* TestLinkedList.swift in Sources */,
-				4A59A04DA09B35F6E37E5165 /* DSListNode+Reverse.mm in Sources */,
-				4A59A6DFFD42457DEE397624 /* DSListNode+Swap.mm in Sources */,
-				4A59AB4C48D906288B7AF3EF /* DSListNode+Cycle.mm in Sources */,
+				4A59A9979EE62B05C7C9EA21 /* DAExchangeNode.m in Sources */,
+				4A59A4B04339B343248E1672 /* DSListNode+Cycle.mm in Sources */,
+				96BD556E269C55AE00E8F805 /* DSStack+Queue.mm in Sources */,
+				4A59AD55989F5B764150331C /* DSListNode+IntersectionNode.mm in Sources */,
+				4A59A6B21320E80A75181E1B /* DSListNode+Swap.mm in Sources */,
+				4A59A166BE7478BD72D55D8C /* DSListNode+Reverse.mm in Sources */,
+				9662963E26A3460A00703CAD /* DSTreeNode+CommonAncestor.mm in Sources */,
+				4A59A54DBA189B3A56C73319 /* KthLargest.mm in Sources */,
+				4A59AF20DB14FFC505414C2E /* DSDeque+SlidingWindow.m in Sources */,
+				4A59A73C09BC309C56C9816E /* SlideWindow.mm in Sources */,
+				4A59A5AF4DBAD4EBBC34B1AB /* TestDeque.mm in Sources */,
+				4A59A370B6C81BC5F3883204 /* DSStack+Min.mm in Sources */,
+				4A59A4AE408F9425D2F266E5 /* NSString+Anagram.mm in Sources */,
+				9662964226A3F50100703CAD /* DSTreeNode+PathSum.mm in Sources */,
+				4A59A814E77F37E90A6BF006 /* ThreeSum.mm in Sources */,
+				4A59AD22DD03D1B4D691D8E8 /* TestSum.mm in Sources */,
+				4A59A9299DDAB22ED6EFC68C /* DSTreeNode+ValidBST.mm in Sources */,
+				4A59A3FB864988566B623D75 /* DSTreeNode+Traverse.mm in Sources */,
+				4A59A57DCC2C61D5BC3D103D /* TestTree.mm in Sources */,
+				4A59A0D80E4D168E5D534452 /* Fibonacci.mm in Sources */,
+				4A59A5F7FB6BA2A1502C7889 /* TestDivideConquer.mm in Sources */,
+				4A59A4358B7F8FEF06D04B78 /* Pow.mm in Sources */,
+				4A59AD210CF35DD4DF1D87DD /* MajorityElement.mm in Sources */,
+				4A59A7B55D60D935FD584226 /* Stock.mm in Sources */,
+				4A59ABF57528D5892D441AB5 /* TestGreedy.mm in Sources */,
+				4A59A8FE50F1026C5CE412DD /* DSTreeNode+Depth.mm in Sources */,
+				4A59AEBFF56DA0EAF40D4DE9 /* DSTreeNode+Bracket.mm in Sources */,
+				4A59AE655B308C73FDE76532 /* DSTreeNode+Queen.mm in Sources */,
+				4A59AD0ABF10F6C0939B2FF1 /* DSTreeNode+Sudoku.mm in Sources */,
+				4A59A7892905DE03BC1880D0 /* Sqrt.mm in Sources */,
+				4A59A08C796B035FE7D698B7 /* TestBinarySearch.mm in Sources */,
+				4A59A5EA33C2DCF440E60322 /* Trie.mm in Sources */,
+				4A59A6875843B93572AF4BAD /* TestTrie.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -681,7 +1065,7 @@
 		};
 		1A85B5975D3D7100E8E5E9DD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6D2AF9A6EE3C5E90ACF542F4 /* Pods-DataStructuresAndAlgorithm.release.xcconfig */;
+			baseConfigurationReference = 93D7D138099BE7C6F58FA079 /* Pods-DataStructuresAndAlgorithm.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -702,7 +1086,7 @@
 		};
 		1A85B666A96CAEF41DF1BA2E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3AFAD6503EB3322499B4E2B9 /* Pods-DataStructuresAndAlgorithm.debug.xcconfig */;
+			baseConfigurationReference = 2F18BDFDF48F4B0AEB31630D /* Pods-DataStructuresAndAlgorithm.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -783,7 +1167,7 @@
 		};
 		3847EA2024D95B47008CD872 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B3906B5BDD9E259A0DCC3731 /* Pods-DataStructuresAndAlgorithmUnitTest.debug.xcconfig */;
+			baseConfigurationReference = 5BCBF18366AE8540084FA1C5 /* Pods-DataStructuresAndAlgorithmUnitTest.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
@@ -806,7 +1190,7 @@
 		};
 		3847EA2124D95B47008CD872 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2CEB8AF33F0FD905E27F3DBB /* Pods-DataStructuresAndAlgorithmUnitTest.release.xcconfig */;
+			baseConfigurationReference = F7E4741474EABEA67E2858CE /* Pods-DataStructuresAndAlgorithmUnitTest.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;

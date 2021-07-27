@@ -31,7 +31,7 @@ class TestCommon: XCTestCase {
         print("arr:\(arr)")
         print("another:\(another)")
         let result = MergeOrderList().merge(arr, another)
-        print("result: \(result)")
+        print("levelResult: \(result)")
     }
 
     func testPerformanceExample() throws {
