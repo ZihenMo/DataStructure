@@ -4,7 +4,11 @@
 // 208.前缀树
 
 #import <XCTest/XCTest.h>
+#import <iostream>
 #import "Trie.h"
+#import "CrossWord.h"
+
+using namespace std;
 
 @interface TestTrie : XCTestCase
 
@@ -20,6 +24,23 @@
     XCTAssertTrue(trie->startsWith("app")); // 返回 True
     trie->insert("app");
     XCTAssertTrue(trie->search("app"));     // 返回 True
+}
+
+- (void)testCrossWord {
+    CrossWord *solution = new CrossWord();
+    vector<string> words = {"oath", "pea", "eat", "rain"};
+    vector<vector<char> > board = {
+            {'o', 'a', 'a', 'n'},
+            {'e', 't', 'a', 'e'},
+            {'i', 'h', 'k', 'r'},
+            {'i', 'f', 'l', 'v'}
+    };
+    vector<string> ans = {"oath", "eat"};
+    vector<string> ret = solution->findWords(board, words);
+    for (string s : ret) {
+        cout << s << endl;
+    }
+    XCTAssertEqual(ans, ret);
 }
 
 @end

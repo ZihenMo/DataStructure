@@ -42,9 +42,13 @@
 		4A59A09C70790ACB113D2D12 /* DSDeque+SlidingWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A8020C5DDD1B0E5272EB /* DSDeque+SlidingWindow.m */; };
 		4A59A0B2A7276837F2E4EA12 /* DSTreeNode+ValidBST.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A244E1BCDF0C372584ED /* DSTreeNode+ValidBST.mm */; };
 		4A59A0B55F232DD01D867DCD /* Trie.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A8CD27E0122D4B59D910 /* Trie.mm */; };
+		4A59A0BC784FFC74757107C9 /* PowOfTwo.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AFDFE7DBEC33182540EA /* PowOfTwo.mm */; };
 		4A59A0C8EE61248A172B0038 /* TestCircularLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A795C8B6372B20432F9A /* TestCircularLinkedList.swift */; };
 		4A59A0D80E4D168E5D534452 /* Fibonacci.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A407469CAC8CFEBEA22C /* Fibonacci.mm */; };
 		4A59A0E2A1110A86D933E967 /* ThreeSum.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A654839D48F0AD777245 /* ThreeSum.mm */; };
+		4A59A10E4C42AEC5542854FA /* CrossWord.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AF001E0F4FD392A244F2 /* CrossWord.mm */; };
+		4A59A10F4289DDFBB13F6471 /* TestBits.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A7887DFCC91289E0F6DC /* TestBits.mm */; };
+		4A59A14C9B438B77AD61FFDB /* CountBits.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A039D2144576D937D65C /* CountBits.mm */; };
 		4A59A166BE7478BD72D55D8C /* DSListNode+Reverse.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A6E6A7C2DB0C3CA9D490 /* DSListNode+Reverse.mm */; };
 		4A59A1D068D7DCF1993A51F9 /* DSTreeNode+Bracket.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59ABB6286514915F919DBA /* DSTreeNode+Bracket.mm */; };
 		4A59A1F28A729A71045BBD10 /* DSListNode+Cycle.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AC35FF49E8C6CB17BAB1 /* DSListNode+Cycle.mm */; };
@@ -58,6 +62,7 @@
 		4A59A2F931CFE4AFCE28A94D /* DSListNode+IntersectionNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A064C0D83D7C66CCC591 /* DSListNode+IntersectionNode.mm */; };
 		4A59A3323FF0C52985668B42 /* SlideWindow.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A641827284BC888BCF7B /* SlideWindow.mm */; };
 		4A59A370B6C81BC5F3883204 /* DSStack+Min.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AC6B0F02B92FACDA16DC /* DSStack+Min.mm */; };
+		4A59A39EDBAAC14643A3628C /* TestBits.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A7887DFCC91289E0F6DC /* TestBits.mm */; };
 		4A59A3FB864988566B623D75 /* DSTreeNode+Traverse.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A132D51A83ACA73B9A19 /* DSTreeNode+Traverse.mm */; };
 		4A59A3FFC97DAF1138ABBC6C /* DSListNode+Reverse.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A6E6A7C2DB0C3CA9D490 /* DSListNode+Reverse.mm */; };
 		4A59A3FFD983D3285D063C45 /* DAExchangeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A98AADF5B858A1C6F028 /* DAExchangeNode.m */; };
@@ -68,6 +73,7 @@
 		4A59A4B04339B343248E1672 /* DSListNode+Cycle.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AC35FF49E8C6CB17BAB1 /* DSListNode+Cycle.mm */; };
 		4A59A53262DC7A354102C1A9 /* TestBinarySearch.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AC7D21F48D5AC19441A4 /* TestBinarySearch.mm */; };
 		4A59A54DBA189B3A56C73319 /* KthLargest.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59ABC2A006FFF556E05E88 /* KthLargest.mm */; };
+		4A59A56964392FBE7A3F6B42 /* HammingWeight.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A92066C3EFD5A9490957 /* HammingWeight.mm */; };
 		4A59A57DCC2C61D5BC3D103D /* TestTree.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AA56AA77D32C218790EA /* TestTree.mm */; };
 		4A59A5AF4DBAD4EBBC34B1AB /* TestDeque.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AE83AB26875B622851FA /* TestDeque.mm */; };
 		4A59A5E59CB80027DEE8C369 /* Stock.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A08E4DB7A17A58C5942C /* Stock.mm */; };
@@ -86,6 +92,7 @@
 		4A59A7B55D60D935FD584226 /* Stock.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A08E4DB7A17A58C5942C /* Stock.mm */; };
 		4A59A7E17C999B9256220D2B /* RotateArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A3A25E9BF96682ECB00A /* RotateArray.swift */; };
 		4A59A814E77F37E90A6BF006 /* ThreeSum.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A654839D48F0AD777245 /* ThreeSum.mm */; };
+		4A59A833972810B882033772 /* HammingWeight.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A92066C3EFD5A9490957 /* HammingWeight.mm */; };
 		4A59A8AF32B22D45B044F5AE /* MajorityElement.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AAADB1982CB4BADE2064 /* MajorityElement.mm */; };
 		4A59A8FAD46FABF17EA044A1 /* TestLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A8432FD81F4D811394EC /* TestLinkedList.swift */; };
 		4A59A8FE50F1026C5CE412DD /* DSTreeNode+Depth.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AEEF974AAD767DB8F100 /* DSTreeNode+Depth.mm */; };
@@ -106,11 +113,14 @@
 		4A59AD6EFFB8EEC09AB3D64C /* TestRotateArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AEADF00B218067D8A63C /* TestRotateArray.swift */; };
 		4A59AD7D2AA0FAD459E7C589 /* TestKthLargestNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A4BDD25BE3E95C714954 /* TestKthLargestNumber.swift */; };
 		4A59AD91EE9A62FA39C967FD /* DSTreeNode+Traverse.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A132D51A83ACA73B9A19 /* DSTreeNode+Traverse.mm */; };
+		4A59AE03A9A10551BAB955F8 /* CountBits.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A039D2144576D937D65C /* CountBits.mm */; };
 		4A59AE2379EDA34510F06E6E /* TestSum.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A4AAE126259CA295A5CC /* TestSum.mm */; };
 		4A59AE4367EA09E31BE8B1AE /* Sqrt.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A7CD09166DA196CB38E4 /* Sqrt.mm */; };
 		4A59AE655B308C73FDE76532 /* DSTreeNode+Queen.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A5085EC00A7BFED947DE /* DSTreeNode+Queen.mm */; };
 		4A59AEA5A55D9779D1DFADF9 /* Fibonacci.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A407469CAC8CFEBEA22C /* Fibonacci.mm */; };
+		4A59AEA6C88F848ACCEFCDA4 /* CrossWord.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AF001E0F4FD392A244F2 /* CrossWord.mm */; };
 		4A59AEBFF56DA0EAF40D4DE9 /* DSTreeNode+Bracket.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59ABB6286514915F919DBA /* DSTreeNode+Bracket.mm */; };
+		4A59AEDE5555EB07C03FA773 /* PowOfTwo.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AFDFE7DBEC33182540EA /* PowOfTwo.mm */; };
 		4A59AF20DB14FFC505414C2E /* DSDeque+SlidingWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A8020C5DDD1B0E5272EB /* DSDeque+SlidingWindow.m */; };
 		554716489858F006ABD93362 /* Pods_DataStructuresAndAlgorithmUnitTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8312B3A6DC57F77781BFAF0 /* Pods_DataStructuresAndAlgorithmUnitTest.framework */; };
 		96572B032697EB5600A536EC /* LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96572B022697EB5600A536EC /* LeetCode.swift */; };
@@ -183,6 +193,7 @@
 		3847EA3124D980B2008CD872 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38F5D8DF24E2319700CA5605 /* DataStructuresAndAlgorithmUnitTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DataStructuresAndAlgorithmUnitTest-Bridging-Header.h"; sourceTree = "<group>"; };
 		46CE78822664DA245E9D9CF6 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		4A59A039D2144576D937D65C /* CountBits.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CountBits.mm; sourceTree = "<group>"; };
 		4A59A064C0D83D7C66CCC591 /* DSListNode+IntersectionNode.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "DSListNode+IntersectionNode.mm"; sourceTree = "<group>"; };
 		4A59A06EDA297630A79AF74E /* DSListNode+IntersectionNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "DSListNode+IntersectionNode.hpp"; sourceTree = "<group>"; };
 		4A59A08E4DB7A17A58C5942C /* Stock.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Stock.mm; sourceTree = "<group>"; };
@@ -190,13 +201,16 @@
 		4A59A132D51A83ACA73B9A19 /* DSTreeNode+Traverse.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "DSTreeNode+Traverse.mm"; sourceTree = "<group>"; };
 		4A59A14D5216A912039081FE /* DSStack+Min.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DSStack+Min.h"; sourceTree = "<group>"; };
 		4A59A1524CDF3FB5F56AEF1D /* Fibonacci.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fibonacci.h; sourceTree = "<group>"; };
+		4A59A18813CBC5A6F780C38A /* PowOfTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PowOfTwo.h; sourceTree = "<group>"; };
 		4A59A1A8C54E2444E67A9037 /* Pow.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Pow.mm; sourceTree = "<group>"; };
+		4A59A1EB0449430437DE45C1 /* CountBits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountBits.h; sourceTree = "<group>"; };
 		4A59A1F52E0AD2EF5C9D2EBE /* DSListNode+Swap.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "DSListNode+Swap.hpp"; sourceTree = "<group>"; };
 		4A59A244E1BCDF0C372584ED /* DSTreeNode+ValidBST.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "DSTreeNode+ValidBST.mm"; sourceTree = "<group>"; };
 		4A59A25B665805EC8DE62EBB /* Sqrt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sqrt.h; sourceTree = "<group>"; };
 		4A59A27B230F9E63C452EA41 /* TestGreedy.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TestGreedy.mm; sourceTree = "<group>"; };
 		4A59A3A25E9BF96682ECB00A /* RotateArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotateArray.swift; sourceTree = "<group>"; };
 		4A59A407469CAC8CFEBEA22C /* Fibonacci.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Fibonacci.mm; sourceTree = "<group>"; };
+		4A59A4374C9801BCC63AFAAF /* CrossWord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrossWord.h; sourceTree = "<group>"; };
 		4A59A4AAE126259CA295A5CC /* TestSum.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TestSum.mm; sourceTree = "<group>"; };
 		4A59A4BDD25BE3E95C714954 /* TestKthLargestNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestKthLargestNumber.swift; sourceTree = "<group>"; };
 		4A59A4D011B8F16587C51F6B /* DSStack+Queue.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "DSStack+Queue.hpp"; sourceTree = "<group>"; };
@@ -214,6 +228,7 @@
 		4A59A66586F571A3FB48113E /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		4A59A6E6A7C2DB0C3CA9D490 /* DSListNode+Reverse.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "DSListNode+Reverse.mm"; sourceTree = "<group>"; };
 		4A59A74BF16EC49A64881C17 /* DSListNode+Reverse.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "DSListNode+Reverse.hpp"; sourceTree = "<group>"; };
+		4A59A7887DFCC91289E0F6DC /* TestBits.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TestBits.mm; sourceTree = "<group>"; };
 		4A59A792E22613530C8528FC /* Pow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pow.h; sourceTree = "<group>"; };
 		4A59A795C8B6372B20432F9A /* TestCircularLinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCircularLinkedList.swift; sourceTree = "<group>"; };
 		4A59A7B2D7C4A1248FB2CC50 /* TestDivideConquer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TestDivideConquer.mm; sourceTree = "<group>"; };
@@ -224,15 +239,18 @@
 		4A59A8432FD81F4D811394EC /* TestLinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestLinkedList.swift; sourceTree = "<group>"; };
 		4A59A8CD27E0122D4B59D910 /* Trie.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Trie.mm; sourceTree = "<group>"; };
 		4A59A91E857ACEAD51479397 /* DSStack+BracketMatching.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "DSStack+BracketMatching.mm"; sourceTree = "<group>"; };
+		4A59A92066C3EFD5A9490957 /* HammingWeight.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HammingWeight.mm; sourceTree = "<group>"; };
 		4A59A977E2D06E9080D9633E /* NSString+Anagram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Anagram.h"; sourceTree = "<group>"; };
 		4A59A98AADF5B858A1C6F028 /* DAExchangeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAExchangeNode.m; sourceTree = "<group>"; };
 		4A59A9D7D9023683C823A345 /* DSListNode+Swap.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "DSListNode+Swap.mm"; sourceTree = "<group>"; };
 		4A59A9E3100052983148B2EC /* DAExchangeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAExchangeNode.h; sourceTree = "<group>"; };
 		4A59AA5247AD41D06EFE6F12 /* DSDeque+SlidingWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DSDeque+SlidingWindow.h"; sourceTree = "<group>"; };
 		4A59AA56AA77D32C218790EA /* TestTree.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TestTree.mm; sourceTree = "<group>"; };
+		4A59AA61F9408F172390BBCA /* TestUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestUtil.h; sourceTree = "<group>"; };
 		4A59AA86066CF506E7F05973 /* ThreeSum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeSum.h; sourceTree = "<group>"; };
 		4A59AAADB1982CB4BADE2064 /* MajorityElement.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MajorityElement.mm; sourceTree = "<group>"; };
 		4A59AAD3BA8893D3BA99E0D3 /* TestKthLargest.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TestKthLargest.mm; sourceTree = "<group>"; };
+		4A59AB6B1C32F1655DAC733B /* HammingWeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HammingWeight.h; sourceTree = "<group>"; };
 		4A59ABB6286514915F919DBA /* DSTreeNode+Bracket.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "DSTreeNode+Bracket.mm"; sourceTree = "<group>"; };
 		4A59ABC2A006FFF556E05E88 /* KthLargest.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = KthLargest.mm; sourceTree = "<group>"; };
 		4A59ABEF33E00488C5AE0F8B /* Trie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Trie.h; sourceTree = "<group>"; };
@@ -253,8 +271,10 @@
 		4A59AEADF00B218067D8A63C /* TestRotateArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestRotateArray.swift; sourceTree = "<group>"; };
 		4A59AEC5F31E5E2BDF67E530 /* TestTrie.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TestTrie.mm; sourceTree = "<group>"; };
 		4A59AEEF974AAD767DB8F100 /* DSTreeNode+Depth.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "DSTreeNode+Depth.mm"; sourceTree = "<group>"; };
+		4A59AF001E0F4FD392A244F2 /* CrossWord.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CrossWord.mm; sourceTree = "<group>"; };
 		4A59AF5880F89E391AF1316E /* DSListNode+Cycle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "DSListNode+Cycle.hpp"; sourceTree = "<group>"; };
 		4A59AFB29C126FD330926378 /* Stock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stock.h; sourceTree = "<group>"; };
+		4A59AFDFE7DBEC33182540EA /* PowOfTwo.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PowOfTwo.mm; sourceTree = "<group>"; };
 		592B2FDF0691BDED78263725 /* libPods-DataStructuresAndAlgorithm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DataStructuresAndAlgorithm.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BCBF18366AE8540084FA1C5 /* Pods-DataStructuresAndAlgorithmUnitTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataStructuresAndAlgorithmUnitTest.debug.xcconfig"; path = "Target Support Files/Pods-DataStructuresAndAlgorithmUnitTest/Pods-DataStructuresAndAlgorithmUnitTest.debug.xcconfig"; sourceTree = "<group>"; };
 		93D7D138099BE7C6F58FA079 /* Pods-DataStructuresAndAlgorithm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataStructuresAndAlgorithm.release.xcconfig"; path = "Target Support Files/Pods-DataStructuresAndAlgorithm/Pods-DataStructuresAndAlgorithm.release.xcconfig"; sourceTree = "<group>"; };
@@ -328,6 +348,7 @@
 				4A59A02BF571F79E700480F6 /* Greendy */,
 				4A59A368EFB17DC67E19D2FA /* BinarySearch */,
 				4A59A2DF52E294A95D2437ED /* Trie */,
+				4A59AE9D7E3EE5E17089A13C /* Bits */,
 			);
 			path = DataStructuresAndAlgorithm;
 			sourceTree = "<group>";
@@ -427,6 +448,8 @@
 				4A59AF90B277CF14457B1996 /* Greedy */,
 				4A59ACDAB9CDA55A93EE30A9 /* BinarySearch */,
 				4A59AE0365C65D56F631DAE7 /* Trie */,
+				4A59A14A7B07351ACF1137EB /* Bits */,
+				4A59AA61F9408F172390BBCA /* TestUtil.h */,
 			);
 			path = DataStructuresAndAlgorithmUnitTest;
 			sourceTree = "<group>";
@@ -494,6 +517,14 @@
 			path = Queue;
 			sourceTree = "<group>";
 		};
+		4A59A14A7B07351ACF1137EB /* Bits */ = {
+			isa = PBXGroup;
+			children = (
+				4A59A7887DFCC91289E0F6DC /* TestBits.mm */,
+			);
+			path = Bits;
+			sourceTree = "<group>";
+		};
 		4A59A157739E85C161644896 /* Swift */ = {
 			isa = PBXGroup;
 			children = (
@@ -513,6 +544,8 @@
 			children = (
 				4A59A8CD27E0122D4B59D910 /* Trie.mm */,
 				4A59ABEF33E00488C5AE0F8B /* Trie.h */,
+				4A59AF001E0F4FD392A244F2 /* CrossWord.mm */,
+				4A59A4374C9801BCC63AFAAF /* CrossWord.h */,
 			);
 			path = Trie;
 			sourceTree = "<group>";
@@ -662,6 +695,19 @@
 				4A59A1104AA71E2AE3EDCBF6 /* SlideWindow.h */,
 			);
 			path = SlideWindow;
+			sourceTree = "<group>";
+		};
+		4A59AE9D7E3EE5E17089A13C /* Bits */ = {
+			isa = PBXGroup;
+			children = (
+				4A59AFDFE7DBEC33182540EA /* PowOfTwo.mm */,
+				4A59A18813CBC5A6F780C38A /* PowOfTwo.h */,
+				4A59A92066C3EFD5A9490957 /* HammingWeight.mm */,
+				4A59AB6B1C32F1655DAC733B /* HammingWeight.h */,
+				4A59A039D2144576D937D65C /* CountBits.mm */,
+				4A59A1EB0449430437DE45C1 /* CountBits.h */,
+			);
+			path = Bits;
 			sourceTree = "<group>";
 		};
 		4A59AEA4E0557F75F6180761 /* KthLargest */ = {
@@ -918,6 +964,11 @@
 				4A59A53262DC7A354102C1A9 /* TestBinarySearch.mm in Sources */,
 				4A59A0B55F232DD01D867DCD /* Trie.mm in Sources */,
 				4A59AC2878C1400F3F2900C7 /* TestTrie.mm in Sources */,
+				4A59AEA6C88F848ACCEFCDA4 /* CrossWord.mm in Sources */,
+				4A59AEDE5555EB07C03FA773 /* PowOfTwo.mm in Sources */,
+				4A59A39EDBAAC14643A3628C /* TestBits.mm in Sources */,
+				4A59A833972810B882033772 /* HammingWeight.mm in Sources */,
+				4A59A14C9B438B77AD61FFDB /* CountBits.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -992,6 +1043,11 @@
 				4A59A08C796B035FE7D698B7 /* TestBinarySearch.mm in Sources */,
 				4A59A5EA33C2DCF440E60322 /* Trie.mm in Sources */,
 				4A59A6875843B93572AF4BAD /* TestTrie.mm in Sources */,
+				4A59A10E4C42AEC5542854FA /* CrossWord.mm in Sources */,
+				4A59A0BC784FFC74757107C9 /* PowOfTwo.mm in Sources */,
+				4A59A10F4289DDFBB13F6471 /* TestBits.mm in Sources */,
+				4A59A56964392FBE7A3F6B42 /* HammingWeight.mm in Sources */,
+				4A59AE03A9A10551BAB955F8 /* CountBits.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
