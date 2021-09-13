@@ -39,18 +39,18 @@ bool solution11(TreeNode *root) {
 /*
  * @brief 使用成员变量记住上一个（根）节点，这样不需要保存所有节点，只需要和根节点比较
  */
-bool ValidBST:: solution12(TreeNode *root) {
-    if (!root) { return true; }
-    if (!this->solution12(root->left)) {
+bool ValidBST:: dfs(TreeNode *root) {
+    if (!root) {
+        return true;
+    }
+    if (!dfs(root->left)) {
         return false;
     }
-    // 中间进行处理
-    if (this->pre && this->pre->val >= root->val) { // 有序数列，当前一定大于之前
+    if (pre && pre->val >= root->val) {
         return false;
     }
-    this->pre = root;
-    
-    return this->solution12(root->right);
+    pre = root;
+    return dfs(root->right);
 }
 
 /**
@@ -64,8 +64,7 @@ bool solution2_helper(TreeNode *root, long long min, long long max) {
     if ((max != LONG_LONG_MAX && root->val >= max) || (min != LONG_LONG_MIN && root->val <= min)) {
         return false;
     }
-    
-    
+
     return solution2_helper(root->left, min, root->val) &&
     solution2_helper(root->right, root->val, max);
 }
@@ -75,9 +74,7 @@ bool solution2(TreeNode *root) {
 }
 
 bool ValidBST::isValidBST(TreeNode *root) {
-#if 0
-    this->pre = nullptr;
-    return this->solution12(root);
-#endif
+//    this->pre = nullptr;
+//    return this->dfs(root);
     return solution2(root);
 }

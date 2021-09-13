@@ -1,0 +1,16 @@
+PODS:
+  - DSContainerForObjC (0.0.3)
+
+DEPENDENCIES:
+  - DSContainerForObjC (from `../PodLib/DSContainerForObjC`)
+
+EXTERNAL SOURCES:
+  DSContainerForObjC:
+    :path: "../PodLib/DSContainerForObjC"
+
+SPEC CHECKSUMS:
+  DSContainerForObjC: 0f1c609af9b99638d0641b0bd9e4ee5561e2a0ab
+
+PODFILE CHECKSUM: 827051a2d0ae65733e46bda4bc2be54208fd06d8
+
+COCOAPODS: 1.10.1

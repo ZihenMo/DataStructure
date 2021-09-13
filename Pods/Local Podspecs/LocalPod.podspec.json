@@ -1,0 +1,26 @@
+{
+  "name": "LocalPod",
+  "version": "0.0.1",
+  "summary": "A short description of LocalPod.",
+  "description": "本地库",
+  "homepage": "http://EXAMPLE/LocalPod",
+  "license": "MIT",
+  "authors": {
+    "mozihen": "mzh9354@sina.com"
+  },
+  "source": {
+    "git": "",
+    "tag": "0.0.1"
+  },
+  "source_files": [
+    "Classes",
+    "Classes/**/*.{h,m}"
+  ],
+  "exclude_files": "Classes/Exclude",
+  "platforms": {
+    "osx": null,
+    "ios": null,
+    "tvos": null,
+    "watchos": null
+  }
+}

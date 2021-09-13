@@ -1,0 +1,6 @@
+framework module DSContainerForObjC {
+  umbrella header "DSContainerForObjC-framework-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -25,5 +25,8 @@ class Queen {
 public:
     vector<vector<string>> print(void);
         vector<vector<string>> solveNQueens(int n);
-    void DFS(int row, int column, vector<pair<int, int>> state);
+    void DFS(int row, vector<pair<int, int>> state);
+
+#pragma mark - solution2
+    void DFS_bit(int row, int col, int xy_dif, int xy_sum, vector<pair<int, int> > &queens);
 };

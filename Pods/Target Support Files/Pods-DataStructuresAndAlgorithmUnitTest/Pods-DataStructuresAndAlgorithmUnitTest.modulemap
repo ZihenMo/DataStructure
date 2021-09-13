@@ -1,0 +1,6 @@
+framework module Pods_DataStructuresAndAlgorithmUnitTest {
+  umbrella header "Pods-DataStructuresAndAlgorithmUnitTest-umbrella.h"
+
+  export *
+  module * { export * }
+}

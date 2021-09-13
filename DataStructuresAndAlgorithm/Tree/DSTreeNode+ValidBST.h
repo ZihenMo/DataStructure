@@ -41,7 +41,7 @@ struct ValidBST {
     
 private:
     TreeNode *pre;
-    bool solution12(TreeNode *root);
+    bool dfs(TreeNode *root);
     
 };
 
