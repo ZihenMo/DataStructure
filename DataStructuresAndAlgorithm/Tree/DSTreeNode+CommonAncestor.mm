@@ -21,12 +21,12 @@
 /**
  * 1.要么在左子树，要么在右子树，如果都没有，则当前根节点为最小公共祖先。
  */
-TreeNode * CommonAncestor::lowestCommonAncestor(TreeNode *root, TreeNode *p, TreeNode *q) {
+CTreeNode * CommonAncestor::lowestCommonAncestor(CTreeNode *root, CTreeNode *p, CTreeNode *q) {
     if (!root || root == q || root == p) {
         return root;
     }
-    TreeNode *left = lowestCommonAncestor(root->left, p, q);
-    TreeNode *right = lowestCommonAncestor(root->right, p, q);
+    CTreeNode *left = lowestCommonAncestor(root->left, p, q);
+    CTreeNode *right = lowestCommonAncestor(root->right, p, q);
     if (!left) {
         return right;
     }
@@ -43,7 +43,7 @@ TreeNode * CommonAncestor::lowestCommonAncestor(TreeNode *root, TreeNode *p, Tre
  * 2. 都大于当前节点则在右子树；
  * 3.一大一小说明公共祖先是当前节点。
  */
-TreeNode * CommonAncestor::lowestCommonAncestor_BST(TreeNode *root, TreeNode *p, TreeNode *q) {
+CTreeNode * CommonAncestor::lowestCommonAncestor_BST(CTreeNode *root, CTreeNode *p, CTreeNode *q) {
     if (!root || !q || !p) {
         return root;
     }
@@ -59,7 +59,7 @@ TreeNode * CommonAncestor::lowestCommonAncestor_BST(TreeNode *root, TreeNode *p,
 /**
  * 非递归版，效率一致
  */
-TreeNode * CommonAncestor::lowestCommonAncestor_BST2(TreeNode *root, TreeNode *p, TreeNode *q) {
+CTreeNode * CommonAncestor::lowestCommonAncestor_BST2(CTreeNode *root, CTreeNode *p, CTreeNode *q) {
     while (root) {
         if (root->val > p->val && root->val > q->val) {
             root = root->left;

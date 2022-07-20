@@ -37,11 +37,11 @@
 #pragma mark - C++
 
 struct ValidBST {
-    bool isValidBST(TreeNode *root);
+    bool isValidBST(CTreeNode *root);
     
 private:
-    TreeNode *pre;
-    bool dfs(TreeNode *root);
+    CTreeNode *pre;
+    bool dfs(CTreeNode *root);
     
 };
 

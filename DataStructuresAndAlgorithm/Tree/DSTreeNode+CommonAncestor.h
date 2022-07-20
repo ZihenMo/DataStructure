@@ -38,12 +38,12 @@ NS_ASSUME_NONNULL_END
 
 class CommonAncestor {
 public:
-    TreeNode *lowestCommonAncestor(TreeNode *root, TreeNode *p, TreeNode *q);
+    CTreeNode *lowestCommonAncestor(CTreeNode *root, CTreeNode *p, CTreeNode *q);
 
     /**
      * 搜索二叉树版
      */
-    TreeNode *lowestCommonAncestor_BST(TreeNode *root, TreeNode *p, TreeNode *q);
+    CTreeNode *lowestCommonAncestor_BST(CTreeNode *root, CTreeNode *p, CTreeNode *q);
 
-    TreeNode *lowestCommonAncestor_BST2(TreeNode *root, TreeNode *p, TreeNode *q);
+    CTreeNode *lowestCommonAncestor_BST2(CTreeNode *root, CTreeNode *p, CTreeNode *q);
 };

@@ -16,7 +16,7 @@
  * 1.判断叶子节点返回当前层数；
  * 2.比较左右了树的最大层作为结果
  */
-int maxDepth_DFS(TreeNode *root, int depth) {
+int maxDepth_DFS(CTreeNode *root, int depth) {
     if (!root) {
         return 0;
     }
@@ -28,11 +28,11 @@ int maxDepth_DFS(TreeNode *root, int depth) {
     return max(left, right);
 }
 
-int maxDepth_BFS(TreeNode *root) {
+int maxDepth_BFS(CTreeNode *root) {
     if (!root) {
         return 0;
     }
-    queue<TreeNode *> queue;
+    queue<CTreeNode *> queue;
     queue.push(root);
     int depth = 0;
     int level = 0;
@@ -40,7 +40,7 @@ int maxDepth_BFS(TreeNode *root) {
         level += 1;
         int breadth = queue.size();
         while (breadth--) {
-            TreeNode *root = queue.front();
+            CTreeNode *root = queue.front();
             queue.pop();
             if (!root->left & !root->right) {   // 这里其实可以不需要判断与比较，外层循环的次数就是最大层
                depth = max(depth, level);
@@ -56,16 +56,16 @@ int maxDepth_BFS(TreeNode *root) {
     return depth;
 }
 
-int TreeDepth::maxDepth(TreeNode *root) {
+int TreeDepth::maxDepth(CTreeNode *root) {
     return maxDepth_DFS(root, 0);
 }
 
 #pragma mark - 树的最小深度
-int minDepth_BFS(TreeNode *root) {
+int minDepth_BFS(CTreeNode *root) {
     if (!root) {
         return 0;
     }
-    queue<TreeNode *> queue;
+    queue<CTreeNode *> queue;
     queue.push(root);
     int depth = INT_MAX;
     int level = 0;
@@ -73,7 +73,7 @@ int minDepth_BFS(TreeNode *root) {
         level += 1;
         int breadth = queue.size();
         while (breadth--) {
-            TreeNode *root = queue.front();
+            CTreeNode *root = queue.front();
             queue.pop();
             if (!root->left & !root->right) {   // 这里其实可以不需要判断与比较，外层循环的次数就是最大层
                 depth = min(depth, level);
@@ -94,7 +94,7 @@ int minDepth_BFS(TreeNode *root) {
  * 而递归终止条件恰好是空节点同时也可能是叶子节点的下一节点，因此需要进行区分叶子节点；
  * （如果取小值则一定会是0，那么结果将是错误的），因此叶子节点最小值应为1——即一个根节点的度。
  */
-int minDepth_DFS(TreeNode *root) {
+int minDepth_DFS(CTreeNode *root) {
     if (!root) {
         return 0;
     }
@@ -114,7 +114,7 @@ int minDepth_DFS(TreeNode *root) {
  * @brief 剪枝,没有必要全遍历完，如果发现了最小度的叶子节点；大于该度的节点没必要遍历；
  */
 int minDepthResult = INT_MAX;
-void minDepth_DFS2(TreeNode *root, int depth) {
+void minDepth_DFS2(CTreeNode *root, int depth) {
     if (!root) {
         return;
     }
@@ -131,11 +131,11 @@ void minDepth_DFS2(TreeNode *root, int depth) {
 /**
  * @brief 同理，BFS剪枝更优
  */
-int minDepth_BFS2(TreeNode *root) {
+int minDepth_BFS2(CTreeNode *root) {
     if (!root) {
         return 0;
     }
-    queue<TreeNode *> queue;
+    queue<CTreeNode *> queue;
     int depth = 0;
     queue.push(root);
     while (!queue.empty()) {
@@ -157,7 +157,7 @@ int minDepth_BFS2(TreeNode *root) {
     }
     return depth;
 }
-int TreeDepth::minDepth(TreeNode *root) {
+int TreeDepth::minDepth(CTreeNode *root) {
     if (!root) {
         return 0;
     }

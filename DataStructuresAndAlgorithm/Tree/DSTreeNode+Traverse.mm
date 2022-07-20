@@ -20,7 +20,7 @@ using namespace std;
  * @brief 递规遍历
  * 三种方法基本一致都是利用二叉树与递规的特性。
  */
-vector<int> tree_preorder(TreeNode *tree) {
+vector<int> tree_preorder(CTreeNode *tree) {
     if (!tree) {
         return {};
     }
@@ -33,7 +33,7 @@ vector<int> tree_preorder(TreeNode *tree) {
     return ret;
 }
 
-vector<int> tree_inorder(TreeNode *tree) {
+vector<int> tree_inorder(CTreeNode *tree) {
     if (!tree) {
         return {};
     }
@@ -47,7 +47,7 @@ vector<int> tree_inorder(TreeNode *tree) {
 }
 
 
-vector<int> tree_postOrder(TreeNode *tree) {
+vector<int> tree_postOrder(CTreeNode *tree) {
     if (!tree) {
         return {};
     }
@@ -64,12 +64,12 @@ vector<int> tree_postOrder(TreeNode *tree) {
  * @brief 层序遍历
  * 方案；利用队列先进先出的特性，在遍历节点时同时压入当前节点的子节点，排在兄弟节点之后。
  */
-vector<int> tree_levelOrder(TreeNode *tree) {
+vector<int> tree_levelOrder(CTreeNode *tree) {
     if (!tree) {
         return vector<int>();
     }
     vector<int> ret;
-    queue<TreeNode *> que;
+    queue<CTreeNode *> que;
     que.push(tree);
     while (!que.empty()) {
         tree = que.front();
@@ -88,11 +88,11 @@ vector<int> tree_levelOrder(TreeNode *tree) {
 /**
  * @brief BFS 稍有不同的是，在每次遍历时将一层遍历完进行存储
  */
-vector<vector<int>> tree_levelOrder2(TreeNode *root) {
+vector<vector<int>> tree_levelOrder2(CTreeNode *root) {
     if (!root) {
         return vector<vector<int>>();
     }
-    queue<TreeNode *> queue;
+    queue<CTreeNode *> queue;
     vector<vector<int>> result;
     queue.push(root);
     while (!queue.empty()) {
@@ -118,7 +118,7 @@ vector<vector<int>> tree_levelOrder2(TreeNode *root) {
  */
 vector<vector<int>> levelResult;
 
-void level_dfs(TreeNode *root, int level) {
+void level_dfs(CTreeNode *root, int level) {
     if (!root) {
         return;
     }
@@ -130,7 +130,7 @@ void level_dfs(TreeNode *root, int level) {
     level_dfs(root->right, level + 1);
 }
 
-vector<vector<int>> tree_levelOrder_DFS(TreeNode *root) {
+vector<vector<int>> tree_levelOrder_DFS(CTreeNode *root) {
     levelResult = {};
     level_dfs(root, 1);
     return levelResult;
@@ -143,11 +143,11 @@ vector<vector<int>> tree_levelOrder_DFS(TreeNode *root) {
  *  2. 将所有左节点的路径访问并压栈（循环）；
  *  3. 如果栈不为空，说明已有无左节点，pop并访问其右节点（单次，因为右节点下可能也有树）
  */
-void tree_preorder_stack(TreeNode *tree) {
+void tree_preorder_stack(CTreeNode *tree) {
     if (!tree) {
         return;
     }
-    stack<TreeNode *> stack;
+    stack<CTreeNode *> stack;
     while (tree || !stack.empty()) {
         while (tree) {
             cout<<tree->val<<" ";
@@ -165,11 +165,11 @@ void tree_preorder_stack(TreeNode *tree) {
 /**
  * 同前序遍历，只是访问时机在栈pop前，也就是一路压栈到最左边后开始访问节点并pop。
  */
-void tree_inorder_stack(TreeNode *tree) {
+void tree_inorder_stack(CTreeNode *tree) {
     if (!tree) {
         return;
     }
-    stack<TreeNode *> stack;
+    stack<CTreeNode *> stack;
     while (tree || !stack.empty()) {
         while (tree) {
             stack.push(tree);
@@ -189,12 +189,12 @@ void tree_inorder_stack(TreeNode *tree) {
  * 当前节点的左节点存在则压栈直至空（这里注意压栈节点不能是上次出栈节点！）；
  * 当前记录上次出栈节点是否为当前节点的右节点或当前节点的右节点为空，则当前节点出栈；否则压栈；
  */
-void tree_postorder_stack(TreeNode *tree) {
+void tree_postorder_stack(CTreeNode *tree) {
     if (!tree) {
         return;
     }
-    stack<TreeNode *> stack;
-    TreeNode *lastPop = nullptr;
+    stack<CTreeNode *> stack;
+    CTreeNode *lastPop = nullptr;
 
     while (tree || !stack.empty()) {
         while (tree && tree != lastPop) { // 第二个条件至关重要！

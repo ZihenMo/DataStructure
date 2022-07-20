@@ -18,11 +18,11 @@
 
 using namespace std;
 
-@interface TestTree : XCTestCase
+@interface DSTestTree : XCTestCase
 
 @end
 
-@implementation TestTree
+@implementation DSTestTree
 
 #pragma mark - 二叉树遍历
 
@@ -36,7 +36,7 @@ void printVector(vector<int> vector) {
 
 - (void)testTreeTraverse1 {
     vector<int> nodes = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11};
-    TreeNode *tree = constructTree(nodes);
+    CTreeNode *tree = constructTree(nodes);
     tree_print(tree);
     auto preorder = tree_preorder(tree);
     auto inorder = tree_inorder(tree);
@@ -52,7 +52,7 @@ void printVector(vector<int> vector) {
 /// 栈遍历二叉树
 - (void)testTreeTraverse2 {
     vector<int> nodes = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11};
-    TreeNode *tree = constructTree(nodes);
+    CTreeNode *tree = constructTree(nodes);
     tree_print(tree);
     tree_preorder_stack(tree);
     tree_inorder_stack(tree);
@@ -64,8 +64,8 @@ void printVector(vector<int> vector) {
 - (void)testValidBST {
     vector<int> nodes1 = {5, 1, 4, TreeNodeNULL, TreeNodeNULL, 3, 6};
     vector<int> nodes2 = {2, 1, 3};
-    TreeNode *tree1 = constructTree(nodes1);
-    TreeNode *tree2 = constructTree(nodes2);
+    CTreeNode *tree1 = constructTree(nodes1);
+    CTreeNode *tree2 = constructTree(nodes2);
     ValidBST *solution = new ValidBST();
     XCTAssertFalse(solution->isValidBST(tree1));
     XCTAssertTrue(solution->isValidBST(tree2));
@@ -78,7 +78,7 @@ void printVector(vector<int> vector) {
     PathSum pathSum;
     vector<int> nodes = {5, 4, 8, 11, TreeNodeNULL, 13, 4, 7, 2, TreeNodeNULL, TreeNodeNULL, TreeNodeNULL, 1};
     int target = 22;
-    TreeNode *tree = constructTree(nodes);
+    CTreeNode *tree = constructTree(nodes);
     bool result = pathSum.tree_hasPathSum_DFS(tree, target);
     XCTAssertTrue(result);
 }
@@ -90,7 +90,7 @@ void printVector(vector<int> vector) {
             11, TreeNodeNULL, 13, 4,
             7, 2, TreeNodeNULL, TreeNodeNULL, 5, 1};
     int target = 22;
-    TreeNode *tree = tree_construct(nodes);
+    CTreeNode *tree = tree_construct(nodes);
     auto result = pathSum.pathSum_DFS(tree, target);
     for (auto v : result) {
         printVector(v);

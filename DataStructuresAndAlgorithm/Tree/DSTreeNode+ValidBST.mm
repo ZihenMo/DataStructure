@@ -24,7 +24,7 @@
  * 缺陷：遍历以容器返回分配了大量空间
  */
 
-bool solution11(TreeNode *root) {
+bool solution11(CTreeNode *root) {
     vector<int> inorder = tree_inorder(root);
     if (inorder.size() <= 1) {
         return true;
@@ -39,7 +39,7 @@ bool solution11(TreeNode *root) {
 /*
  * @brief 使用成员变量记住上一个（根）节点，这样不需要保存所有节点，只需要和根节点比较
  */
-bool ValidBST:: dfs(TreeNode *root) {
+bool ValidBST:: dfs(CTreeNode *root) {
     if (!root) {
         return true;
     }
@@ -58,7 +58,7 @@ bool ValidBST:: dfs(TreeNode *root) {
  * 采用递归传递最大最小值。
  * 缺陷：边界值局限问题（以及类型提升），实际问题可能无法确实最大值与最小值。
  */
-bool solution2_helper(TreeNode *root, long long min, long long max) {
+bool solution2_helper(CTreeNode *root, long long min, long long max) {
     if (!root) { return true; }
     
     if ((max != LONG_LONG_MAX && root->val >= max) || (min != LONG_LONG_MIN && root->val <= min)) {
@@ -69,11 +69,11 @@ bool solution2_helper(TreeNode *root, long long min, long long max) {
     solution2_helper(root->right, root->val, max);
 }
 
-bool solution2(TreeNode *root) {
+bool solution2(CTreeNode *root) {
     return solution2_helper(root, LONG_LONG_MIN, LONG_LONG_MAX);
 }
 
-bool ValidBST::isValidBST(TreeNode *root) {
+bool ValidBST::isValidBST(CTreeNode *root) {
 //    this->pre = nullptr;
 //    return this->dfs(root);
     return solution2(root);

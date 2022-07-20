@@ -30,6 +30,6 @@
 
 class TreeDepth {
 public:
-    int maxDepth(TreeNode* root);
-    int minDepth(TreeNode* root);
+    int maxDepth(CTreeNode* root);
+    int minDepth(CTreeNode* root);
 };

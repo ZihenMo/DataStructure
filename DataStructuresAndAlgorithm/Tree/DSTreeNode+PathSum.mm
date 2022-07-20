@@ -22,7 +22,7 @@ using namespace std;
 /**
  * 递归先序遍历 DFS
  */
-bool PathSum::tree_hasPathSum_DFS(TreeNode *root, int targetSum) {
+bool PathSum::tree_hasPathSum_DFS(CTreeNode *root, int targetSum) {
     if (!root) {
         return false;
     }
@@ -38,11 +38,11 @@ bool PathSum::tree_hasPathSum_DFS(TreeNode *root, int targetSum) {
 /**
  * 层序遍历 BFS T:O(n) S:O(n)
  */
-bool PathSum::tree_hasPathSum_BFS(TreeNode *root, int targetSum) {
+bool PathSum::tree_hasPathSum_BFS(CTreeNode *root, int targetSum) {
     if (!root) {
         return false;
     }
-    queue<TreeNode *> nodeQue;
+    queue<CTreeNode *> nodeQue;
     queue<int> sumQue;
     nodeQue.push(root);
     sumQue.push(root->val);
@@ -70,7 +70,7 @@ bool PathSum::tree_hasPathSum_BFS(TreeNode *root, int targetSum) {
 /**
  * @brief DFS
  */
-vector<vector<int>> PathSum::pathSum_DFS(TreeNode *root, int targetSum) {
+vector<vector<int>> PathSum::pathSum_DFS(CTreeNode *root, int targetSum) {
     if (!root) {
         return {};
     }
@@ -88,11 +88,11 @@ vector<vector<int>> PathSum::pathSum_DFS(TreeNode *root, int targetSum) {
 /**
  * @brief 非递归 DFS 该如果回溯和值？未解
  */
-vector<vector<int>> pathSum_DFS2(TreeNode *root, int targetSum) {
+vector<vector<int>> pathSum_DFS2(CTreeNode *root, int targetSum) {
     if (!root) {return {};}
     vector<int> path;
     vector<vector<int>>result;
-    stack<TreeNode *> stack;
+    stack<CTreeNode *> stack;
     while (root || !stack.empty()) {
         while (root) {
             stack.push(root);
@@ -112,16 +112,16 @@ vector<vector<int>> pathSum_DFS2(TreeNode *root, int targetSum) {
  * @brief 广度优先搜索 O(n2)
  * 1.搜索时使用hashTable保存其父节点，找到解时通过父节点表索引出完整路径。
  */
-vector<vector<int>> PathSum::pathSum_BFS(TreeNode *root, int targetSum) {
+vector<vector<int>> PathSum::pathSum_BFS(CTreeNode *root, int targetSum) {
     if (!root) {
         return vector<vector<int>>();
     }
-    queue<TreeNode *> nodeQue;
+    queue<CTreeNode *> nodeQue;
     queue<int> sumQue;
     nodeQue.push(root);
     sumQue.push(root->val);
     while (!nodeQue.empty()) {
-        TreeNode *node = nodeQue.front();
+        CTreeNode *node = nodeQue.front();
         nodeQue.pop();
         int sum = sumQue.front();
         sumQue.pop();
@@ -146,7 +146,7 @@ vector<vector<int>> PathSum::pathSum_BFS(TreeNode *root, int targetSum) {
 /**
  * @brief 获取节点对应的路径
  */
-vector<int> PathSum::pathToRoot(TreeNode *node) {
+vector<int> PathSum::pathToRoot(CTreeNode *node) {
     vector<int> path;
     while (node) {
         path.push_back(node->val);

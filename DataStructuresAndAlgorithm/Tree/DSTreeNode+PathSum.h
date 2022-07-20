@@ -26,16 +26,16 @@ NS_ASSUME_NONNULL_END
 
 class PathSum {
 private:
-    std::unordered_map<TreeNode *, TreeNode *> parent;
+    std::unordered_map<CTreeNode *, CTreeNode *> parent;
     std::vector<int> path;
     std::vector<vector<int>> result;
-    vector<int> pathToRoot(TreeNode *leaf);
+    vector<int> pathToRoot(CTreeNode *leaf);
 public:
-    bool tree_hasPathSum_DFS(TreeNode *root, int targetSum);
-    bool tree_hasPathSum_BFS(TreeNode *root, int targetSum);
+    bool tree_hasPathSum_DFS(CTreeNode *root, int targetSum);
+    bool tree_hasPathSum_BFS(CTreeNode *root, int targetSum);
 
-    vector<vector<int>>pathSum_DFS(TreeNode* root, int targetSum);
-    vector<vector<int>>pathSum_BFS(TreeNode* root, int targetSum);
+    vector<vector<int>>pathSum_DFS(CTreeNode* root, int targetSum);
+    vector<vector<int>>pathSum_BFS(CTreeNode* root, int targetSum);
 };
 
 

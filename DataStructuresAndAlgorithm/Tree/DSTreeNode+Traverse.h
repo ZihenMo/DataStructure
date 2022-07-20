@@ -27,19 +27,19 @@ using namespace std;
 /**
  * @brief 前序遍历
  */
-vector<int> tree_preorder(TreeNode *tree);
+vector<int> tree_preorder(CTreeNode *tree);
 /**
  * @brief 中序遍历
  */
-vector<int> tree_inorder(TreeNode *tree);
+vector<int> tree_inorder(CTreeNode *tree);
 /**
  * @brief 后序遍历
  */
-vector<int> tree_postOrder(TreeNode *tree);
+vector<int> tree_postOrder(CTreeNode *tree);
 /**
  * @brief 层序遍历
  */
-vector<int> tree_levelOrder(TreeNode *tree);
+vector<int> tree_levelOrder(CTreeNode *tree);
 
 /**
  * @brief 102. 二叉树的层序遍历
@@ -54,11 +54,11 @@ vector<int> tree_levelOrder(TreeNode *tree);
  *   [15,7]
  * ]
  */
-vector<vector<int>> tree_levelOrder2(TreeNode* root);
+vector<vector<int>> tree_levelOrder2(CTreeNode* root);
 
 #pragma mark - 栈法
-void tree_preorder_stack(TreeNode *tree);
-void tree_inorder_stack(TreeNode *tree);
-void tree_postorder_stack(TreeNode *tree);
+void tree_preorder_stack(CTreeNode *tree);
+void tree_inorder_stack(CTreeNode *tree);
+void tree_postorder_stack(CTreeNode *tree);
 
 
