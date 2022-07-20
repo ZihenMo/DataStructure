@@ -41,8 +41,8 @@ class DoubleLinkedList<T>: List {
             }
         }
         else {
-            var next = move(index)
-            var prev = next?.prev
+            let next = move(index)
+            let prev = next?.prev
 
             if index == 0 {
                 head = node

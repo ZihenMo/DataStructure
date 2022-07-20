@@ -145,6 +145,9 @@
 		9662963E26A3460A00703CAD /* DSTreeNode+CommonAncestor.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9662963C26A3460A00703CAD /* DSTreeNode+CommonAncestor.mm */; };
 		9662964126A3F50100703CAD /* DSTreeNode+PathSum.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9662964026A3F50100703CAD /* DSTreeNode+PathSum.mm */; };
 		9662964226A3F50100703CAD /* DSTreeNode+PathSum.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9662964026A3F50100703CAD /* DSTreeNode+PathSum.mm */; };
+		968D74452886850A005B37C7 /* Set+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968D74442886850A005B37C7 /* Set+Extensions.swift */; };
+		968D7447288689BD005B37C7 /* TestSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968D7446288689BD005B37C7 /* TestSet.swift */; };
+		968D744828868BE8005B37C7 /* Set+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968D74442886850A005B37C7 /* Set+Extensions.swift */; };
 		96BD5569269C205000E8F805 /* TestStack.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96BD5568269C205000E8F805 /* TestStack.mm */; };
 		96BD556A269C2A4700E8F805 /* DSStack+BracketMatching.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59A91E857ACEAD51479397 /* DSStack+BracketMatching.mm */; };
 		96BD556D269C557700E8F805 /* TestQueue.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AC01EB6D2BB9EA11BF1F /* TestQueue.mm */; };
@@ -313,6 +316,8 @@
 		9662963C26A3460A00703CAD /* DSTreeNode+CommonAncestor.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "DSTreeNode+CommonAncestor.mm"; sourceTree = "<group>"; };
 		9662963F26A3F50100703CAD /* DSTreeNode+PathSum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DSTreeNode+PathSum.h"; sourceTree = "<group>"; };
 		9662964026A3F50100703CAD /* DSTreeNode+PathSum.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "DSTreeNode+PathSum.mm"; sourceTree = "<group>"; };
+		968D74442886850A005B37C7 /* Set+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Set+Extensions.swift"; sourceTree = "<group>"; };
+		968D7446288689BD005B37C7 /* TestSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSet.swift; sourceTree = "<group>"; };
 		96BD5568269C205000E8F805 /* TestStack.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TestStack.mm; sourceTree = "<group>"; };
 		C8312B3A6DC57F77781BFAF0 /* Pods_DataStructuresAndAlgorithmUnitTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DataStructuresAndAlgorithmUnitTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7E4741474EABEA67E2858CE /* Pods-DataStructuresAndAlgorithmUnitTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataStructuresAndAlgorithmUnitTest.release.xcconfig"; path = "Target Support Files/Pods-DataStructuresAndAlgorithmUnitTest/Pods-DataStructuresAndAlgorithmUnitTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -403,6 +408,7 @@
 				1A85BFB0049D7A245FDD44B7 /* CircularLinkedList.swift */,
 				1A85BB6E3215E103A4DD71C8 /* DoubleCircularLinkedList.swift */,
 				46CE78822664DA245E9D9CF6 /* Stack.swift */,
+				968D74442886850A005B37C7 /* Set+Extensions.swift */,
 			);
 			path = Swift;
 			sourceTree = "<group>";
@@ -569,6 +575,7 @@
 				4A59A4BDD25BE3E95C714954 /* TestKthLargestNumber.swift */,
 				4A59AEADF00B218067D8A63C /* TestRotateArray.swift */,
 				4A59A8432FD81F4D811394EC /* TestLinkedList.swift */,
+				968D7446288689BD005B37C7 /* TestSet.swift */,
 			);
 			path = Swift;
 			sourceTree = "<group>";
@@ -872,7 +879,7 @@
 					3847EA1924D95B47008CD872 = {
 						CreatedOnToolsVersion = 11.2.1;
 						DevelopmentTeam = 9C9K388S8H;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -987,6 +994,7 @@
 				1A85BDEA5F7628B7F8C0190C /* DoubleCircularLinkedList.swift in Sources */,
 				46CE73BF45656F11005463F2 /* Stack.swift in Sources */,
 				9662964126A3F50100703CAD /* DSTreeNode+PathSum.mm in Sources */,
+				968D74452886850A005B37C7 /* Set+Extensions.swift in Sources */,
 				96572B032697EB5600A536EC /* LeetCode.swift in Sources */,
 				4A59A9407256820ED1D53707 /* Person.m in Sources */,
 				4A59A6A0C1BBF0FCE1800156 /* KthLargestNumber.swift in Sources */,
@@ -1070,6 +1078,7 @@
 				96BD556D269C557700E8F805 /* TestQueue.mm in Sources */,
 				4A59A9D5C5314A9F54AA5ED8 /* KthLargestNumber.swift in Sources */,
 				4A59A297BA631BBBBB65D972 /* RotateArray.swift in Sources */,
+				968D7447288689BD005B37C7 /* TestSet.swift in Sources */,
 				4A59AA695F576E9996E214B0 /* TestDoubleLinkedList.swift in Sources */,
 				4A59AD57BA23BFF21203042F /* Test.swift in Sources */,
 				4A59A6E8F56C1EE766FBE5C1 /* TestDoubleCircularLinkedList.swift in Sources */,
@@ -1113,6 +1122,7 @@
 				4A59A10E4C42AEC5542854FA /* CrossWord.mm in Sources */,
 				4A59A0BC784FFC74757107C9 /* PowOfTwo.mm in Sources */,
 				4A59A10F4289DDFBB13F6471 /* TestBits.mm in Sources */,
+				968D744828868BE8005B37C7 /* Set+Extensions.swift in Sources */,
 				4A59A56964392FBE7A3F6B42 /* HammingWeight.mm in Sources */,
 				4A59AE03A9A10551BAB955F8 /* CountBits.mm in Sources */,
 				4A59ACA6B14E85F2133F3485 /* ClimbStair.mm in Sources */,
@@ -1301,8 +1311,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5BCBF18366AE8540084FA1C5 /* Pods-DataStructuresAndAlgorithmUnitTest.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 9C9K388S8H;
 				INFOPLIST_FILE = "$(SRCROOT)/$(TARGET_NAME)/Info.plist";
@@ -1324,8 +1334,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F7E4741474EABEA67E2858CE /* Pods-DataStructuresAndAlgorithmUnitTest.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 9C9K388S8H;
 				INFOPLIST_FILE = "$(SRCROOT)/$(TARGET_NAME)/Info.plist";
